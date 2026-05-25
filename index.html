@@ -68,7 +68,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .alert-table th{text-align:left;padding:5px 8px;opacity:0.7;font-weight:500;border-bottom:1px solid rgba(255,255,255,0.1);}
 .alert-table td{padding:5px 8px;border-bottom:1px solid rgba(255,255,255,0.06);}
 .alert-table tr:last-child td{border-bottom:none;}
-td.days-old{font-weight:600;}
 .code-pill{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;padding:2px 7px;border-radius:4px;background:rgba(255,255,255,0.08);letter-spacing:0.05em;}
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:4px;}
 .kpi{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;}
@@ -182,28 +181,29 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div class="report-header">
       <div>
         <div class="rh-title">Daily Operations Report</div>
-        <div class="rh-sub">Sunday, 25 May 2026 — Let's Hookah</div>
+        <div class="rh-sub">Monday, 25 May 2026 — Let's Hookah</div>
       </div>
       <span class="rh-badge badge-live">Updated 25 May 2026</span>
     </div>
 
     <div class="sec-label">Alerts</div>
+
     <div class="alert alert-warn">
-      <div class="alert-title">⚠ 4 orders from yesterday not collected — AED 583.75</div>
+      <div class="alert-title">⚠ 3 orders from today not yet collected — AED 824.25</div>
       <div class="alert-body">
         <table class="alert-table">
-          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Zone</th></tr></thead>
+          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Time slot</th><th>Zone</th></tr></thead>
           <tbody>
-            <tr><td>#7317</td><td>Diksha T.</td><td>AED 119.70</td><td>Zone B</td></tr>
-            <tr><td>#7318</td><td>Zahra K.</td><td>AED 215.25</td><td>Zone A</td></tr>
-            <tr><td>#7319</td><td>Samer H.</td><td>AED 119.70</td><td>Zone A</td></tr>
-            <tr><td>#7320</td><td>Hiba S.</td><td>AED 129.10</td><td>Zone A</td></tr>
+            <tr><td>#7321</td><td>Liza S.</td><td>AED 409.50</td><td>08:15–09:00 PM</td><td>Zone B</td></tr>
+            <tr><td>#7322</td><td>Zeina N.</td><td>AED 46.20</td><td>09:45–10:30 PM</td><td>Zone B</td></tr>
+            <tr><td>#7323</td><td>Ahmed M.</td><td>AED 368.55</td><td>10:45–11:45 PM</td><td>Zone C+D</td></tr>
           </tbody>
         </table>
       </div>
     </div>
+
     <div class="alert alert-danger">
-      <div class="alert-title">🔴 3 overdue uncollected orders from previous days — AED 358.50 outstanding</div>
+      <div class="alert-title">🔴 7 overdue Not Collected orders from previous days — AED 823.15</div>
       <div class="alert-body">
         <table class="alert-table">
           <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th></tr></thead>
@@ -211,83 +211,88 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
             <tr><td>#7309</td><td>Amir A.</td><td>AED 119.70</td><td>21 May</td><td>Zone A</td></tr>
             <tr><td>#7311</td><td>Zeina N.</td><td>AED 119.70</td><td>22 May</td><td>Zone B</td></tr>
             <tr><td>#7316</td><td>Zeina N.</td><td>AED 119.70</td><td>23 May</td><td>Zone B</td></tr>
+            <tr><td>#7317</td><td>Diksha T.</td><td>AED 119.70</td><td>24 May</td><td>Zone B</td></tr>
+            <tr><td>#7318</td><td>Zahra K.</td><td>AED 215.25</td><td>24 May</td><td>Zone A</td></tr>
+            <tr><td>#7319</td><td>Samer H.</td><td>AED 119.70</td><td>24 May</td><td>Zone A</td></tr>
+            <tr><td>#7320</td><td>Hiba S.</td><td>AED 129.10</td><td>24 May</td><td>Zone A</td></tr>
           </tbody>
         </table>
       </div>
-    </div>
-    <div class="alert alert-purple">
-      <div class="alert-title">🔧 Damage / accessory payment detected this month</div>
-      <div class="alert-body">
-        <table class="alert-table">
-          <thead><tr><th>Order</th><th>Date</th><th>Item</th><th>Amount</th></tr></thead>
-          <tbody>
-            <tr><td>#7250</td><td>3 May</td><td>Broken head</td><td>AED 52.50</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="alert alert-teal">
-      <div class="alert-title">🏷 No discounts used on yesterday's orders</div>
-      <div class="alert-body">Active codes this month: <span class="code-pill">HomeAlone20</span> <span class="code-pill">LOYAL25</span> <span class="code-pill">Welcome20</span> <span class="code-pill">F&amp;F20</span> <span class="code-pill">Ladiesnight20</span> <span class="code-pill">welcome15</span></div>
-    </div>
-    <div class="alert alert-ok">
-      <div class="alert-title">✓ No cancelled orders yesterday</div>
-      <div class="alert-body">All 5 orders proceeded normally</div>
     </div>
 
-    <div class="sec-label">Yesterday's summary — 24 May</div>
+    <div class="alert alert-teal">
+      <div class="alert-title">🏷 1 discount used today — AED 70.00 given</div>
+      <div class="alert-body">
+        <table class="alert-table">
+          <thead><tr><th>Order</th><th>Customer</th><th>Code</th><th>Discount</th></tr></thead>
+          <tbody>
+            <tr><td>#7322</td><td>Zeina N. (64 orders)</td><td><span class="code-pill">Auto-loyalty</span></td><td>AED 70.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ No cancelled orders today</div>
+      <div class="alert-body">All 3 orders proceeded normally</div>
+    </div>
+
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ No damage or accessory payments today</div>
+      <div class="alert-body">No orders detected with damage or accessory keywords</div>
+    </div>
+
+    <div class="sec-label">Today's summary — 25 May</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">5</div><div class="kpi-sub">#7316 – #7320</div></div>
-      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">703.75</div><div class="kpi-sub">AED</div></div>
-      <div class="kpi kpi-warn"><div class="kpi-label">Uncollected</div><div class="kpi-val">583.75</div><div class="kpi-sub">AED — 4 orders</div></div>
-      <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">6</div><div class="kpi-sub">sold yesterday</div></div>
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">3</div><div class="kpi-sub">#7321 – #7323</div></div>
+      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">824.25</div><div class="kpi-sub">AED</div></div>
+      <div class="kpi kpi-warn"><div class="kpi-label">Discounts given</div><div class="kpi-val">70.00</div><div class="kpi-sub">AED — 1 order</div></div>
+      <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">4</div><div class="kpi-sub">sold today</div></div>
     </div>
 
     <div class="sec-label">Shisha breakdown</div>
     <div class="card">
-      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">4 units</span></div>
-      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">1 unit</span></div>
-      <div class="card-row"><span class="cr-label">Add-ons / Tips</span><span class="cr-val">1 unit</span></div>
+      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">2 units</span></div>
+      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">2 units</span></div>
+      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">1 unit</span></div>
     </div>
 
     <div class="sec-label">Payment collection</div>
     <div class="pay-grid">
-      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">703.75</div><div class="pay-orders">5 orders · 100%</div></div>
+      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">46.20</div><div class="pay-orders">1 order · 5.6%</div></div>
       <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">0.00</div><div class="pay-orders">0 orders</div></div>
-      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">0.00</div><div class="pay-orders">0 orders</div></div>
+      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">778.05</div><div class="pay-orders">2 orders · 94.4%</div></div>
     </div>
 
     <div class="sec-label">Orders detail</div>
     <div class="order-table-wrap">
       <table class="order-tbl">
-        <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th>Amount</th><th>Status</th></tr></thead>
+        <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td>#7316</td><td>Zeina N.</td><td>Arabic 1H</td><td>AED 119.70</td><td><span class="ob ob-loyal">Loyal — 63 orders</span></td></tr>
-          <tr><td>#7317</td><td>Diksha T.</td><td>Arabic 1H</td><td>AED 119.70</td><td><span class="ob ob-return">Returning — 3rd</span></td></tr>
-          <tr><td>#7318</td><td>Zahra K.</td><td>Russian VIP</td><td>AED 215.25</td><td><span class="ob ob-new">New</span></td></tr>
-          <tr><td>#7319</td><td>Samer H.</td><td>Arabic 1H</td><td>AED 119.70</td><td><span class="ob ob-new">New</span></td></tr>
-          <tr><td>#7320</td><td>Hiba S.</td><td>Arabic 1H + tip</td><td>AED 129.10</td><td><span class="ob ob-new">New</span></td></tr>
+          <tr><td>#7321</td><td>Liza S.</td><td>Russian VIP x2</td><td>AED 409.50</td><td>Payment Link</td><td><span class="ob ob-new">New</span></td></tr>
+          <tr><td>#7322</td><td>Zeina N.</td><td>Arabic 1H</td><td>AED 46.20</td><td>Card on delivery</td><td><span class="ob ob-loyal">Loyal — 64 orders</span></td></tr>
+          <tr><td>#7323</td><td>Ahmed M.</td><td>Two Heads x2</td><td>AED 368.55</td><td>Payment Link</td><td><span class="ob ob-return">Returning — 4th</span></td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="sec-label">New vs. returning</div>
     <div class="card">
-      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">3 (60%)</span></div>
-      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">2 (40%)</span></div>
-      <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">1 — Zeina (63 orders)</span></div>
+      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">1 (33%)</span></div>
+      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">2 (67%)</span></div>
+      <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">1 — Zeina (64 orders)</span></div>
     </div>
 
-    <div class="sec-label">Website traffic — 24 May</div>
+    <div class="sec-label">Website traffic — 25 May</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total sessions</div><div class="kpi-val">22</div><div class="kpi-sub">yesterday</div></div>
-      <div class="kpi kpi-ok"><div class="kpi-label">Ordered</div><div class="kpi-val">5</div><div class="kpi-sub">converted</div></div>
-      <div class="kpi kpi-warn"><div class="kpi-label">Did not order</div><div class="kpi-val">17</div><div class="kpi-sub">left without buying</div></div>
-      <div class="kpi"><div class="kpi-label">Conversion rate</div><div class="kpi-val">22.7%</div><div class="kpi-sub">sessions → orders</div></div>
+      <div class="kpi"><div class="kpi-label">Total sessions</div><div class="kpi-val">26</div><div class="kpi-sub">letshookah.co</div></div>
+      <div class="kpi kpi-ok"><div class="kpi-label">Placed order</div><div class="kpi-val">3</div><div class="kpi-sub">sessions converted</div></div>
+      <div class="kpi kpi-warn"><div class="kpi-label">No order placed</div><div class="kpi-val">23</div><div class="kpi-sub">sessions without order</div></div>
+      <div class="kpi"><div class="kpi-label">Conversion rate</div><div class="kpi-val">11.5%</div><div class="kpi-sub">sessions → orders</div></div>
     </div>
     <div class="card">
-      <div class="traffic-row"><span class="tr-label">Direct</span><div class="tr-bar-wrap"><div class="tr-bar" style="width:59%;background:var(--gold);"></div></div><span class="tr-val">13</span></div>
-      <div class="traffic-row"><span class="tr-label">Search</span><div class="tr-bar-wrap"><div class="tr-bar" style="width:41%;background:var(--success);"></div></div><span class="tr-val">9</span></div>
+      <div class="traffic-row"><span class="tr-label">Direct</span><div class="tr-bar-wrap"><div class="tr-bar" style="width:65%;background:var(--gold);"></div></div><span class="tr-val">17</span></div>
+      <div class="traffic-row"><span class="tr-label">Search</span><div class="tr-bar-wrap"><div class="tr-bar" style="width:35%;background:var(--success);"></div></div><span class="tr-val">9</span></div>
       <div class="traffic-row"><span class="tr-label">Social</span><div class="tr-bar-wrap"><div class="tr-bar" style="width:0%;background:var(--info);"></div></div><span class="tr-val">0</span></div>
     </div>
   </div>
@@ -374,16 +379,16 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div class="report-header">
       <div>
         <div class="rh-title">Weekly Report — w/c 18 May</div>
-        <div class="rh-sub">18 May – 24 May 2026 · Let's Hookah</div>
+        <div class="rh-sub">18 May – 25 May 2026 · Let's Hookah</div>
       </div>
       <span class="rh-badge badge-live">Updated 25 May 2026</span>
     </div>
     <div class="sec-label">Week at a glance</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">20</div><div class="kpi-sub">this week</div></div>
-      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">6,001</div><div class="kpi-sub">AED</div></div>
-      <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">11</div><div class="kpi-sub">first-time orders</div></div>
-      <div class="kpi"><div class="kpi-label">Returning</div><div class="kpi-val">9</div><div class="kpi-sub">ordered before</div></div>
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">23</div><div class="kpi-sub">this week</div></div>
+      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">6,825</div><div class="kpi-sub">AED</div></div>
+      <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">12</div><div class="kpi-sub">first-time orders</div></div>
+      <div class="kpi"><div class="kpi-label">Returning</div><div class="kpi-val">11</div><div class="kpi-sub">ordered before</div></div>
     </div>
     <div class="sec-label">Day by day</div>
     <div class="day-grid">
@@ -397,15 +402,15 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     </div>
     <div class="sec-label">Customer retention</div>
     <div class="card">
-      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">11 (55%)</span></div>
-      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-ok">9 (45%)</span></div>
-      <div class="card-row"><span class="cr-label">Retention rate</span><span class="cr-ok">45%</span></div>
-      <div class="card-row"><span class="cr-label">Loyal regulars active</span><span class="cr-ok">yes — multiple this week</span></div>
+      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">12 (52%)</span></div>
+      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-ok">11 (48%)</span></div>
+      <div class="card-row"><span class="cr-label">Retention rate</span><span class="cr-ok">48%</span></div>
+      <div class="card-row"><span class="cr-label">Loyal regulars active</span><span class="cr-ok">yes — Zeina (64 orders)</span></div>
       <div class="ret-bar-wrap">
-        <div class="ret-bar"><div class="ret-new" style="width:55%"></div><div class="ret-ret" style="width:45%"></div></div>
+        <div class="ret-bar"><div class="ret-new" style="width:52%"></div><div class="ret-ret" style="width:48%"></div></div>
         <div class="ret-legend">
-          <div class="leg"><div class="leg-dot" style="background:var(--info)"></div>New — 55%</div>
-          <div class="leg"><div class="leg-dot" style="background:var(--gold)"></div>Returning — 45%</div>
+          <div class="leg"><div class="leg-dot" style="background:var(--info)"></div>New — 52%</div>
+          <div class="leg"><div class="leg-dot" style="background:var(--gold)"></div>Returning — 48%</div>
         </div>
       </div>
     </div>
@@ -414,6 +419,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <table class="order-tbl">
         <thead><tr><th>Name</th><th>Joined</th><th>First order value</th></tr></thead>
         <tbody>
+          <tr><td>Liza Stepenskaya</td><td>25 May</td><td>AED 409.50</td></tr>
           <tr><td>Hiba Shanaa</td><td>24 May</td><td>AED 129.10</td></tr>
           <tr><td>Samer Hemade</td><td>24 May</td><td>AED 119.70</td></tr>
           <tr><td>Zahra Khalfan</td><td>24 May</td><td>AED 215.25</td></tr>
@@ -430,10 +436,10 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     </div>
     <div class="sec-label">Top products this week</div>
     <div class="card">
-      <div class="prod-row"><span class="prod-name">Arabic — Desert Dream (1 Head)</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:62%;background:var(--gold);"></div></div><span class="prod-val">13 orders · AED 1,598</span></div>
+      <div class="prod-row"><span class="prod-name">Arabic — Desert Dream (1 Head)</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:57%;background:var(--gold);"></div></div><span class="prod-val">13 orders · AED 1,598</span></div>
       <div class="prod-row"><span class="prod-name">Gold Catering Package</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:100%;background:var(--success);"></div></div><span class="prod-val">2 orders · AED 2,598</span></div>
-      <div class="prod-row"><span class="prod-name">Russian VIP Signature</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:28%;background:var(--info);"></div></div><span class="prod-val">3 orders · AED 740</span></div>
-      <div class="prod-row"><span class="prod-name">Premium Two Heads</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:13%;background:var(--text-dim);"></div></div><span class="prod-val">2 orders · AED 326</span></div>
+      <div class="prod-row"><span class="prod-name">Russian VIP Signature</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:35%;background:var(--info);"></div></div><span class="prod-val">5 orders · AED 1,150</span></div>
+      <div class="prod-row"><span class="prod-name">Premium Two Heads</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:20%;background:var(--text-dim);"></div></div><span class="prod-val">4 orders · AED 695</span></div>
     </div>
     <div class="sec-label">Best & worst days</div>
     <div class="card">
@@ -459,7 +465,7 @@ function checkLogin(){
     sessionStorage.setItem(SESSION_KEY,'1');
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app').style.display='block';
-    document.getElementById('last-updated-txt').textContent='Updated 25 May 2026, 11:25';
+    document.getElementById('last-updated-txt').textContent='Updated 25 May 2026, 19:30';
   } else {
     document.getElementById('login-error').style.display='block';
     document.getElementById('pwd-input').value='';
@@ -483,7 +489,7 @@ document.getElementById('pwd-input').addEventListener('keydown',e=>{if(e.key==='
 if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
-  document.getElementById('last-updated-txt').textContent='Updated 25 May 2026, 11:25';
+  document.getElementById('last-updated-txt').textContent='Updated 25 May 2026, 19:30';
 }
 </script>
 </body>
