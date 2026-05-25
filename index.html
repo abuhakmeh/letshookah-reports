@@ -10,8 +10,6 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{font-size:16px;}
 body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);min-height:100vh;line-height:1.5;}
-
-/* LOGIN */
 #login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--black);position:relative;overflow:hidden;}
 #login-screen::before{content:'';position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(154,134,96,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
 .login-box{background:var(--surface);border:1px solid var(--border-strong);border-radius:20px;padding:48px 40px;width:100%;max-width:400px;text-align:center;position:relative;z-index:1;}
@@ -26,8 +24,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .login-btn:hover{background:var(--gold-light);}
 .login-btn:active{transform:scale(0.98);}
 .login-error{font-size:12px;color:var(--danger);margin-top:10px;display:none;}
-
-/* APP SHELL */
 #app{display:none;}
 .topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
 .topbar-brand{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--gold);text-transform:uppercase;}
@@ -35,31 +31,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .last-updated{font-size:11px;color:var(--text-muted);font-family:'DM Mono',monospace;}
 .logout-btn{font-size:11px;color:var(--text-muted);cursor:pointer;background:none;border:1px solid var(--border);border-radius:6px;padding:5px 12px;font-family:'DM Sans',sans-serif;transition:color 0.2s,border-color 0.2s;}
 .logout-btn:hover{color:var(--text);border-color:var(--border-strong);}
-
-/* TABS */
 .tabs-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none;}
 .tabs-bar::-webkit-scrollbar{display:none;}
 .tab-btn{font-family:'Syne',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);padding:16px 20px;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color 0.2s,border-color 0.2s;}
 .tab-btn:hover{color:var(--text);}
 .tab-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
-
-/* CONTENT */
 .tab-content{display:none;padding:28px 24px;max-width:900px;margin:0 auto;}
 .tab-content.active{display:block;}
-
-/* SECTION LABELS */
 .sec-label{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);margin:24px 0 12px;}
 .sec-label:first-child{margin-top:0;}
-
-/* REPORT HEADER */
 .report-header{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px 22px;display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:16px;}
 .rh-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--text);margin-bottom:4px;}
 .rh-sub{font-size:13px;color:var(--text-muted);}
 .rh-badge{font-size:11px;font-weight:500;padding:5px 12px;border-radius:99px;white-space:nowrap;flex-shrink:0;}
 .badge-live{background:var(--success-bg);color:var(--success);border:1px solid rgba(74,158,106,0.3);}
 .badge-info{background:var(--info-bg);color:var(--info);border:1px solid rgba(80,128,184,0.3);}
-
-/* ALERTS */
 .alert{border-radius:var(--r);padding:12px 16px;margin-bottom:8px;border-left:3px solid;display:flex;flex-direction:column;gap:3px;}
 .alert-warn{background:var(--warn-bg);border-color:var(--warn);}
 .alert-danger{background:var(--danger-bg);border-color:var(--danger);}
@@ -82,11 +68,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .alert-table th{text-align:left;padding:5px 8px;opacity:0.7;font-weight:500;border-bottom:1px solid rgba(255,255,255,0.1);}
 .alert-table td{padding:5px 8px;border-bottom:1px solid rgba(255,255,255,0.06);}
 .alert-table tr:last-child td{border-bottom:none;}
-.alert-warn .alert-table,.alert-danger .alert-table,.alert-purple .alert-table,.alert-teal .alert-table{color:inherit;}
 td.days-old{font-weight:600;}
 .code-pill{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;padding:2px 7px;border-radius:4px;background:rgba(255,255,255,0.08);letter-spacing:0.05em;}
-
-/* KPI GRID */
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:4px;}
 .kpi{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;}
 .kpi-label{font-size:11px;color:var(--text-muted);margin-bottom:6px;}
@@ -95,8 +78,6 @@ td.days-old{font-weight:600;}
 .kpi-warn .kpi-val{color:var(--warn);}
 .kpi-danger .kpi-val{color:var(--danger);}
 .kpi-ok .kpi-val{color:var(--success);}
-
-/* CARD */
 .card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:4px 18px;margin-bottom:10px;}
 .card-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--border);font-size:13px;gap:12px;}
 .card-row:last-child{border-bottom:none;}
@@ -105,8 +86,6 @@ td.days-old{font-weight:600;}
 .cr-ok{color:var(--success);font-weight:500;}
 .cr-warn{color:var(--warn);font-weight:500;}
 .cr-danger{color:var(--danger);font-weight:500;}
-
-/* PAYMENT */
 .pay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;}
 .pay-card{border-radius:var(--r);padding:14px 16px;border:1px solid var(--border);}
 .pay-label{font-size:11px;margin-bottom:6px;}
@@ -118,8 +97,6 @@ td.days-old{font-weight:600;}
 .pc-cash .pay-label{color:#5aaa7a;}.pc-cash .pay-val{color:#6abb8a;}.pc-cash .pay-orders{color:var(--success);}
 .pc-link{background:rgba(192,136,64,0.08);}
 .pc-link .pay-label{color:#c08840;}.pc-link .pay-val{color:#d09850;}.pc-link .pay-orders{color:#a07030;}
-
-/* ORDER TABLE */
 .order-table-wrap{overflow-x:auto;border-radius:var(--r-lg);border:1px solid var(--border);}
 table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460px;}
 .order-tbl th{background:var(--surface3);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted);padding:12px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
@@ -128,23 +105,17 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 .order-tbl tr.cancelled td{color:var(--danger);opacity:0.85;}
 .order-tbl tr:hover td{background:var(--surface3);}
 .order-tbl tr.total-row td{font-weight:600;border-top:1px solid var(--border-strong);background:var(--surface3);}
-
-/* BADGES */
 .ob{display:inline-block;font-size:10px;font-weight:600;font-family:'Syne',sans-serif;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:99px;white-space:nowrap;}
 .ob-new{background:var(--info-bg);color:#88aadd;border:1px solid rgba(80,128,184,0.3);}
 .ob-loyal{background:rgba(154,134,96,0.15);color:var(--gold-light);border:1px solid var(--border-strong);}
 .ob-return{background:var(--surface3);color:var(--text-muted);border:1px solid var(--border);}
 .ob-cancel{background:var(--danger-bg);color:var(--danger);border:1px solid rgba(184,80,80,0.3);}
-
-/* TRAFFIC */
 .traffic-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
 .traffic-row:last-child{border-bottom:none;}
 .tr-label{color:var(--text-muted);min-width:64px;}
 .tr-bar-wrap{flex:1;background:var(--surface3);border-radius:4px;height:5px;overflow:hidden;}
 .tr-bar{height:100%;border-radius:4px;}
 .tr-val{font-family:'DM Mono',monospace;font-size:12px;color:var(--text);min-width:28px;text-align:right;}
-
-/* DAY GRID */
 .day-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:4px;}
 .day-cell{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:10px 6px;text-align:center;}
 .day-cell.best{border-color:var(--gold);background:rgba(154,134,96,0.1);}
@@ -152,25 +123,19 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 .day-orders{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--text);line-height:1;}
 .day-cell.best .day-orders{color:var(--gold-light);}
 .day-rev{font-size:10px;color:var(--text-muted);margin-top:4px;font-family:'DM Mono',monospace;}
-
-/* RETENTION */
 .ret-bar-wrap{padding:12px 0 4px;}
 .ret-bar{height:8px;border-radius:99px;overflow:hidden;display:flex;margin-bottom:10px;}
 .ret-new{background:var(--info);}.ret-ret{background:var(--gold);}
 .ret-legend{display:flex;gap:20px;font-size:12px;}
 .leg{display:flex;align-items:center;gap:7px;color:var(--text-muted);}
 .leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-
-/* PRODUCT BARS */
 .prod-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
 .prod-row:last-child{border-bottom:none;}
 .prod-name{color:var(--text);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .prod-bar-wrap{width:80px;background:var(--surface3);border-radius:4px;height:5px;overflow:hidden;flex-shrink:0;}
 .prod-bar-fill{height:100%;border-radius:4px;}
 .prod-val{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-muted);min-width:100px;text-align:right;white-space:nowrap;}
-
 .divider{height:1px;background:var(--border);margin:20px 0;}
-
 @media(max-width:600px){
   .topbar,.tabs-bar{padding:0 16px;}
   .tab-content{padding:20px 16px;}
@@ -185,22 +150,19 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 </style>
 </head>
 <body>
-
-<!-- LOGIN -->
 <div id="login-screen">
   <div class="login-box">
     <div class="login-logo">Let's Hookah</div>
     <div class="login-title">Reports Dashboard</div>
     <div class="pwd-wrap">
       <input type="password" id="pwd-input" placeholder="Enter password" autocomplete="current-password"/>
-      <button class="pwd-toggle" onclick="togglePwd()" id="pwd-toggle-btn" title="Show/hide password">👁</button>
+      <button class="pwd-toggle" onclick="togglePwd()" id="pwd-toggle-btn" title="Show password">👁</button>
     </div>
     <button class="login-btn" onclick="checkLogin()">Access Dashboard</button>
     <div class="login-error" id="login-error">Incorrect password. Try again.</div>
   </div>
 </div>
 
-<!-- APP -->
 <div id="app">
   <div class="topbar">
     <div class="topbar-brand">LH Reports</div>
@@ -215,18 +177,17 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <button class="tab-btn" onclick="switchTab('weekly',this)">Weekly</button>
   </div>
 
-  <!-- ══════════ DAILY TAB ══════════ -->
+  <!-- DAILY -->
   <div class="tab-content active" id="tab-daily">
     <div class="report-header">
       <div>
         <div class="rh-title">Daily Operations Report</div>
-        <div class="rh-sub">Sunday, 24 May 2026 — Let's Hookah</div>
+        <div class="rh-sub">Sunday, 25 May 2026 — Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Live data</span>
+      <span class="rh-badge badge-live">Updated 25 May 2026</span>
     </div>
 
     <div class="sec-label">Alerts</div>
-
     <div class="alert alert-warn">
       <div class="alert-title">⚠ 4 orders from yesterday not collected — AED 583.75</div>
       <div class="alert-body">
@@ -241,22 +202,20 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
         </table>
       </div>
     </div>
-
     <div class="alert alert-danger">
       <div class="alert-title">🔴 Overdue uncollected from previous days — action required</div>
       <div class="alert-body">
         <table class="alert-table">
           <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Days overdue</th></tr></thead>
           <tbody>
-            <tr><td>#3186</td><td>Tima G.</td><td>AED 94.00</td><td class="days-old">567 days</td></tr>
-            <tr><td>#4125</td><td>Abdullah A.</td><td>AED 377.20</td><td class="days-old">491 days</td></tr>
-            <tr><td>#4288</td><td>Mohammed I.</td><td>AED 300.00</td><td class="days-old">475 days</td></tr>
-            <tr><td>#4628</td><td>Cidra H.</td><td>AED 98.70</td><td class="days-old">443 days</td></tr>
+            <tr><td>#3186</td><td>Tima G.</td><td>AED 94.00</td><td class="days-old">568 days</td></tr>
+            <tr><td>#4125</td><td>Abdullah A.</td><td>AED 377.20</td><td class="days-old">492 days</td></tr>
+            <tr><td>#4288</td><td>Mohammed I.</td><td>AED 300.00</td><td class="days-old">476 days</td></tr>
+            <tr><td>#4628</td><td>Cidra H.</td><td>AED 98.70</td><td class="days-old">444 days</td></tr>
           </tbody>
         </table>
       </div>
     </div>
-
     <div class="alert alert-purple">
       <div class="alert-title">🔧 Damage / accessory payment detected this month</div>
       <div class="alert-body">
@@ -268,18 +227,16 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
         </table>
       </div>
     </div>
-
     <div class="alert alert-teal">
-      <div class="alert-title">🏷 Discounts & promo codes used yesterday — AED 0 given</div>
-      <div class="alert-body">No discounts applied on yesterday's orders. For reference, active codes this month include: <span class="code-pill">HomeAlone20</span> <span class="code-pill">LOYAL25</span> <span class="code-pill">Welcome20</span> <span class="code-pill">F&amp;F20</span> <span class="code-pill">Ladiesnight20</span> <span class="code-pill">welcome15</span></div>
+      <div class="alert-title">🏷 No discounts used on yesterday's orders</div>
+      <div class="alert-body">Active codes this month: <span class="code-pill">HomeAlone20</span> <span class="code-pill">LOYAL25</span> <span class="code-pill">Welcome20</span> <span class="code-pill">F&amp;F20</span> <span class="code-pill">Ladiesnight20</span> <span class="code-pill">welcome15</span></div>
     </div>
-
     <div class="alert alert-ok">
       <div class="alert-title">✓ No cancelled orders yesterday</div>
       <div class="alert-body">All 5 orders proceeded normally</div>
     </div>
 
-    <div class="sec-label">Yesterday's summary</div>
+    <div class="sec-label">Yesterday's summary — 24 May</div>
     <div class="kpi-grid">
       <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">5</div><div class="kpi-sub">#7316 – #7320</div></div>
       <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">703.75</div><div class="kpi-sub">AED</div></div>
@@ -322,7 +279,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">1 — Zeina (63 orders)</span></div>
     </div>
 
-    <div class="sec-label">Website traffic</div>
+    <div class="sec-label">Website traffic — 24 May</div>
     <div class="kpi-grid">
       <div class="kpi"><div class="kpi-label">Total sessions</div><div class="kpi-val">22</div><div class="kpi-sub">yesterday</div></div>
       <div class="kpi kpi-ok"><div class="kpi-label">Ordered</div><div class="kpi-val">5</div><div class="kpi-sub">converted</div></div>
@@ -336,7 +293,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     </div>
   </div>
 
-  <!-- ══════════ BI-MONTHLY TAB ══════════ -->
+  <!-- BI-MONTHLY -->
   <div class="tab-content" id="tab-bimonthly">
     <div class="report-header">
       <div>
@@ -345,7 +302,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       </div>
       <span class="rh-badge badge-info">50 orders</span>
     </div>
-
     <div class="sec-label">Alerts</div>
     <div class="alert alert-danger">
       <div class="alert-title">🔴 2 cancelled orders — AED 311.85 lost</div>
@@ -359,7 +315,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="alert-title">🏷 13 orders used discount codes — AED 537.45 total given</div>
       <div class="alert-body">
         <table class="alert-table">
-          <thead><tr><th>Code</th><th>Orders</th><th>Total discount given</th></tr></thead>
+          <thead><tr><th>Code</th><th>Orders</th><th>Total discount</th></tr></thead>
           <tbody>
             <tr><td><span class="code-pill">HomeAlone20</span></td><td>4 orders</td><td>AED 150.40</td></tr>
             <tr><td><span class="code-pill">Welcome20</span></td><td>1 order</td><td>AED 281.30</td></tr>
@@ -367,12 +323,11 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
             <tr><td><span class="code-pill">LOYAL25</span></td><td>1 order</td><td>AED 46.25</td></tr>
             <tr><td><span class="code-pill">Ladiesnight20</span></td><td>1 order</td><td>AED 32.60</td></tr>
             <tr><td><span class="code-pill">welcome15 / LOYAL15</span></td><td>2 orders</td><td>AED 42.30</td></tr>
-            <tr><td><span class="code-pill">Auto-generated</span></td><td>3 orders (loyalty)</td><td>AED 140.00</td></tr>
+            <tr><td><span class="code-pill">Auto-generated</span></td><td>3 orders</td><td>AED 140.00</td></tr>
           </tbody>
         </table>
       </div>
     </div>
-
     <div class="sec-label">Period summary</div>
     <div class="kpi-grid">
       <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">50</div><div class="kpi-sub">#7241 – #7290</div></div>
@@ -380,14 +335,12 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">63</div><div class="kpi-sub">total sold</div></div>
       <div class="kpi kpi-danger"><div class="kpi-label">Cancelled</div><div class="kpi-val">2</div><div class="kpi-sub">AED 311.85 lost</div></div>
     </div>
-
     <div class="sec-label">Revenue by payment method</div>
     <div class="pay-grid">
       <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">5,431</div><div class="pay-orders">30 orders · 74.5%</div></div>
       <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">912</div><div class="pay-orders">10 orders · 12.5%</div></div>
       <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">945</div><div class="pay-orders">10 orders · 13%</div></div>
     </div>
-
     <div class="sec-label">Shisha category breakdown</div>
     <div class="card">
       <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">38 units</span></div>
@@ -396,14 +349,12 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="card-row"><span class="cr-label">Silver Catering Package</span><span class="cr-val">1 unit</span></div>
       <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">4 units</span></div>
     </div>
-
     <div class="sec-label">Customer breakdown</div>
     <div class="card">
       <div class="card-row"><span class="cr-label">New customers</span><span class="cr-ok">12 orders (24%)</span></div>
       <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">38 orders (76%)</span></div>
       <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">14 orders this period</span></div>
     </div>
-
     <div class="sec-label">Cancelled orders detail</div>
     <div class="order-table-wrap">
       <table class="order-tbl">
@@ -419,16 +370,15 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div style="text-align:center;color:var(--text-dim);font-size:13px;padding:8px 0;">Second half report (16–31 May) will appear here after the 16th update</div>
   </div>
 
-  <!-- ══════════ WEEKLY TAB ══════════ -->
+  <!-- WEEKLY -->
   <div class="tab-content" id="tab-weekly">
     <div class="report-header">
       <div>
         <div class="rh-title">Weekly Report — w/c 18 May</div>
         <div class="rh-sub">18 May – 24 May 2026 · Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Live data</span>
+      <span class="rh-badge badge-live">Updated 25 May 2026</span>
     </div>
-
     <div class="sec-label">Week at a glance</div>
     <div class="kpi-grid">
       <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">20</div><div class="kpi-sub">this week</div></div>
@@ -436,7 +386,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">11</div><div class="kpi-sub">first-time orders</div></div>
       <div class="kpi"><div class="kpi-label">Returning</div><div class="kpi-val">9</div><div class="kpi-sub">ordered before</div></div>
     </div>
-
     <div class="sec-label">Day by day</div>
     <div class="day-grid">
       <div class="day-cell"><div class="day-name">Mon 18</div><div class="day-orders">2</div><div class="day-rev">292</div></div>
@@ -447,7 +396,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="day-cell"><div class="day-name">Sat 23</div><div class="day-orders">3</div><div class="day-rev">359</div></div>
       <div class="day-cell"><div class="day-name">Sun 24</div><div class="day-orders">5</div><div class="day-rev">694</div></div>
     </div>
-
     <div class="sec-label">Customer retention</div>
     <div class="card">
       <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">11 (55%)</span></div>
@@ -462,7 +410,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
         </div>
       </div>
     </div>
-
     <div class="sec-label">New customers this week</div>
     <div class="order-table-wrap">
       <table class="order-tbl">
@@ -482,7 +429,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
         </tbody>
       </table>
     </div>
-
     <div class="sec-label">Top products this week</div>
     <div class="card">
       <div class="prod-row"><span class="prod-name">Arabic — Desert Dream (1 Head)</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:62%;background:var(--gold);"></div></div><span class="prod-val">13 orders · AED 1,598</span></div>
@@ -490,7 +436,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="prod-row"><span class="prod-name">Russian VIP Signature</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:28%;background:var(--info);"></div></div><span class="prod-val">3 orders · AED 740</span></div>
       <div class="prod-row"><span class="prod-name">Premium Two Heads</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:13%;background:var(--text-dim);"></div></div><span class="prod-val">2 orders · AED 326</span></div>
     </div>
-
     <div class="sec-label">Best & worst days</div>
     <div class="card">
       <div class="card-row"><span class="cr-label">Best day by revenue</span><span class="cr-ok">Thursday 21 May — AED 2,347</span></div>
@@ -504,21 +449,18 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 const PASS='LetsHookah26';
 const SESSION_KEY='lh_dash_auth';
 let pwdVisible=false;
-
 function togglePwd(){
   pwdVisible=!pwdVisible;
   const inp=document.getElementById('pwd-input');
-  const btn=document.getElementById('pwd-toggle-btn');
   inp.type=pwdVisible?'text':'password';
-  btn.textContent=pwdVisible?'🙈':'👁';
+  document.getElementById('pwd-toggle-btn').textContent=pwdVisible?'🙈':'👁';
 }
 function checkLogin(){
-  const val=document.getElementById('pwd-input').value;
-  if(val===PASS){
+  if(document.getElementById('pwd-input').value===PASS){
     sessionStorage.setItem(SESSION_KEY,'1');
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app').style.display='block';
-    setLastUpdated();
+    document.getElementById('last-updated-txt').textContent='Updated 25 May 2026, 11:25';
   } else {
     document.getElementById('login-error').style.display='block';
     document.getElementById('pwd-input').value='';
@@ -530,12 +472,7 @@ function logout(){
   document.getElementById('login-screen').style.display='flex';
   document.getElementById('app').style.display='none';
   document.getElementById('pwd-input').value='';
-  if(pwdVisible){togglePwd();}
-}
-function setLastUpdated(){
-  const now=new Date();
-  const opts={day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false};
-  document.getElementById('last-updated-txt').textContent='Updated '+now.toLocaleString('en-GB',opts);
+  if(pwdVisible)togglePwd();
 }
 function switchTab(id,btn){
   document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
@@ -547,7 +484,7 @@ document.getElementById('pwd-input').addEventListener('keydown',e=>{if(e.key==='
 if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
-  setLastUpdated();
+  document.getElementById('last-updated-txt').textContent='Updated 25 May 2026, 11:25';
 }
 </script>
 </body>
