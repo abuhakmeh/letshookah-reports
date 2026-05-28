@@ -299,36 +299,87 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     </div>
 
     <!-- ANALYTICS FUNNEL -->
-    <div class="sec-label">Website funnel — 27 May (GA4)</div>
-    <div class="funnel">
-      <div class="funnel-step">
-        <div class="funnel-icon">👁</div>
-        <div class="funnel-info"><div class="funnel-label">Visited the website</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:100%;background:var(--gold);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">20</span><span class="funnel-pct">100%</span></div>
+    <div class="sec-label">Website funnel — 27 May (GA4 + Shopify)</div>
+
+    <!-- FUNNEL EXPLAINER -->
+    <div style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:18px 18px 8px;margin-bottom:10px;">
+
+      <!-- Step 1 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(154,134,96,0.15);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">👁</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:500;color:var(--text);">Visited letshookah.co</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — all visitors</div>
+        </div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold);">20</div>
       </div>
-      <div class="funnel-step">
-        <div class="funnel-icon">🛒</div>
-        <div class="funnel-info"><div class="funnel-label">Added to cart</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:40%;background:var(--info);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">8</span><span class="funnel-pct">40%</span></div>
+
+      <!-- Drop 1 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:6px 0 6px 44px;">
+        <div style="font-size:11px;color:var(--text-dim);">↓ 12 left without any action (60%)</div>
       </div>
-      <div class="funnel-step">
-        <div class="funnel-icon">💳</div>
-        <div class="funnel-info"><div class="funnel-label">Reached checkout</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:10%;background:var(--warn);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">2</span><span class="funnel-pct">10%</span></div>
+
+      <!-- Step 2 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
+        <div style="width:32px;height:32px;border-radius:50%;background:var(--info-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🛒</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:500;color:var(--text);">Added to cart</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — anonymous, no contact details yet</div>
+        </div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#88aadd;">8</div>
       </div>
-      <div class="funnel-step">
-        <div class="funnel-icon">✅</div>
-        <div class="funnel-info"><div class="funnel-label">Completed order</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:10%;background:var(--success);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">2</span><span class="funnel-pct">10%</span></div>
+
+      <!-- Drop 2 — THE KEY EXPLANATION -->
+      <div style="background:rgba(184,80,80,0.1);border-left:3px solid var(--danger);border-radius:0 var(--r) var(--r) 0;margin:6px 0 6px 0;padding:10px 14px;">
+        <div style="font-size:12px;font-weight:500;color:var(--danger);margin-bottom:4px;">↓ 6 people dropped here — cart to checkout gap</div>
+        <div style="font-size:12px;color:var(--danger);opacity:0.85;line-height:1.5;">These 6 added to cart but left before entering any contact details. GA4 can see they existed but Shopify has no record of who they are — they cannot be recovered or contacted. This is the biggest leak.</div>
       </div>
-    </div>
-    <div class="alert alert-danger">
-      <div class="alert-title">🔴 Big drop from cart to checkout — 8 added to cart, only 2 reached checkout</div>
-      <div class="alert-body">40% of visitors added to cart but only 10% completed. 6 people dropped between cart and checkout. This is your biggest leak yesterday — worth checking if checkout is working smoothly on mobile.</div>
+
+      <!-- Step 3 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
+        <div style="width:32px;height:32px;border-radius:50%;background:var(--warn-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">💳</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:500;color:var(--text);">Reached checkout — entered details</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Shopify now knows who they are · could be recovered if they didn't complete</div>
+        </div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--warn);">2</div>
+      </div>
+
+      <!-- Drop 3 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:6px 0 6px 44px;">
+        <div style="font-size:11px;color:var(--success);font-weight:500;">↓ 0 abandoned here — both completed ✓</div>
+      </div>
+
+      <!-- Step 4 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 0;">
+        <div style="width:32px;height:32px;border-radius:50%;background:var(--success-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">✅</div>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:500;color:var(--text);">Completed order</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Paid · fulfilled · in your Shopify orders</div>
+        </div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--success);">2</div>
+      </div>
+
+      <!-- Summary bar -->
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-family:'Syne',sans-serif;letter-spacing:0.1em;text-transform:uppercase;">Where did the 20 visitors go?</div>
+        <div style="display:flex;height:10px;border-radius:99px;overflow:hidden;gap:2px;">
+          <div style="width:60%;background:var(--surface3);" title="12 left immediately"></div>
+          <div style="width:30%;background:var(--danger);" title="6 added cart, left before checkout"></div>
+          <div style="width:10%;background:var(--success);" title="2 ordered"></div>
+        </div>
+        <div style="display:flex;gap:16px;margin-top:8px;flex-wrap:wrap;">
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);"><div style="width:8px;height:8px;border-radius:2px;background:var(--surface3);flex-shrink:0;"></div>12 left without action (60%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--danger);"><div style="width:8px;height:8px;border-radius:2px;background:var(--danger);flex-shrink:0;"></div>6 anonymous cart drops (30%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--success);"><div style="width:8px;height:8px;border-radius:2px;background:var(--success);flex-shrink:0;"></div>2 ordered (10%)</div>
+        </div>
+      </div>
+
+      <!-- Why abandoned = 0 explanation -->
+      <div style="background:rgba(74,158,106,0.08);border-radius:var(--r);padding:10px 14px;margin-top:12px;margin-bottom:4px;">
+        <div style="font-size:12px;font-weight:500;color:var(--success);margin-bottom:3px;">Why abandoned checkouts = 0</div>
+        <div style="font-size:12px;color:var(--success);opacity:0.85;">The 6 who dropped from cart never reached Shopify's checkout page — Shopify has no record of them. The 2 who did reach checkout both completed their order. So 0 abandoned checkouts is correct.</div>
+      </div>
     </div>
 
     <div class="sec-label">Traffic by source — 27 May</div>
