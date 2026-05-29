@@ -226,80 +226,87 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div class="report-header">
       <div>
         <div class="rh-title">Daily Operations Report</div>
-        <div class="rh-sub">Thursday, 28 May 2026 — Let's Hookah</div>
+        <div class="rh-sub">Friday, 29 May 2026 — Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Updated 28 May 2026</span>
+      <span class="rh-badge badge-live">Updated 29 May 2026</span>
     </div>
 
     <div class="sec-label">🚨 Stuck — not moving</div>
-    <div class="alert alert-warn">
-      <div class="alert-title">⚠ #7322 Zeina N. — 3 days Not Collected — AED 46.20</div>
-      <div class="alert-body">Tagged Not Collected since 25 May. This is the oldest unresolved order — chase today.</div>
-    </div>
-
-    <div class="sec-label">Today's alerts — 27 May</div>
-    <div class="alert alert-ok">
-      <div class="alert-title">✓ 4 orders today — AED 873.34</div>
-      <div class="alert-body">#7330–#7333 · All fulfilled · No cancellations</div>
-    </div>
-    <div class="alert alert-danger">
-      <div class="alert-title">🔴 8 orders tagged Not Collected — AED 1,517.94 outstanding</div>
+    <div class="alert alert-stuck">
+      <div class="alert-title">🚨 3 orders stuck 3+ days — need chasing today</div>
       <div class="alert-body">
         <table class="alert-table">
-          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th><th>Age</th></tr></thead>
+          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Days stuck</th></tr></thead>
           <tbody>
-            <tr><td>#7322</td><td>Zeina N.</td><td>AED 46.20</td><td>25 May</td><td>Zone B</td><td><span class="days-badge days-critical">3 days</span></td></tr>
-            <tr><td>#7324</td><td>Lama Abdul</td><td>AED 110.15</td><td>25 May</td><td>Zone C+D</td><td><span class="days-badge days-warn">3 days</span></td></tr>
-            <tr><td>#7325</td><td>Sonia K.</td><td>AED 119.70</td><td>26 May</td><td>Zone B</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7329</td><td>Ahmed M.</td><td>AED 368.55</td><td>26 May</td><td>Zone C+D</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7330</td><td>Emad Aldeen</td><td>AED 118.65</td><td>27 May</td><td>—</td><td>Today</td></tr>
-            <tr><td>#7331</td><td>Pablo M.</td><td>AED 406.09</td><td>27 May</td><td>Zone A</td><td>Today</td></tr>
-            <tr><td>#7332</td><td>Zahra Z.</td><td>AED 119.70</td><td>27 May</td><td>Zone B</td><td>Today</td></tr>
-            <tr><td>#7333</td><td>Vogue E.</td><td>AED 228.90</td><td>27 May</td><td>—</td><td>Today</td></tr>
-            <tr class="total-row"><td colspan="2">Total outstanding</td><td>AED 1,517.94</td><td colspan="3"></td></tr>
+            <tr><td>#7322</td><td>Zeina Noureddine</td><td>AED 46.20</td><td>25 May</td><td><span class="days-badge days-critical">4 days</span></td></tr>
+            <tr><td>#7324</td><td>Lama Abdul</td><td>AED 110.15</td><td>25 May</td><td><span class="days-badge days-critical">4 days</span></td></tr>
+            <tr><td>#7325</td><td>Sonia Khanjari</td><td>AED 119.70</td><td>26 May</td><td><span class="days-badge days-warn">3 days</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <div class="alert alert-teal">
-      <div class="alert-title">🏷 1 discount used today — AED 122.25 given</div>
-      <div class="alert-body">#7331 Pablo Miralles (5th order) — <span class="code-pill">LOYAL25</span> — AED 122.25 off · Two Heads x3</div>
+
+    <div class="sec-label">Today's alerts — 28 May</div>
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ 1 order confirmed today — AED 726.60 · 1 more pending</div>
+      <div class="alert-body">#7334 Reem Jethani — Two Heads x4 — Zone A — New customer — payment PENDING collection tonight</div>
+    </div>
+    <div class="alert alert-danger">
+      <div class="alert-title">🔴 9 orders tagged Not Collected — AED 2,244.54 outstanding</div>
+      <div class="alert-body">
+        <table class="alert-table">
+          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th><th>Age</th></tr></thead>
+          <tbody>
+            <tr><td>#7322</td><td>Zeina N.</td><td>AED 46.20</td><td>25 May</td><td>Zone B</td><td><span class="days-badge days-critical">4 days</span></td></tr>
+            <tr><td>#7324</td><td>Lama Abdul</td><td>AED 110.15</td><td>25 May</td><td>Zone C+D</td><td><span class="days-badge days-critical">4 days</span></td></tr>
+            <tr><td>#7325</td><td>Sonia K.</td><td>AED 119.70</td><td>26 May</td><td>Zone B</td><td><span class="days-badge days-warn">3 days</span></td></tr>
+            <tr><td>#7329</td><td>Ahmed M.</td><td>AED 368.55</td><td>26 May</td><td>Zone C+D</td><td><span class="days-badge days-warn">3 days</span></td></tr>
+            <tr><td>#7330</td><td>Emad Aldeen</td><td>AED 118.65</td><td>27 May</td><td>—</td><td><span class="days-badge days-warn">2 days</span></td></tr>
+            <tr><td>#7331</td><td>Pablo M.</td><td>AED 406.09</td><td>27 May</td><td>Zone A</td><td><span class="days-badge days-warn">2 days</span></td></tr>
+            <tr><td>#7332</td><td>Zahra Z.</td><td>AED 119.70</td><td>27 May</td><td>Zone B</td><td><span class="days-badge days-warn">2 days</span></td></tr>
+            <tr><td>#7333</td><td>Vogue E.</td><td>AED 228.90</td><td>27 May</td><td>—</td><td><span class="days-badge days-warn">2 days</span></td></tr>
+            <tr><td>#7334</td><td>Reem Jethani</td><td>AED 726.60</td><td>28 May</td><td>Zone A</td><td>Today</td></tr>
+            <tr class="total-row"><td colspan="2">Total outstanding</td><td>AED 2,244.54</td><td colspan="3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ No discounts used today</div>
+      <div class="alert-body">#7334 at full price</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No cancelled orders today</div>
-      <div class="alert-body">All 4 orders on 27 May proceeded normally</div>
+      <div class="alert-body">All orders on 28 May proceeded normally</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No damage or accessory payments today</div>
-      <div class="alert-body">No orders with damage or accessory keywords detected</div>
+      <div class="alert-body">No orders with damage keywords detected</div>
     </div>
 
     <!-- YESTERDAY PANEL -->
-    <div class="sec-label">Yesterday — 27 May</div>
+    <div class="sec-label">Yesterday — 28 May</div>
     <div class="yday-panel">
       <div class="yday-grid">
-        <div class="yday-kpi"><div class="yday-label">Orders</div><div class="yday-val">4</div><div class="yday-sub">#7330–#7333</div></div>
-        <div class="yday-kpi"><div class="yday-label">Revenue</div><div class="yday-val">873.34</div><div class="yday-sub">AED</div></div>
-        <div class="yday-kpi"><div class="yday-label">Shisha units</div><div class="yday-val">5</div><div class="yday-sub">sold</div></div>
-        <div class="yday-kpi"><div class="yday-label">New customers</div><div class="yday-val">2</div><div class="yday-sub">Emad & Zahra</div></div>
-        <div class="yday-kpi"><div class="yday-label">Sessions</div><div class="yday-val">20</div><div class="yday-sub">letshookah.co</div></div>
-        <div class="yday-kpi"><div class="yday-label">Conversion</div><div class="yday-val">10%</div><div class="yday-sub">sessions→orders</div></div>
+        <div class="yday-kpi"><div class="yday-label">Orders</div><div class="yday-val">1</div><div class="yday-sub">#7334</div></div>
+        <div class="yday-kpi"><div class="yday-label">Revenue</div><div class="yday-val">726.60</div><div class="yday-sub">AED</div></div>
+        <div class="yday-kpi"><div class="yday-label">Shisha units</div><div class="yday-val">4</div><div class="yday-sub">Two Heads x4</div></div>
+        <div class="yday-kpi"><div class="yday-label">New customers</div><div class="yday-val">1</div><div class="yday-sub">Reem Jethani</div></div>
+        <div class="yday-kpi"><div class="yday-label">Sessions</div><div class="yday-val">26</div><div class="yday-sub">letshookah.co</div></div>
+        <div class="yday-kpi"><div class="yday-label">Conversion</div><div class="yday-val">0%</div><div class="yday-sub">website orders</div></div>
       </div>
       <div class="order-table-wrap">
         <table class="order-tbl">
           <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>#7330</td><td>Emad Aldeen</td><td>Arabic grape mint</td><td>AED 118.65</td><td>Card on delivery</td><td><span class="ob ob-new">New</span></td></tr>
-            <tr><td>#7331</td><td>Pablo Miralles</td><td>Two Heads x3</td><td>AED 406.09</td><td>Card on delivery</td><td><span class="ob ob-return">Returning — 5th · LOYAL25</span></td></tr>
-            <tr><td>#7332</td><td>Zahra Zakizadeh</td><td>Arabic 1H</td><td>AED 119.70</td><td>Cash (COD)</td><td><span class="ob ob-new">New</span></td></tr>
-            <tr><td>#7333</td><td>Vogue Eldobee</td><td>Love 66</td><td>AED 228.90</td><td>Card on delivery</td><td><span class="ob ob-return">Returning</span></td></tr>
+            <tr><td>#7334</td><td>Reem Jethani</td><td>Two Heads x4</td><td>AED 726.60</td><td>Card on delivery</td><td><span class="ob ob-new">New · PENDING</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <!-- ANALYTICS FUNNEL -->
-    <div class="sec-label">Website funnel — 27 May (GA4 + Shopify)</div>
+    <div class="sec-label">Website funnel — 28 May (GA4 + Shopify)</div>
 
     <!-- FUNNEL EXPLAINER -->
     <div style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:18px 18px 8px;margin-bottom:10px;">
@@ -311,12 +318,12 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <div style="font-size:13px;font-weight:500;color:var(--text);">Visited letshookah.co</div>
           <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — all visitors</div>
         </div>
-        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold);">20</div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold);">26</div>
       </div>
 
       <!-- Drop 1 -->
       <div style="display:flex;align-items:center;gap:12px;padding:6px 0 6px 44px;">
-        <div style="font-size:11px;color:var(--text-dim);">↓ 12 left without any action (60%)</div>
+        <div style="font-size:11px;color:var(--text-dim);">↓ 23 left without any action (88%)</div>
       </div>
 
       <!-- Step 2 -->
@@ -326,13 +333,13 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <div style="font-size:13px;font-weight:500;color:var(--text);">Added to cart</div>
           <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — anonymous, no contact details yet</div>
         </div>
-        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#88aadd;">8</div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#88aadd;">3</div>
       </div>
 
       <!-- Drop 2 — THE KEY EXPLANATION -->
       <div style="background:rgba(184,80,80,0.1);border-left:3px solid var(--danger);border-radius:0 var(--r) var(--r) 0;margin:6px 0 6px 0;padding:10px 14px;">
-        <div style="font-size:12px;font-weight:500;color:var(--danger);margin-bottom:4px;">↓ 6 people dropped here — cart to checkout gap</div>
-        <div style="font-size:12px;color:var(--danger);opacity:0.85;line-height:1.5;">These 6 added to cart but left before entering any contact details. GA4 can see they existed but Shopify has no record of who they are — they cannot be recovered or contacted. This is the biggest leak.</div>
+        <div style="font-size:12px;font-weight:500;color:var(--danger);margin-bottom:4px;">↓ 1 person dropped here — cart to checkout gap</div>
+        <div style="font-size:12px;color:var(--danger);opacity:0.85;line-height:1.5;">This 1 person added to cart but left before entering any contact details. GA4 can see they existed but Shopify has no record of who they are — they cannot be recovered or contacted. This is the biggest leak.</div>
       </div>
 
       <!-- Step 3 -->
@@ -347,7 +354,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 
       <!-- Drop 3 -->
       <div style="display:flex;align-items:center;gap:12px;padding:6px 0 6px 44px;">
-        <div style="font-size:11px;color:var(--success);font-weight:500;">↓ 0 abandoned here — both completed ✓</div>
+        <div style="font-size:11px;color:var(--danger);font-weight:500;">↓ 1 abandoned here — reached checkout but didn't complete ⚠</div>
       </div>
 
       <!-- Step 4 -->
@@ -357,46 +364,46 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <div style="font-size:13px;font-weight:500;color:var(--text);">Completed order</div>
           <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Paid · fulfilled · in your Shopify orders</div>
         </div>
-        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--success);">2</div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--success);">0</div>
       </div>
 
       <!-- Summary bar -->
       <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
         <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-family:'Syne',sans-serif;letter-spacing:0.1em;text-transform:uppercase;">Where did the 20 visitors go?</div>
         <div style="display:flex;height:10px;border-radius:99px;overflow:hidden;gap:2px;">
-          <div style="width:60%;background:var(--surface3);" title="12 left immediately"></div>
-          <div style="width:30%;background:var(--danger);" title="6 added cart, left before checkout"></div>
-          <div style="width:10%;background:var(--success);" title="2 ordered"></div>
+          <div style="width:88%;background:var(--surface3);" title="23 left without action"></div>
+          <div style="width:4%;background:var(--danger);" title="1 dropped cart to checkout"></div>
+          <div style="width:8%;background:var(--warn);" title="2 reached checkout, 1 abandoned"></div>
         </div>
         <div style="display:flex;gap:16px;margin-top:8px;flex-wrap:wrap;">
-          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);"><div style="width:8px;height:8px;border-radius:2px;background:var(--surface3);flex-shrink:0;"></div>12 left without action (60%)</div>
-          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--danger);"><div style="width:8px;height:8px;border-radius:2px;background:var(--danger);flex-shrink:0;"></div>6 anonymous cart drops (30%)</div>
-          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--success);"><div style="width:8px;height:8px;border-radius:2px;background:var(--success);flex-shrink:0;"></div>2 ordered (10%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);"><div style="width:8px;height:8px;border-radius:2px;background:var(--surface3);flex-shrink:0;"></div>23 left without action (88%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--danger);"><div style="width:8px;height:8px;border-radius:2px;background:var(--danger);flex-shrink:0;"></div>1 anonymous cart drop (4%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--warn);"><div style="width:8px;height:8px;border-radius:2px;background:var(--warn);flex-shrink:0;"></div>2 reached checkout, 1 abandoned (8%)</div>
         </div>
       </div>
 
       <!-- Why abandoned = 0 explanation -->
       <div style="background:rgba(74,158,106,0.08);border-radius:var(--r);padding:10px 14px;margin-top:12px;margin-bottom:4px;">
-        <div style="font-size:12px;font-weight:500;color:var(--success);margin-bottom:3px;">Why abandoned checkouts = 0</div>
-        <div style="font-size:12px;color:var(--success);opacity:0.85;">The 6 who dropped from cart never reached Shopify's checkout page — Shopify has no record of them. The 2 who did reach checkout both completed their order. So 0 abandoned checkouts is correct.</div>
+        <div style="font-size:12px;font-weight:500;color:var(--warn);margin-bottom:3px;">1 abandoned checkout today — contactable</div>
+        <div style="font-size:12px;color:var(--warn);opacity:0.85;">2 reached checkout. 1 completed (order #7334 Reem Jethani). 1 left without completing — they left a phone number (+971502075952) and were looking at Two Heads AED 197.40. You can reach out on WhatsApp to recover this order.</div>
       </div>
     </div>
 
-    <div class="sec-label">Traffic by source — 27 May</div>
+    <div class="sec-label">Traffic by source — 28 May</div>
     <div class="order-table-wrap">
       <table class="src-table">
         <thead><tr><th>Source</th><th>Sessions</th><th>Added cart</th><th>Checkout</th><th>Ordered</th><th>Conv. rate</th></tr></thead>
         <tbody>
           <tr>
             <td>Direct</td>
-            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:75%;background:var(--gold);"></div></div>15</td>
-            <td>6</td><td>2</td><td>2</td>
-            <td><span class="cvr-badge cvr-mid">13.3%</span></td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:73%;background:var(--gold);"></div></div>19</td>
+            <td>2</td><td>2</td><td>0</td>
+            <td><span class="cvr-badge cvr-low">0%</span></td>
           </tr>
           <tr>
             <td>Search (Google)</td>
-            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:25%;background:var(--success);"></div></div>5</td>
-            <td>2</td><td>0</td><td>0</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:27%;background:var(--success);"></div></div>7</td>
+            <td>1</td><td>0</td><td>0</td>
             <td><span class="cvr-badge cvr-low">0%</span></td>
           </tr>
           <tr>
@@ -414,10 +421,21 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     </div>
 
     <!-- ABANDONED CHECKOUTS -->
-    <div class="sec-label">Abandoned checkouts — yesterday (27 May)</div>
-    <div class="alert alert-ok">
-      <div class="alert-title">✓ No abandoned checkouts yesterday</div>
-      <div class="alert-body">Everyone who reached checkout on 27 May completed their order.</div>
+    <div class="sec-label">Abandoned checkouts — yesterday (28 May)</div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ 1 abandoned checkout yesterday — AED 197.40 recoverable</div>
+      <div class="alert-body">
+        <table class="alert-table">
+          <thead><tr><th>Date</th><th>Contact</th><th>Product</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>28 May</td><td>📱 +971502075952</td><td>Two Heads</td><td>AED 197.40</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="alert alert-teal">
+      <div class="alert-title">💡 They left a phone number — reach out on WhatsApp now</div>
+      <div class="alert-body">Send: "Hi, we noticed you were checking out our Two Heads shisha package — are you still interested? We can arrange delivery tonight 🪄"</div>
     </div>
 
   </div>
@@ -446,7 +464,8 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <tr><td>Sun 25 May</td><td>4</td><td>934</td><td>5</td><td>1</td><td>AED 70</td><td>0</td></tr>
           <tr><td>Mon 26 May</td><td>5</td><td>967</td><td>7</td><td>1</td><td>—</td><td>0</td></tr>
           <tr><td>Tue 27 May</td><td>4</td><td>873</td><td>5</td><td>2</td><td>AED 122</td><td>0</td></tr>
-          <tr class="today-row"><td>Today 28 May</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Thu 28 May</td><td>1</td><td>727</td><td>4</td><td>1</td><td>—</td><td>0</td></tr>
+          <tr class="today-row"><td>Today 29 May</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -464,7 +483,8 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <tr><td>Mon 25 May</td><td>28</td><td>10</td><td>4</td><td>4</td><td><span class="cvr-badge cvr-mid">14.3%</span></td><td>6 added cart, didn't checkout</td></tr>
           <tr><td>Tue 26 May</td><td>23</td><td>6</td><td>5</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 cart abandonment only</td></tr>
           <tr><td>Wed 27 May</td><td>20</td><td>8</td><td>2</td><td>2</td><td><span class="cvr-badge cvr-mid">10%</span></td><td>6 dropped cart→checkout</td></tr>
-          <tr class="today-row"><td>Thu 28 May</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Day still early</td></tr>
+          <tr><td>Thu 28 May</td><td>26</td><td>3</td><td>2</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td><td>1 abandoned checkout — contactable</td></tr>
+          <tr class="today-row"><td>Fri 29 May</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Day still early</td></tr>
         </tbody>
       </table>
     </div>
@@ -562,9 +582,9 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div class="report-header">
       <div>
         <div class="rh-title">Weekly Report — w/c 19 May</div>
-        <div class="rh-sub">19 May – 27 May 2026 · Let's Hookah</div>
+        <div class="rh-sub">19 May – 28 May 2026 · Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Updated 28 May 2026</span>
+      <span class="rh-badge badge-live">Updated 29 May 2026</span>
     </div>
 
     <div class="sec-label">🚨 Stuck this week</div>
@@ -575,9 +595,9 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 
     <div class="sec-label">Week at a glance</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">33</div><div class="kpi-sub">19–27 May</div></div>
-      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">9,054</div><div class="kpi-sub">AED</div></div>
-      <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">15</div><div class="kpi-sub">first-time</div></div>
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">34</div><div class="kpi-sub">19–28 May</div></div>
+      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">9,781</div><div class="kpi-sub">AED</div></div>
+      <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">16</div><div class="kpi-sub">first-time</div></div>
       <div class="kpi"><div class="kpi-label">Returning</div><div class="kpi-val">18</div><div class="kpi-sub">ordered before</div></div>
     </div>
 
@@ -587,25 +607,25 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
         <div class="funnel-icon">👁</div>
         <div class="funnel-info"><div class="funnel-label">Visited the website</div></div>
         <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:100%;background:var(--gold);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">229</span><span class="funnel-pct">100%</span></div>
+        <div class="funnel-nums"><span class="funnel-count">255</span><span class="funnel-pct">100%</span></div>
       </div>
       <div class="funnel-step">
         <div class="funnel-icon">🛒</div>
         <div class="funnel-info"><div class="funnel-label">Added to cart</div></div>
         <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:22%;background:var(--info);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">50</span><span class="funnel-pct">21.8%</span></div>
+        <div class="funnel-nums"><span class="funnel-count">53</span><span class="funnel-pct">20.8%</span></div>
       </div>
       <div class="funnel-step">
         <div class="funnel-icon">💳</div>
         <div class="funnel-info"><div class="funnel-label">Reached checkout</div></div>
         <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:9%;background:var(--warn);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">21</span><span class="funnel-pct">9.2%</span></div>
+        <div class="funnel-nums"><span class="funnel-count">23</span><span class="funnel-pct">9.0%</span></div>
       </div>
       <div class="funnel-step">
         <div class="funnel-icon">✅</div>
         <div class="funnel-info"><div class="funnel-label">Completed order</div></div>
         <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:8%;background:var(--success);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">20</span><span class="funnel-pct">8.7%</span></div>
+        <div class="funnel-nums"><span class="funnel-count">20</span><span class="funnel-pct">7.8%</span></div>
       </div>
     </div>
     <div class="alert alert-warn">
@@ -636,6 +656,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="day-cell"><div class="day-name">Sun 25</div><div class="day-orders">4</div><div class="day-rev">934</div></div>
       <div class="day-cell"><div class="day-name">Mon 26</div><div class="day-orders">5</div><div class="day-rev">967</div></div>
       <div class="day-cell"><div class="day-name">Tue 27</div><div class="day-orders">4</div><div class="day-rev">873</div></div>
+      <div class="day-cell"><div class="day-name">Thu 28</div><div class="day-orders">1</div><div class="day-rev">727</div></div>
     </div>
 
     <div class="sec-label">Customer retention</div>
@@ -658,6 +679,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <table class="order-tbl">
         <thead><tr><th>Name</th><th>Joined</th><th>First order value</th></tr></thead>
         <tbody>
+          <tr><td>Reem Jethani</td><td>28 May</td><td>AED 726.60</td></tr>
           <tr><td>Emad Aldeen</td><td>27 May</td><td>AED 118.65</td></tr>
           <tr><td>Zahra Zakizadeh</td><td>27 May</td><td>AED 119.70</td></tr>
           <tr><td>Fernando De Andres</td><td>26 May</td><td>AED 239.40</td></tr>
@@ -687,7 +709,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 
     <div class="sec-label">Abandoned checkouts — this week</div>
     <div class="alert alert-warn">
-      <div class="alert-title">✓ No abandoned checkouts from 22–27 May — clean week</div>
+      <div class="alert-title">⚠ 1 abandoned checkout this week (28 May) — AED 197.40 · phone available</div>
       <div class="alert-body">
         <table class="alert-table">
           <thead><tr><th>Date</th><th>Name</th><th>Contact</th><th>Product</th><th>Value</th></tr></thead>
@@ -698,8 +720,8 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       </div>
     </div>
     <div class="alert alert-teal">
-      <div class="alert-title">💡 Enable Shopify abandoned checkout emails to catch these automatically</div>
-      <div class="alert-body">Shopify Admin → Marketing → Automations → Abandoned checkout → Enable. Free, built-in, 2 minutes to turn on.</div>
+      <div class="alert-title">💡 Contact: +971502075952 — WhatsApp them now to recover AED 197.40</div>
+      <div class="alert-body">Shopify Admin → Marketing → Automations → Abandoned checkout → Enable to automate this going forward. Free, built-in, 2 minutes to turn on.</div>
     </div>
 
     <div class="sec-label">Best & worst days</div>
@@ -726,7 +748,7 @@ function checkLogin(){
     sessionStorage.setItem(SESSION_KEY,'1');
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app').style.display='block';
-    document.getElementById('last-updated-txt').textContent='Updated 28 May 2026, 09:00';
+    document.getElementById('last-updated-txt').textContent='Updated 29 May 2026, 09:00';
   } else {
     document.getElementById('login-error').style.display='block';
     document.getElementById('pwd-input').value='';
@@ -750,7 +772,7 @@ document.getElementById('pwd-input').addEventListener('keydown',e=>{if(e.key==='
 if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
-  document.getElementById('last-updated-txt').textContent='Updated 28 May 2026, 09:00';
+  document.getElementById('last-updated-txt').textContent='Updated 29 May 2026, 09:00';
 }
 </script>
 </body>
