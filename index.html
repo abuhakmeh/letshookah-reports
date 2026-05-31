@@ -232,21 +232,13 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     </div>
 
     <div class="sec-label">🚨 Stuck — not moving</div>
-    <div class="alert alert-stuck">
-      <div class="alert-title">🚨 2 orders stuck 5 days — still Not Collected in Shopify</div>
-      <div class="alert-body">
-        <table class="alert-table">
-          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Days stuck</th></tr></thead>
-          <tbody>
-            <tr><td>#7330</td><td>Emad Aldeen</td><td>AED 118.65</td><td>27 May</td><td><span class="days-badge days-critical">5 days</span></td></tr>
-            <tr><td>#7332</td><td>Zahra Zakizadeh</td><td>AED 119.70</td><td>27 May</td><td><span class="days-badge days-critical">5 days</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ #7322 Zeina N. and #7325 Sonia K. now collected — removed from stuck</div>
-      <div class="alert-body">Both confirmed collected and paid in Shopify as of today.</div>
+      <div class="alert-title">✓ No genuinely stuck orders today</div>
+      <div class="alert-body">All orders tagged Not Collected are confirmed PAID in Shopify. Your team needs to remove the Not Collected tag from paid orders — see note below.</div>
+    </div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ Action needed — team process fix required</div>
+      <div class="alert-body">9 orders have the Not Collected tag but are all marked PAID in Shopify. Your team is adding the tag when creating the order but not removing it after collecting payment. Going forward the dashboard will only flag orders that are tagged Not Collected AND still show PENDING payment — so the report is always accurate. Please ask your team to remove the Not Collected tag from any order once payment is collected.</div>
     </div>
 
     <div class="sec-label">Today's alerts — 31 May</div>
@@ -254,29 +246,9 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="alert-title">✓ No orders yet today — Sunday 31 May</div>
       <div class="alert-body">Day is still early</div>
     </div>
-    <div class="alert alert-danger">
-      <div class="alert-title">🔴 13 orders tagged Not Collected — AED 2,069.31 outstanding</div>
-      <div class="alert-body">
-        <table class="alert-table">
-          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th><th>Age</th></tr></thead>
-          <tbody>
-            <tr><td>#7330</td><td>Emad Aldeen</td><td>AED 118.65</td><td>27 May</td><td>—</td><td><span class="days-badge days-critical">5 days</span></td></tr>
-            <tr><td>#7332</td><td>Zahra Z.</td><td>AED 119.70</td><td>27 May</td><td>Zone B</td><td><span class="days-badge days-critical">5 days</span></td></tr>
-            <tr><td>#7336</td><td>Nevine Tabbara</td><td>AED 60.90</td><td>29 May</td><td>Zone A</td><td><span class="days-badge days-warn">3 days</span></td></tr>
-            <tr><td>#7337</td><td>Maria K.</td><td>AED 215.25</td><td>29 May</td><td>Zone A</td><td><span class="days-badge days-warn">3 days</span></td></tr>
-            <tr><td>#7338</td><td>Dmitrii WDW</td><td>AED 192.15</td><td>29 May</td><td>Zone A</td><td><span class="days-badge days-warn">3 days</span></td></tr>
-            <tr><td>#7340</td><td>Zeina N.</td><td>AED 119.70</td><td>30 May</td><td>Zone B</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7341</td><td>Rahul Mittal</td><td>AED 119.70</td><td>30 May</td><td>Zone A</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7342</td><td>Yogesh Mande</td><td>AED 218.40</td><td>30 May</td><td>Zone B</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7343</td><td>Krupesh Soni</td><td>AED 415.80</td><td>30 May</td><td>Zone A</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7344</td><td>Zahra Khalfan</td><td>AED 218.40</td><td>30 May</td><td>Zone A</td><td><span class="days-badge days-warn">2 days</span></td></tr>
-            <tr><td>#7346</td><td>Lama Abdul</td><td>AED 124.95</td><td>30 May</td><td>Zone C+D</td><td>Today</td></tr>
-            <tr><td>#7347</td><td>Futun Futun</td><td>AED 363.30</td><td>30 May</td><td>Zone A</td><td>Today</td></tr>
-            <tr><td>#7348</td><td>Rouba Halawi</td><td>AED 99.96</td><td>30 May</td><td>Zone A</td><td>Today</td></tr>
-            <tr class="total-row"><td colspan="2">Total outstanding</td><td>AED 2,069.31</td><td colspan="3"></td></tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ No genuinely uncollected orders today</div>
+      <div class="alert-body">All orders tagged Not Collected are confirmed PAID in Shopify. The dashboard now cross-checks tag + payment status — only shows orders where payment is genuinely PENDING.</div>
     </div>
     <div class="alert alert-warn">
       <div class="alert-title">⚠ #7345 Syed Hussain — no tags at all — needs checking</div>
