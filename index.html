@@ -228,7 +228,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
         <div class="rh-title">Daily Operations Report</div>
         <div class="rh-sub">Sunday, 31 May 2026 — Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Updated 31 May 2026</span>
+      <span class="rh-badge badge-live">Updated 31 May 2026 · 09:30</span>
     </div>
 
     <div class="sec-label">🚨 Stuck — not moving</div>
@@ -243,8 +243,8 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 
     <div class="sec-label">Today's alerts — 31 May</div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ No orders yet today — Sunday 31 May</div>
-      <div class="alert-body">Day is still early</div>
+      <div class="alert-title">✓ No orders yet today — Sunday 31 May · 5 sessions so far</div>
+      <div class="alert-body">All 5 sessions from direct traffic — day still early</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No genuinely uncollected orders today</div>
@@ -448,7 +448,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <tr><td>Thu 28 May</td><td>1</td><td>727</td><td>4</td><td>1</td><td>—</td><td>0</td></tr>
           <tr><td>Fri 29 May</td><td>5</td><td>793</td><td>5</td><td>2</td><td>AED 56</td><td>0</td></tr>
           <tr><td>Sat 30 May</td><td>8</td><td>1,560</td><td>13</td><td>3</td><td>AED 19</td><td>0</td></tr>
-          <tr class="today-row"><td>Today 31 May</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr class="today-row"><td>Sun 31 May</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -469,7 +469,7 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <tr><td>Thu 28 May</td><td>26</td><td>3</td><td>2</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td><td>1 abandoned checkout — contactable</td></tr>
           <tr><td>Fri 29 May</td><td>23</td><td>10</td><td>6</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 checkout drop — no details</td></tr>
           <tr><td>Sat 30 May</td><td>35</td><td>10</td><td>8</td><td>7</td><td><span class="cvr-badge cvr-high">20.0%</span></td><td>1 checkout drop — no details</td></tr>
-          <tr class="today-row"><td>Sun 31 May</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Day still early</td></tr>
+          <tr class="today-row"><td>Sun 31 May</td><td>5</td><td>0</td><td>0</td><td>0</td><td>—</td><td>Early — 5 direct sessions</td></tr>
         </tbody>
       </table>
     </div>
@@ -567,9 +567,9 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div class="report-header">
       <div>
         <div class="rh-title">Weekly Report — w/c 19 May</div>
-        <div class="rh-sub">19 May – 30 May 2026 · Let's Hookah</div>
+        <div class="rh-sub">19 May – 31 May 2026 · Final week of May</div>
       </div>
-      <span class="rh-badge badge-live">Updated 31 May 2026</span>
+      <span class="rh-badge badge-live">Updated 31 May 2026 · 09:30</span>
     </div>
 
     <div class="sec-label">🚨 Stuck this week</div>
@@ -740,7 +740,7 @@ function checkLogin(){
     sessionStorage.setItem(SESSION_KEY,'1');
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app').style.display='block';
-    document.getElementById('last-updated-txt').textContent='Updated 31 May 2026, 09:00';
+    document.getElementById('last-updated-txt').textContent='Updated 31 May 2026, 09:30';
   } else {
     document.getElementById('login-error').style.display='block';
     document.getElementById('pwd-input').value='';
@@ -764,7 +764,7 @@ document.getElementById('pwd-input').addEventListener('keydown',e=>{if(e.key==='
 if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
-  document.getElementById('last-updated-txt').textContent='Updated 31 May 2026, 09:00';
+  document.getElementById('last-updated-txt').textContent='Updated 31 May 2026, 09:30';
 }
 </script>
 </body>
