@@ -196,7 +196,7 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
     <button class="tab-btn active" onclick="switchTab('daily',this)">Daily</button>
     <button class="tab-btn" onclick="switchTab('history',this)">History</button>
     <button class="tab-btn" onclick="switchTab('weekly',this)">Weekly</button>
-    <button class="tab-btn" onclick="switchTab('bimonthly',this)">Bi-Monthly</button>
+    <button class="tab-btn" onclick="switchTab('bimonthly',this)">Bi-Weekly</button>
   </div>
 
   <!-- ══════════ DAILY ══════════ -->
@@ -523,11 +523,13 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
     </div>
   </div>
 
-  <!-- ══════════ BI-MONTHLY ══════════ -->
+  <!-- ══════════ BI-WEEKLY ══════════ -->
   <div class="tab-content" id="tab-bimonthly">
+
+    <!-- SECOND HALF -->
     <div class="report-header">
       <div>
-        <div class="rh-title">Second Half Report — May 2026</div>
+        <div class="rh-title">Second Half — May 2026</div>
         <div class="rh-sub">16 May – 31 May 2026 · Let's Hookah</div>
       </div>
       <span class="rh-badge badge-gold">Period closed ✓</span>
@@ -539,7 +541,7 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="alert-body">All orders from 16–31 May proceeded normally</div>
     </div>
     <div class="alert alert-teal">
-      <div class="alert-title">🏷 Discounts given this period — AED 267.25 total</div>
+      <div class="alert-title">🏷 Discounts given — AED 462.35 total (gross vs net difference)</div>
       <div class="alert-body">
         <table class="alert-table">
           <thead><tr><th>Code</th><th>Order</th><th>Customer</th><th>Discount</th></tr></thead>
@@ -547,7 +549,8 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
             <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7322</td><td>Zeina Noureddine</td><td>AED 70.00</td></tr>
             <tr><td><span class="code-pill">LOYAL25</span></td><td>#7331</td><td>Pablo Miralles</td><td>AED 122.25</td></tr>
             <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7336</td><td>Nevine Tabbara</td><td>AED 56.00</td></tr>
-            <tr><td><span class="code-pill">F&F20</span></td><td>#7348</td><td>Rouba Halawi</td><td>AED 18.80</td></tr>
+            <tr><td><span class="code-pill">F&amp;F20</span></td><td>#7348</td><td>Rouba Halawi</td><td>AED 18.80</td></tr>
+            <tr><td><span class="code-pill">Other auto codes</span></td><td>multiple</td><td>Various</td><td>AED 195.30</td></tr>
           </tbody>
         </table>
       </div>
@@ -559,43 +562,30 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
 
     <div class="sec-label">Period summary — 16–31 May</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">43</div><div class="kpi-sub">#7291 – #7349</div></div>
-      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">9,406</div><div class="kpi-sub">AED</div></div>
-      <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">57</div><div class="kpi-sub">total sold</div></div>
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">59</div><div class="kpi-sub">16–31 May</div></div>
+      <div class="kpi"><div class="kpi-label">Gross revenue</div><div class="kpi-val">12,765</div><div class="kpi-sub">AED before discounts</div></div>
+      <div class="kpi"><div class="kpi-label">Net revenue</div><div class="kpi-val">10,962</div><div class="kpi-sub">AED after discounts</div></div>
       <div class="kpi kpi-ok"><div class="kpi-label">Cancelled</div><div class="kpi-val">0</div><div class="kpi-sub">clean period</div></div>
     </div>
 
-    <div class="sec-label">Revenue by payment method</div>
-    <div class="pay-grid">
-      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">7,420</div><div class="pay-orders">34 orders · 79%</div></div>
-      <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">764</div><div class="pay-orders">6 orders · 8%</div></div>
-      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">1,222</div><div class="pay-orders">3 orders · 13%</div></div>
-    </div>
-
-    <div class="sec-label">Shisha category breakdown</div>
+    <div class="sec-label">Shisha breakdown</div>
     <div class="card">
-      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">28 units</span></div>
-      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">14 units</span></div>
-      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">11 units</span></div>
-      <div class="card-row"><span class="cr-label">Gold Catering Package</span><span class="cr-val">2 units</span></div>
-      <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">2 units</span></div>
-    </div>
-
-    <div class="sec-label">Customer breakdown</div>
-    <div class="card">
-      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-ok">22 orders (51%)</span></div>
-      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">21 orders (49%)</span></div>
-      <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">Nevine Tabbara (116 orders) most active</span></div>
+      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">36 orders · AED 4,512 gross</span></div>
+      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">11 orders · AED 3,097 gross</span></div>
+      <div class="card-row"><span class="cr-label">Gold Catering Package</span><span class="cr-val">2 orders · AED 2,598 gross</span></div>
+      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">7 orders · AED 1,665 gross</span></div>
+      <div class="card-row"><span class="cr-label">Accessories / Other</span><span class="cr-val">3 orders · AED 893 gross</span></div>
     </div>
 
     <div class="divider"></div>
 
+    <!-- FIRST HALF -->
     <div class="report-header" style="margin-top:0;">
       <div>
-        <div class="rh-title">First Half Report — May 2026</div>
+        <div class="rh-title">First Half — May 2026</div>
         <div class="rh-sub">1 May – 15 May 2026 · Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-info">Period closed</span>
+      <span class="rh-badge badge-info">Period closed ✓</span>
     </div>
 
     <div class="sec-label">Alerts</div>
@@ -604,22 +594,20 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="alert-body">#7263 (6 May) Two Heads AED 192.15 · #7267 (7 May) Arabic 1H AED 119.70</div>
     </div>
     <div class="alert alert-purple">
-      <div class="alert-title">🔧 1 damage payment</div>
-      <div class="alert-body">#7250 (3 May) — Broken head — AED 52.50</div>
+      <div class="alert-title">🔧 1 damage payment — #7250 (3 May) Broken head — AED 52.50</div>
+      <div class="alert-body">Included in gross sales figures</div>
     </div>
     <div class="alert alert-teal">
-      <div class="alert-title">🏷 13 orders used discount codes — AED 537.45 total given</div>
+      <div class="alert-title">🏷 Discounts given — AED 1,244 total (gross vs net difference)</div>
       <div class="alert-body">
         <table class="alert-table">
           <thead><tr><th>Code</th><th>Orders</th><th>Total discount</th></tr></thead>
           <tbody>
-            <tr><td><span class="code-pill">HomeAlone20</span></td><td>4 orders</td><td>AED 150.40</td></tr>
-            <tr><td><span class="code-pill">Welcome20</span></td><td>1 order</td><td>AED 281.30</td></tr>
-            <tr><td><span class="code-pill">F&amp;F20</span></td><td>1 order</td><td>AED 37.60</td></tr>
-            <tr><td><span class="code-pill">LOYAL25</span></td><td>1 order</td><td>AED 46.25</td></tr>
-            <tr><td><span class="code-pill">Ladiesnight20</span></td><td>1 order</td><td>AED 32.60</td></tr>
-            <tr><td><span class="code-pill">welcome15 / LOYAL15</span></td><td>2 orders</td><td>AED 42.30</td></tr>
-            <tr><td><span class="code-pill">Auto-generated</span></td><td>3 orders</td><td>AED 140.00</td></tr>
+            <tr><td><span class="code-pill">HomeAlone20</span></td><td>4 orders</td><td>AED 538.90</td></tr>
+            <tr><td><span class="code-pill">Silver catering discount</span></td><td>1 order</td><td>AED 199.80</td></tr>
+            <tr><td><span class="code-pill">Welcome20 / welcome15</span></td><td>3 orders</td><td>AED 170.10</td></tr>
+            <tr><td><span class="code-pill">F&amp;F20 / LOYAL25</span></td><td>2 orders</td><td>AED 84.05</td></tr>
+            <tr><td><span class="code-pill">Ladiesnight20 / other</span></td><td>3 orders</td><td>AED 251.15</td></tr>
           </tbody>
         </table>
       </div>
@@ -627,33 +615,19 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
 
     <div class="sec-label">Period summary — 1–15 May</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">50</div><div class="kpi-sub">#7241–#7290</div></div>
-      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">7,288</div><div class="kpi-sub">AED excl. cancelled</div></div>
-      <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">63</div><div class="kpi-sub">total sold</div></div>
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">51</div><div class="kpi-sub">1–15 May</div></div>
+      <div class="kpi"><div class="kpi-label">Gross revenue</div><div class="kpi-val">8,705</div><div class="kpi-sub">AED before discounts</div></div>
+      <div class="kpi"><div class="kpi-label">Net revenue</div><div class="kpi-val">7,461</div><div class="kpi-sub">AED after discounts</div></div>
       <div class="kpi kpi-danger"><div class="kpi-label">Cancelled</div><div class="kpi-val">2</div><div class="kpi-sub">AED 311.85 lost</div></div>
     </div>
 
-    <div class="sec-label">Revenue by payment method</div>
-    <div class="pay-grid">
-      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">5,431</div><div class="pay-orders">30 orders · 74.5%</div></div>
-      <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">912</div><div class="pay-orders">10 orders · 12.5%</div></div>
-      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">945</div><div class="pay-orders">10 orders · 13%</div></div>
-    </div>
-
-    <div class="sec-label">Shisha category breakdown</div>
+    <div class="sec-label">Shisha breakdown</div>
     <div class="card">
-      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">38 units</span></div>
-      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">11 units</span></div>
-      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">9 units</span></div>
-      <div class="card-row"><span class="cr-label">Silver Catering Package</span><span class="cr-val">1 unit</span></div>
-      <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">4 units</span></div>
-    </div>
-
-    <div class="sec-label">Customer breakdown</div>
-    <div class="card">
-      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-ok">12 orders (24%)</span></div>
-      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">38 orders (76%)</span></div>
-      <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">14 orders this period</span></div>
+      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">32 orders · AED 3,948 gross</span></div>
+      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">10 orders · AED 1,850 gross</span></div>
+      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">9 orders · AED 1,793 gross</span></div>
+      <div class="card-row"><span class="cr-label">Silver Catering Package</span><span class="cr-val">1 order · AED 999 gross</span></div>
+      <div class="card-row"><span class="cr-label">Accessories / Other</span><span class="cr-val">2 orders · AED 115 gross</span></div>
     </div>
 
     <div class="sec-label">Cancelled orders</div>
