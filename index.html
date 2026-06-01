@@ -214,9 +214,16 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="alert-title">✓ No orders yet today — Sunday 1 June</div>
       <div class="alert-body">Day is still early — new week starts today</div>
     </div>
-    <div class="alert alert-ok">
-      <div class="alert-title">✓ No uncollected orders outstanding</div>
-      <div class="alert-body">All recent orders confirmed paid. #7349 Camelia Draghici (31 May, AED 124.95) was last night's delivery — confirm collection status with your team.</div>
+    <div class="alert alert-danger">
+      <div class="alert-title">🔴 1 order Not Collected — AED 124.95 outstanding</div>
+      <div class="alert-body">
+        <table class="alert-table">
+          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th><th>Payment</th></tr></thead>
+          <tbody>
+            <tr><td>#7349</td><td>Camelia Draghici</td><td>AED 124.95</td><td>31 May</td><td>Zone C+D</td><td>Card on delivery — PENDING</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No cancelled orders today</div>
