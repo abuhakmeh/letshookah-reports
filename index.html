@@ -41,7 +41,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .rh-badge{font-size:11px;font-weight:500;padding:5px 12px;border-radius:99px;white-space:nowrap;flex-shrink:0;}
 .badge-live{background:var(--success-bg);color:var(--success);border:1px solid rgba(74,158,106,0.3);}
 .badge-info{background:var(--info-bg);color:var(--info);border:1px solid rgba(80,128,184,0.3);}
-/* ALERTS */
+.badge-gold{background:rgba(154,134,96,0.15);color:var(--gold-light);border:1px solid var(--border-strong);}
 .alert{border-radius:var(--r);padding:12px 16px;margin-bottom:8px;border-left:3px solid;display:flex;flex-direction:column;gap:3px;}
 .alert-warn{background:var(--warn-bg);border-color:var(--warn);}
 .alert-danger{background:var(--danger-bg);border-color:var(--danger);}
@@ -71,7 +71,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .days-critical{background:rgba(255,68,68,0.2);color:#ff6666;}
 .days-warn{background:rgba(192,136,64,0.2);color:var(--warn);}
 .code-pill{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;padding:2px 7px;border-radius:4px;background:rgba(255,255,255,0.08);}
-/* KPI */
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:4px;}
 .kpi{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;}
 .kpi-label{font-size:11px;color:var(--text-muted);margin-bottom:6px;}
@@ -80,7 +79,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .kpi-warn .kpi-val{color:var(--warn);}
 .kpi-danger .kpi-val{color:var(--danger);}
 .kpi-ok .kpi-val{color:var(--success);}
-/* CARD */
 .card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:4px 18px;margin-bottom:10px;}
 .card-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--border);font-size:13px;gap:12px;}
 .card-row:last-child{border-bottom:none;}
@@ -89,39 +87,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);
 .cr-ok{color:var(--success);font-weight:500;}
 .cr-warn{color:var(--warn);font-weight:500;}
 .cr-danger{color:var(--danger);font-weight:500;}
-/* FUNNEL */
-.funnel{display:flex;flex-direction:column;gap:6px;margin-bottom:10px;}
-.funnel-step{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:12px 16px;display:flex;align-items:center;gap:12px;}
-.funnel-icon{font-size:16px;width:28px;text-align:center;flex-shrink:0;}
-.funnel-info{flex:1;}
-.funnel-label{font-size:12px;color:var(--text-muted);margin-bottom:3px;}
-.funnel-bar-wrap{flex:1;background:var(--surface3);border-radius:4px;height:6px;overflow:hidden;min-width:60px;}
-.funnel-bar{height:100%;border-radius:4px;transition:width 0.8s ease;}
-.funnel-nums{display:flex;align-items:center;gap:8px;min-width:100px;justify-content:flex-end;}
-.funnel-count{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--text);}
-.funnel-pct{font-size:11px;color:var(--text-muted);font-family:'DM Mono',monospace;}
-.funnel-drop{font-size:11px;color:var(--danger);font-family:'DM Mono',monospace;text-align:right;}
-/* TRAFFIC SOURCE FUNNEL TABLE */
-.src-table{width:100%;border-collapse:collapse;font-size:13px;}
-.src-table th{background:var(--surface3);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);}
-.src-table td{padding:11px 14px;color:var(--text);border-bottom:1px solid var(--border);vertical-align:middle;}
-.src-table tr:last-child td{border-bottom:none;}
-.src-table tr:hover td{background:var(--surface3);}
-.mini-bar-wrap{width:60px;background:var(--surface3);border-radius:3px;height:4px;overflow:hidden;display:inline-block;vertical-align:middle;margin-right:6px;}
-.mini-bar{height:100%;border-radius:3px;}
-/* HISTORY TABLE */
-.history-wrap{overflow-x:auto;border-radius:var(--r-lg);border:1px solid var(--border);margin-bottom:10px;}
-table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700px;}
-.hist-tbl th{background:var(--surface3);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
-.hist-tbl td{padding:10px 12px;color:var(--text);border-bottom:1px solid var(--border);vertical-align:middle;white-space:nowrap;}
-.hist-tbl tr:last-child td{border-bottom:none;}
-.hist-tbl tr:hover td{background:var(--surface3);}
-.hist-tbl tr.today-row td{background:rgba(154,134,96,0.08);font-weight:500;}
-.cvr-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;padding:2px 7px;border-radius:4px;}
-.cvr-high{background:var(--success-bg);color:var(--success);}
-.cvr-mid{background:var(--warn-bg);color:var(--warn);}
-.cvr-low{background:var(--danger-bg);color:var(--danger);}
-/* PAY */
+.yday-panel{background:var(--surface2);border:1px solid var(--border-strong);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:10px;position:relative;}
+.yday-panel::before{content:'YESTERDAY';position:absolute;top:-10px;left:16px;font-family:'Syne',sans-serif;font-size:9px;font-weight:700;letter-spacing:0.2em;color:var(--gold);background:var(--surface2);padding:0 8px;}
+.yday-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:12px;}
+.yday-kpi{text-align:center;}
+.yday-label{font-size:10px;color:var(--text-muted);margin-bottom:4px;}
+.yday-val{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:var(--text);}
+.yday-sub{font-size:10px;color:var(--text-dim);margin-top:2px;}
 .pay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;}
 .pay-card{border-radius:var(--r);padding:14px 16px;border:1px solid var(--border);}
 .pay-label{font-size:11px;margin-bottom:6px;}
@@ -133,7 +105,6 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
 .pc-cash .pay-label{color:#5aaa7a;}.pc-cash .pay-val{color:#6abb8a;}.pc-cash .pay-orders{color:var(--success);}
 .pc-link{background:rgba(192,136,64,0.08);}
 .pc-link .pay-label{color:#c08840;}.pc-link .pay-val{color:#d09850;}.pc-link .pay-orders{color:#a07030;}
-/* ORDER TABLE */
 .order-table-wrap{overflow-x:auto;border-radius:var(--r-lg);border:1px solid var(--border);}
 table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460px;}
 .order-tbl th{background:var(--surface3);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted);padding:12px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
@@ -147,36 +118,43 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
 .ob-loyal{background:rgba(154,134,96,0.15);color:var(--gold-light);border:1px solid var(--border-strong);}
 .ob-return{background:var(--surface3);color:var(--text-muted);border:1px solid var(--border);}
 .ob-cancel{background:var(--danger-bg);color:var(--danger);border:1px solid rgba(184,80,80,0.3);}
-/* YESTERDAY PANEL */
-.yday-panel{background:var(--surface2);border:1px solid var(--border-strong);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:10px;position:relative;}
-.yday-panel::before{content:'YESTERDAY';position:absolute;top:-10px;left:16px;font-family:'Syne',sans-serif;font-size:9px;font-weight:700;letter-spacing:0.2em;color:var(--gold);background:var(--surface2);padding:0 8px;}
-.yday-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:12px;}
-.yday-kpi{text-align:center;}
-.yday-label{font-size:10px;color:var(--text-muted);margin-bottom:4px;}
-.yday-val{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:var(--text);}
-.yday-sub{font-size:10px;color:var(--text-dim);margin-top:2px;}
-/* DAY GRID */
-.day-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:4px;}
+.src-table{width:100%;border-collapse:collapse;font-size:13px;}
+.src-table th{background:var(--surface3);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);}
+.src-table td{padding:11px 14px;color:var(--text);border-bottom:1px solid var(--border);vertical-align:middle;}
+.src-table tr:last-child td{border-bottom:none;}
+.src-table tr:hover td{background:var(--surface3);}
+.mini-bar-wrap{width:60px;background:var(--surface3);border-radius:3px;height:4px;overflow:hidden;display:inline-block;vertical-align:middle;margin-right:6px;}
+.mini-bar{height:100%;border-radius:3px;}
+.cvr-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;padding:2px 7px;border-radius:4px;}
+.cvr-high{background:var(--success-bg);color:var(--success);}
+.cvr-mid{background:var(--warn-bg);color:var(--warn);}
+.cvr-low{background:var(--danger-bg);color:var(--danger);}
+.history-wrap{overflow-x:auto;border-radius:var(--r-lg);border:1px solid var(--border);margin-bottom:10px;}
+table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700px;}
+.hist-tbl th{background:var(--surface3);font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
+.hist-tbl td{padding:10px 12px;color:var(--text);border-bottom:1px solid var(--border);vertical-align:middle;white-space:nowrap;}
+.hist-tbl tr:last-child td{border-bottom:none;}
+.hist-tbl tr:hover td{background:var(--surface3);}
+.hist-tbl tr.today-row td{background:rgba(154,134,96,0.08);font-weight:500;}
+.day-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(56px,1fr));gap:6px;margin-bottom:4px;}
 .day-cell{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:10px 6px;text-align:center;}
 .day-cell.best{border-color:var(--gold);background:rgba(154,134,96,0.1);}
 .day-name{font-size:9px;font-family:'Syne',sans-serif;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:6px;}
-.day-orders{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--text);line-height:1;}
+.day-orders{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--text);line-height:1;}
 .day-cell.best .day-orders{color:var(--gold-light);}
 .day-rev{font-size:10px;color:var(--text-muted);margin-top:4px;font-family:'DM Mono',monospace;}
-/* RETENTION */
 .ret-bar-wrap{padding:12px 0 4px;}
 .ret-bar{height:8px;border-radius:99px;overflow:hidden;display:flex;margin-bottom:10px;}
 .ret-new{background:var(--info);}.ret-ret{background:var(--gold);}
 .ret-legend{display:flex;gap:20px;font-size:12px;}
 .leg{display:flex;align-items:center;gap:7px;color:var(--text-muted);}
 .leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-/* PROD */
 .prod-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
 .prod-row:last-child{border-bottom:none;}
 .prod-name{color:var(--text);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .prod-bar-wrap{width:80px;background:var(--surface3);border-radius:4px;height:5px;overflow:hidden;flex-shrink:0;}
 .prod-bar-fill{height:100%;border-radius:4px;}
-.prod-val{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-muted);min-width:100px;text-align:right;white-space:nowrap;}
+.prod-val{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-muted);min-width:110px;text-align:right;white-space:nowrap;}
 .divider{height:1px;background:var(--border);margin:20px 0;}
 @media(max-width:600px){
   .topbar,.tabs-bar{padding:0 16px;}
@@ -184,15 +162,15 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
   .tab-btn{padding:14px 12px;font-size:11px;}
   .pay-grid{grid-template-columns:1fr;}
   .kpi-grid{grid-template-columns:repeat(2,1fr);}
-  .day-grid{grid-template-columns:repeat(4,1fr);}
   .report-header{flex-direction:column;}
   .last-updated{display:none;}
   .login-box{padding:36px 24px;margin:16px;}
-  .funnel-step{flex-wrap:wrap;}
 }
 </style>
 </head>
 <body>
+
+<!-- LOGIN -->
 <div id="login-screen">
   <div class="login-box">
     <div class="login-logo">Let's Hookah</div>
@@ -217,166 +195,97 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
   <div class="tabs-bar">
     <button class="tab-btn active" onclick="switchTab('daily',this)">Daily</button>
     <button class="tab-btn" onclick="switchTab('history',this)">History</button>
-    <button class="tab-btn" onclick="switchTab('bimonthly',this)">Bi-Monthly</button>
     <button class="tab-btn" onclick="switchTab('weekly',this)">Weekly</button>
+    <button class="tab-btn" onclick="switchTab('bimonthly',this)">Bi-Monthly</button>
   </div>
 
-  <!-- ══════════════ DAILY ══════════════ -->
+  <!-- ══════════ DAILY ══════════ -->
   <div class="tab-content active" id="tab-daily">
     <div class="report-header">
       <div>
         <div class="rh-title">Daily Operations Report</div>
-        <div class="rh-sub">Sunday, 31 May 2026 — Let's Hookah</div>
+        <div class="rh-sub">Sunday, 1 June 2026 — Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Updated 31 May 2026 · 20:00</span>
+      <span class="rh-badge badge-live">Updated 1 Jun 2026</span>
     </div>
 
-    <div class="sec-label">🚨 Stuck — not moving</div>
+    <div class="sec-label">Alerts — today</div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ No genuinely stuck orders today</div>
-      <div class="alert-body">All orders tagged Not Collected are confirmed PAID in Shopify. Your team needs to remove the Not Collected tag from paid orders — see note below.</div>
-    </div>
-    <div class="alert alert-warn">
-      <div class="alert-title">⚠ Action needed — team process fix required</div>
-      <div class="alert-body">9 orders have the Not Collected tag but are all marked PAID in Shopify. Your team is adding the tag when creating the order but not removing it after collecting payment. Going forward the dashboard will only flag orders that are tagged Not Collected AND still show PENDING payment — so the report is always accurate. Please ask your team to remove the Not Collected tag from any order once payment is collected.</div>
-    </div>
-
-    <div class="sec-label">Today's alerts — 31 May</div>
-    <div class="alert alert-ok">
-      <div class="alert-title">✓ 1 order today — AED 124.95 · scheduled 11:30 PM tonight</div>
-      <div class="alert-body">#7349 Camelia Draghici — Arabic 1H — Card on delivery — New customer — Zone C+D</div>
-    </div>
-    <div class="alert alert-warn">
-      <div class="alert-title">⚠ 1 order PENDING collection tonight — AED 124.95</div>
-      <div class="alert-body">
-        <table class="alert-table">
-          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Time</th><th>Zone</th></tr></thead>
-          <tbody>
-            <tr><td>#7349</td><td>Camelia Draghici</td><td>AED 124.95</td><td>11:30 PM</td><td>Zone C+D</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <div class="alert-title">✓ No orders yet today — Sunday 1 June</div>
+      <div class="alert-body">Day is still early — new week starts today</div>
     </div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ No discounts used today</div>
-      <div class="alert-body">#7349 at full price</div>
+      <div class="alert-title">✓ No uncollected orders outstanding</div>
+      <div class="alert-body">All recent orders confirmed paid. #7349 Camelia Draghici (31 May, AED 124.95) was last night's delivery — confirm collection status with your team.</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No cancelled orders today</div>
-      <div class="alert-body">All orders on 31 May proceeded normally</div>
+      <div class="alert-body">No cancellations detected</div>
+    </div>
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ No discounts used today</div>
+      <div class="alert-body">No orders yet today</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No damage or accessory payments today</div>
       <div class="alert-body">No damage keywords detected</div>
     </div>
 
-    <!-- YESTERDAY PANEL -->
-    <div class="sec-label">Yesterday — 30 May</div>
+    <div class="sec-label">Yesterday — 31 May</div>
     <div class="yday-panel">
       <div class="yday-grid">
-        <div class="yday-kpi"><div class="yday-label">Orders</div><div class="yday-val">8</div><div class="yday-sub">#7341–#7348</div></div>
-        <div class="yday-kpi"><div class="yday-label">Revenue</div><div class="yday-val">1,559.91</div><div class="yday-sub">AED</div></div>
-        <div class="yday-kpi"><div class="yday-label">Shisha units</div><div class="yday-val">13</div><div class="yday-sub">sold</div></div>
-        <div class="yday-kpi"><div class="yday-label">New customers</div><div class="yday-val">3</div><div class="yday-sub">Yogesh, Krupesh, Rouba</div></div>
-        <div class="yday-kpi"><div class="yday-label">Sessions</div><div class="yday-val">35</div><div class="yday-sub">letshookah.co</div></div>
-        <div class="yday-kpi"><div class="yday-label">Conversion</div><div class="yday-val">20.0%</div><div class="yday-sub">sessions→orders</div></div>
+        <div class="yday-kpi"><div class="yday-label">Orders</div><div class="yday-val">1</div><div class="yday-sub">#7349</div></div>
+        <div class="yday-kpi"><div class="yday-label">Revenue</div><div class="yday-val">124.95</div><div class="yday-sub">AED</div></div>
+        <div class="yday-kpi"><div class="yday-label">Shisha units</div><div class="yday-val">1</div><div class="yday-sub">Arabic 1H</div></div>
+        <div class="yday-kpi"><div class="yday-label">New customers</div><div class="yday-val">1</div><div class="yday-sub">Camelia D.</div></div>
+        <div class="yday-kpi"><div class="yday-label">Sessions</div><div class="yday-val">12</div><div class="yday-sub">letshookah.co</div></div>
+        <div class="yday-kpi"><div class="yday-label">Conversion</div><div class="yday-val">8.3%</div><div class="yday-sub">sessions→orders</div></div>
       </div>
       <div class="order-table-wrap">
         <table class="order-tbl">
           <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>#7341</td><td>Rahul Mittal</td><td>Arabic 1H</td><td>AED 119.70</td><td>Card on delivery</td><td><span class="ob ob-return">Returning — 8th</span></td></tr>
-            <tr><td>#7342</td><td>Yogesh Mande</td><td>Arabic 1H x2</td><td>AED 218.40</td><td>Card on delivery</td><td><span class="ob ob-new">New</span></td></tr>
-            <tr><td>#7343</td><td>Krupesh Soni</td><td>Arabic 1H x4</td><td>AED 415.80</td><td>Card on delivery</td><td><span class="ob ob-new">New</span></td></tr>
-            <tr><td>#7344</td><td>Zahra Khalfan</td><td>Arabic 1H x2</td><td>AED 218.40</td><td>Card on delivery</td><td><span class="ob ob-return">Returning — 2nd</span></td></tr>
-            <tr><td>#7345</td><td>Syed Hussain</td><td>Two Heads</td><td>AED 197.40</td><td>—</td><td><span class="ob ob-return">Returning — 13th ⚠ no tag</span></td></tr>
-            <tr><td>#7346</td><td>Lama Abdul</td><td>Arabic 1H</td><td>AED 124.95</td><td>Card on delivery</td><td><span class="ob ob-return">Returning — 4th</span></td></tr>
-            <tr><td>#7347</td><td>Futun Futun</td><td>Two Heads x2</td><td>AED 363.30</td><td>Card on delivery</td><td><span class="ob ob-return">Returning — 2nd</span></td></tr>
-            <tr><td>#7348</td><td>Rouba Halawi</td><td>Arabic 1H</td><td>AED 99.96</td><td>Cash (COD)</td><td><span class="ob ob-new">New · F&F20</span></td></tr>
+            <tr><td>#7349</td><td>Camelia Draghici</td><td>Arabic 1H</td><td>AED 124.95</td><td>Card on delivery</td><td><span class="ob ob-new">New</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- ANALYTICS FUNNEL -->
     <div class="sec-label">Website funnel — 31 May (GA4 + Shopify)</div>
-
-    <!-- FUNNEL EXPLAINER -->
     <div style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:18px 18px 8px;margin-bottom:10px;">
-
-      <!-- Step 1 -->
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
         <div style="width:32px;height:32px;border-radius:50%;background:rgba(154,134,96,0.15);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">👁</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:500;color:var(--text);">Visited letshookah.co</div>
-          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — all visitors</div>
-        </div>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Visited letshookah.co</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — all visitors</div></div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold);">12</div>
       </div>
-
-      <!-- Drop 1 -->
-      <div style="display:flex;align-items:center;gap:12px;padding:6px 0 6px 44px;">
-        <div style="font-size:11px;color:var(--text-dim);">↓ 11 left without any action (92%)</div>
-      </div>
-
-      <!-- Step 2 -->
+      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--text-dim);">↓ 11 left without any action (92%)</div></div>
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
         <div style="width:32px;height:32px;border-radius:50%;background:var(--info-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🛒</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:500;color:var(--text);">Added to cart</div>
-          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — anonymous, no contact details yet</div>
-        </div>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Added to cart</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — anonymous</div></div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#88aadd;">1</div>
       </div>
-
-      <!-- Drop 2 — THE KEY EXPLANATION -->
-      <div style="background:rgba(184,80,80,0.1);border-left:3px solid var(--danger);border-radius:0 var(--r) var(--r) 0;margin:6px 0 6px 0;padding:10px 14px;">
-        <div style="font-size:12px;font-weight:500;color:var(--success);margin-bottom:4px;">↓ 0 dropped here — cart went straight to checkout</div>
-        <div style="font-size:12px;color:var(--success);opacity:0.85;line-height:1.5;">The 1 person who added to cart went all the way through. GA4 can see they existed but Shopify has no record of who they are — they cannot be recovered or contacted. This is the biggest leak.</div>
-      </div>
-
-      <!-- Step 3 -->
+      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--success);font-weight:500;">↓ 0 dropped — went straight to checkout ✓</div></div>
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
         <div style="width:32px;height:32px;border-radius:50%;background:var(--warn-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">💳</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:500;color:var(--text);">Reached checkout — entered details</div>
-          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Shopify now knows who they are · could be recovered if they didn't complete</div>
-        </div>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Reached checkout</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Entered details — Shopify can identify them</div></div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--warn);">1</div>
       </div>
-
-      <!-- Drop 3 -->
-      <div style="display:flex;align-items:center;gap:12px;padding:6px 0 6px 44px;">
-        <div style="font-size:11px;color:var(--success);font-weight:500;">↓ 0 abandoned — completed ✓</div>
-      </div>
-
-      <!-- Step 4 -->
+      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--success);font-weight:500;">↓ 0 abandoned — completed ✓</div></div>
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;">
         <div style="width:32px;height:32px;border-radius:50%;background:var(--success-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">✅</div>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:500;color:var(--text);">Completed order</div>
-          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Paid · fulfilled · in your Shopify orders</div>
-        </div>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Completed order</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">#7349 Camelia Draghici</div></div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--success);">1</div>
       </div>
-
-      <!-- Summary bar -->
       <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
-        <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-family:'Syne',sans-serif;letter-spacing:0.1em;text-transform:uppercase;">Where did the 20 visitors go?</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-family:'Syne',sans-serif;letter-spacing:0.1em;text-transform:uppercase;">Where did the 12 visitors go?</div>
         <div style="display:flex;height:10px;border-radius:99px;overflow:hidden;gap:2px;">
-          <div style="width:92%;background:var(--surface3);" title="11 left without action"></div>
-          <div style="width:8%;background:var(--success);" title="1 ordered"></div>
+          <div style="width:92%;background:var(--surface3);"></div>
+          <div style="width:8%;background:var(--success);"></div>
         </div>
         <div style="display:flex;gap:16px;margin-top:8px;flex-wrap:wrap;">
           <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);"><div style="width:8px;height:8px;border-radius:2px;background:var(--surface3);flex-shrink:0;"></div>11 left without action (92%)</div>
           <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--success);"><div style="width:8px;height:8px;border-radius:2px;background:var(--success);flex-shrink:0;"></div>1 ordered (8%)</div>
         </div>
-      </div>
-
-      <!-- Why abandoned = 0 explanation -->
-      <div style="background:rgba(74,158,106,0.08);border-radius:var(--r);padding:10px 14px;margin-top:12px;margin-bottom:4px;">
-        <div style="font-size:12px;font-weight:500;color:var(--success);margin-bottom:3px;">Clean funnel today ✓</div>
-        <div style="font-size:12px;color:var(--success);opacity:0.85;">1 visited and added to cart · 1 reached checkout · 1 completed order (#7349 Camelia). Perfect conversion — 0 dropped out.</div>
       </div>
     </div>
 
@@ -385,69 +294,48 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <table class="src-table">
         <thead><tr><th>Source</th><th>Sessions</th><th>Added cart</th><th>Checkout</th><th>Ordered</th><th>Conv. rate</th></tr></thead>
         <tbody>
-          <tr>
-            <td>Direct</td>
-            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:83%;background:var(--gold);"></div></div>10</td>
-            <td>1</td><td>1</td><td>1</td>
-            <td><span class="cvr-badge cvr-mid">10%</span></td>
-          </tr>
-          <tr>
-            <td>Search (Google)</td>
-            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:17%;background:var(--success);"></div></div>2</td>
-            <td>0</td><td>0</td><td>0</td>
-            <td><span class="cvr-badge cvr-low">0%</span></td>
-          </tr>
-          <tr>
-            <td>Social</td>
-            <td><div class="mini-bar-wrap"><div class="mini-bar" style="width:0%;background:var(--info);"></div></div>0</td>
-            <td>0</td><td>0</td><td>0</td>
-            <td><span class="cvr-badge cvr-low">0%</span></td>
-          </tr>
+          <tr><td>Direct</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:83%;background:var(--gold);"></div></div>10</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">10%</span></td></tr>
+          <tr><td>Search (Google)</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:17%;background:var(--success);"></div></div>2</td><td>0</td><td>0</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td></tr>
         </tbody>
       </table>
     </div>
-    <div class="alert alert-stuck">
-      <div class="alert-title">🚨 Social traffic 0 for 7 consecutive days</div>
-      <div class="alert-body">Instagram and TikTok are sending zero tracked visitors to letshookah.co. Add your website link to your Instagram bio and use UTM-tagged links in posts so traffic can be measured.</div>
-    </div>
 
-    <!-- ABANDONED CHECKOUTS -->
-    <div class="sec-label">Abandoned checkouts — today (31 May)</div>
+    <div class="sec-label">Abandoned checkouts — 31 May</div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ No abandoned checkouts today</div>
-      <div class="alert-body">1 person reached checkout and completed their order. 0 abandoned.</div>
+      <div class="alert-title">✓ No abandoned checkouts yesterday</div>
+      <div class="alert-body">1 reached checkout · 1 completed · 0 abandoned</div>
     </div>
-
   </div>
 
-  <!-- ══════════════ HISTORY TAB ══════════════ -->
+  <!-- ══════════ HISTORY ══════════ -->
   <div class="tab-content" id="tab-history">
     <div class="report-header">
       <div>
-        <div class="rh-title">Daily History</div>
-        <div class="rh-sub">Last 7 days — letshookah.co & orders</div>
+        <div class="rh-title">Daily History — May 2026</div>
+        <div class="rh-sub">Full month view · letshookah.co</div>
       </div>
-      <span class="rh-badge badge-info">7 days</span>
+      <span class="rh-badge badge-info">13 days</span>
     </div>
 
     <div class="sec-label">Orders & revenue — day by day</div>
     <div class="history-wrap">
       <table class="hist-tbl">
-        <thead><tr><th>Date</th><th>Orders</th><th>Revenue (AED)</th><th>Shisha units</th><th>New customers</th><th>Discounts given</th><th>Cancelled</th></tr></thead>
+        <thead><tr><th>Date</th><th>Orders</th><th>Revenue (AED)</th><th>Shisha units</th><th>New customers</th><th>Discounts</th><th>Cancelled</th></tr></thead>
         <tbody>
-          <tr><td>Mon 19 May</td><td>2</td><td>1,580</td><td>3</td><td>2</td><td>—</td><td>0</td></tr>
-          <tr><td>Tue 20 May</td><td>2</td><td>390</td><td>2</td><td>1</td><td>—</td><td>0</td></tr>
-          <tr><td>Wed 21 May</td><td>4</td><td>2,347</td><td>5</td><td>2</td><td>—</td><td>0</td></tr>
-          <tr><td>Thu 22 May</td><td>2</td><td>340</td><td>2</td><td>0</td><td>—</td><td>0</td></tr>
-          <tr><td>Fri 23 May</td><td>3</td><td>359</td><td>3</td><td>3</td><td>—</td><td>0</td></tr>
-          <tr><td>Sat 24 May</td><td>5</td><td>694</td><td>6</td><td>3</td><td>—</td><td>0</td></tr>
-          <tr><td>Sun 25 May</td><td>4</td><td>934</td><td>5</td><td>1</td><td>AED 70</td><td>0</td></tr>
-          <tr><td>Mon 26 May</td><td>5</td><td>967</td><td>7</td><td>1</td><td>—</td><td>0</td></tr>
-          <tr><td>Tue 27 May</td><td>4</td><td>873</td><td>5</td><td>2</td><td>AED 122</td><td>0</td></tr>
-          <tr><td>Thu 28 May</td><td>1</td><td>727</td><td>4</td><td>1</td><td>—</td><td>0</td></tr>
-          <tr><td>Fri 29 May</td><td>5</td><td>793</td><td>5</td><td>2</td><td>AED 56</td><td>0</td></tr>
-          <tr><td>Sat 30 May</td><td>8</td><td>1,560</td><td>13</td><td>3</td><td>AED 19</td><td>0</td></tr>
-          <tr class="today-row"><td>Sun 31 May</td><td>1</td><td>125</td><td>1</td><td>1</td><td>—</td><td>0</td></tr>
+          <tr><td>Tue 19 May</td><td>2</td><td>1,487</td><td>3</td><td>2</td><td>—</td><td>0</td></tr>
+          <tr><td>Wed 20 May</td><td>2</td><td>742</td><td>2</td><td>1</td><td>—</td><td>0</td></tr>
+          <tr><td>Thu 21 May</td><td>4</td><td>2,150</td><td>5</td><td>2</td><td>—</td><td>0</td></tr>
+          <tr><td>Fri 22 May</td><td>2</td><td>279</td><td>2</td><td>0</td><td>—</td><td>0</td></tr>
+          <tr><td>Sat 23 May</td><td>3</td><td>282</td><td>3</td><td>3</td><td>—</td><td>0</td></tr>
+          <tr><td>Sun 24 May</td><td>5</td><td>561</td><td>6</td><td>3</td><td>—</td><td>0</td></tr>
+          <tr><td>Mon 25 May</td><td>4</td><td>884</td><td>5</td><td>1</td><td>AED 70</td><td>0</td></tr>
+          <tr><td>Tue 26 May</td><td>5</td><td>796</td><td>7</td><td>1</td><td>—</td><td>0</td></tr>
+          <tr><td>Wed 27 May</td><td>3</td><td>693</td><td>4</td><td>2</td><td>AED 122</td><td>0</td></tr>
+          <tr><td>Thu 28 May</td><td>2</td><td>845</td><td>5</td><td>1</td><td>—</td><td>0</td></tr>
+          <tr><td>Fri 29 May</td><td>6</td><td>793</td><td>6</td><td>2</td><td>AED 56</td><td>0</td></tr>
+          <tr><td>Sat 30 May</td><td>8</td><td>1,523</td><td>13</td><td>3</td><td>AED 19</td><td>0</td></tr>
+          <tr><td>Sun 31 May</td><td>1</td><td>125</td><td>1</td><td>1</td><td>—</td><td>0</td></tr>
+          <tr class="today-row"><td>Mon 1 Jun</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -455,51 +343,255 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
     <div class="sec-label">Website funnel — day by day (GA4)</div>
     <div class="history-wrap">
       <table class="hist-tbl">
-        <thead><tr><th>Date</th><th>Sessions</th><th>Added cart</th><th>Reached checkout</th><th>Completed</th><th>Conv. rate</th><th>Drop-off</th></tr></thead>
+        <thead><tr><th>Date</th><th>Sessions</th><th>Added cart</th><th>Reached checkout</th><th>Completed</th><th>Conv. rate</th><th>Note</th></tr></thead>
         <tbody>
-          <tr><td>Wed 20 May</td><td>46</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-low">2.2%</span></td><td>45 left without buying</td></tr>
-          <tr><td>Thu 21 May</td><td>34</td><td>9</td><td>4</td><td>3</td><td><span class="cvr-badge cvr-mid">8.8%</span></td><td>5 added cart, didn't checkout</td></tr>
-          <tr><td>Fri 22 May</td><td>11</td><td>3</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">9.1%</span></td><td>2 added cart, didn't checkout</td></tr>
-          <tr><td>Sat 23 May</td><td>28</td><td>5</td><td>3</td><td>3</td><td><span class="cvr-badge cvr-mid">10.7%</span></td><td>2 added cart, didn't checkout</td></tr>
-          <tr><td>Sun 24 May</td><td>22</td><td>6</td><td>5</td><td>5</td><td><span class="cvr-badge cvr-high">22.7%</span></td><td>1 added cart, didn't checkout</td></tr>
-          <tr><td>Mon 25 May</td><td>28</td><td>10</td><td>4</td><td>4</td><td><span class="cvr-badge cvr-mid">14.3%</span></td><td>6 added cart, didn't checkout</td></tr>
-          <tr><td>Tue 26 May</td><td>23</td><td>6</td><td>5</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 cart abandonment only</td></tr>
-          <tr><td>Wed 27 May</td><td>20</td><td>8</td><td>2</td><td>2</td><td><span class="cvr-badge cvr-mid">10%</span></td><td>6 dropped cart→checkout</td></tr>
-          <tr><td>Thu 28 May</td><td>26</td><td>3</td><td>2</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td><td>1 abandoned checkout — contactable</td></tr>
-          <tr><td>Fri 29 May</td><td>23</td><td>10</td><td>6</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 checkout drop — no details</td></tr>
-          <tr><td>Sat 30 May</td><td>35</td><td>10</td><td>8</td><td>7</td><td><span class="cvr-badge cvr-high">20.0%</span></td><td>1 checkout drop — no details</td></tr>
-          <tr class="today-row"><td>Sun 31 May</td><td>12</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">8.3%</span></td><td>Clean — 0 abandoned</td></tr>
+          <tr><td>Tue 19 May</td><td>17</td><td>2</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">5.9%</span></td><td>1 cart drop</td></tr>
+          <tr><td>Wed 20 May</td><td>46</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-low">2.2%</span></td><td>Low conversion</td></tr>
+          <tr><td>Thu 21 May</td><td>34</td><td>9</td><td>4</td><td>3</td><td><span class="cvr-badge cvr-mid">8.8%</span></td><td>5 cart drops</td></tr>
+          <tr><td>Fri 22 May</td><td>11</td><td>3</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">9.1%</span></td><td>2 cart drops</td></tr>
+          <tr><td>Sat 23 May</td><td>28</td><td>5</td><td>3</td><td>3</td><td><span class="cvr-badge cvr-mid">10.7%</span></td><td>2 cart drops</td></tr>
+          <tr><td>Sun 24 May</td><td>22</td><td>6</td><td>5</td><td>5</td><td><span class="cvr-badge cvr-high">22.7%</span></td><td>Best conversion day</td></tr>
+          <tr><td>Mon 25 May</td><td>28</td><td>10</td><td>4</td><td>4</td><td><span class="cvr-badge cvr-mid">14.3%</span></td><td>6 cart drops</td></tr>
+          <tr><td>Tue 26 May</td><td>23</td><td>6</td><td>5</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 cart drop</td></tr>
+          <tr><td>Wed 27 May</td><td>20</td><td>8</td><td>2</td><td>2</td><td><span class="cvr-badge cvr-mid">10%</span></td><td>6 cart drops</td></tr>
+          <tr><td>Thu 28 May</td><td>26</td><td>3</td><td>2</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td><td>1 abandoned — +971502075952</td></tr>
+          <tr><td>Fri 29 May</td><td>23</td><td>10</td><td>6</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 checkout drop</td></tr>
+          <tr><td>Sat 30 May</td><td>35</td><td>10</td><td>8</td><td>7</td><td><span class="cvr-badge cvr-high">20.0%</span></td><td>1 checkout drop</td></tr>
+          <tr><td>Sun 31 May</td><td>12</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">8.3%</span></td><td>Clean — 0 abandoned</td></tr>
+          <tr class="today-row"><td>Mon 1 Jun</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>New week</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="sec-label">Key observation</div>
-    <div class="alert alert-warn">
-      <div class="alert-title">⚠ Cart abandonment is your biggest issue — 6 people a day adding to cart and not completing</div>
-      <div class="alert-body">Average across the week: 34 out of every 100 visitors add to cart. Only 14 complete the order. That's 20 people per 100 who showed real buying intent but didn't follow through. A WhatsApp follow-up or a simpler checkout could recover a meaningful number of these.</div>
-    </div>
+    <div class="sec-label">Key observations</div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ Your best day was Sunday 24 May — 22.7% conversion rate</div>
-      <div class="alert-body">When people arrived on 24 May, nearly 1 in 4 placed an order. That's excellent. Worth understanding what was different that day — was there a post, a promotion, or specific timing?</div>
+      <div class="alert-title">✓ Best conversion days: Sun 24 May (22.7%) and Tue 26 May (21.7%)</div>
+      <div class="alert-body">These days had high intent visitors. Worth understanding what drove traffic those days — was there a post, a promotion, or a specific time of day?</div>
+    </div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ Cart abandonment is consistent — average 3–6 people per day drop between cart and checkout</div>
+      <div class="alert-body">This is your main growth lever. A WhatsApp follow-up or simplified checkout could recover 2–3 extra orders per day.</div>
+    </div>
+    <div class="alert alert-danger">
+      <div class="alert-title">🔴 1 unrecovered abandoned checkout — 28 May · +971502075952 · AED 197.40</div>
+      <div class="alert-body">This person left a phone number. Two Heads AED 197.40. Still contactable on WhatsApp.</div>
     </div>
   </div>
 
-  <!-- ══════════════ BI-MONTHLY ══════════════ -->
+  <!-- ══════════ WEEKLY ══════════ -->
+  <div class="tab-content" id="tab-weekly">
+    <div class="report-header">
+      <div>
+        <div class="rh-title">Weekly Report — May 2026 Final</div>
+        <div class="rh-sub">19 May – 31 May 2026 · Let's Hookah · Week closed</div>
+      </div>
+      <span class="rh-badge badge-gold">Week closed ✓</span>
+    </div>
+
+    <div class="sec-label">Week summary</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">47</div><div class="kpi-sub">19–31 May</div></div>
+      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">10,160</div><div class="kpi-sub">AED (gross)</div></div>
+      <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">22</div><div class="kpi-sub">first-time orders</div></div>
+      <div class="kpi"><div class="kpi-label">Returning</div><div class="kpi-val">25</div><div class="kpi-sub">ordered before</div></div>
+    </div>
+
+    <div class="sec-label">Day by day</div>
+    <div class="day-grid">
+      <div class="day-cell"><div class="day-name">Tue 19</div><div class="day-orders">2</div><div class="day-rev">1,487</div></div>
+      <div class="day-cell"><div class="day-name">Wed 20</div><div class="day-orders">2</div><div class="day-rev">742</div></div>
+      <div class="day-cell best"><div class="day-name">Thu 21</div><div class="day-orders">4</div><div class="day-rev">2,150</div></div>
+      <div class="day-cell"><div class="day-name">Fri 22</div><div class="day-orders">2</div><div class="day-rev">279</div></div>
+      <div class="day-cell"><div class="day-name">Sat 23</div><div class="day-orders">3</div><div class="day-rev">282</div></div>
+      <div class="day-cell"><div class="day-name">Sun 24</div><div class="day-orders">5</div><div class="day-rev">561</div></div>
+      <div class="day-cell"><div class="day-name">Mon 25</div><div class="day-orders">4</div><div class="day-rev">884</div></div>
+      <div class="day-cell"><div class="day-name">Tue 26</div><div class="day-orders">5</div><div class="day-rev">796</div></div>
+      <div class="day-cell"><div class="day-name">Wed 27</div><div class="day-orders">3</div><div class="day-rev">693</div></div>
+      <div class="day-cell"><div class="day-name">Thu 28</div><div class="day-orders">2</div><div class="day-rev">845</div></div>
+      <div class="day-cell"><div class="day-name">Fri 29</div><div class="day-orders">6</div><div class="day-rev">793</div></div>
+      <div class="day-cell best"><div class="day-name">Sat 30</div><div class="day-orders">8</div><div class="day-rev">1,523</div></div>
+      <div class="day-cell"><div class="day-name">Sun 31</div><div class="day-orders">1</div><div class="day-rev">125</div></div>
+    </div>
+
+    <div class="sec-label">Customer retention</div>
+    <div class="card">
+      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">22 (47%)</span></div>
+      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-ok">25 (53%)</span></div>
+      <div class="card-row"><span class="cr-label">Retention rate</span><span class="cr-ok">53%</span></div>
+      <div class="card-row"><span class="cr-label">Most loyal active</span><span class="cr-ok">Nevine Tabbara — 116 orders</span></div>
+      <div class="ret-bar-wrap">
+        <div class="ret-bar"><div class="ret-new" style="width:47%"></div><div class="ret-ret" style="width:53%"></div></div>
+        <div class="ret-legend">
+          <div class="leg"><div class="leg-dot" style="background:var(--info)"></div>New — 47%</div>
+          <div class="leg"><div class="leg-dot" style="background:var(--gold)"></div>Returning — 53%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-label">Website funnel this week (GA4)</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Total sessions</div><div class="kpi-val">325</div><div class="kpi-sub">letshookah.co</div></div>
+      <div class="kpi"><div class="kpi-label">Added to cart</div><div class="kpi-val">74</div><div class="kpi-sub">22.8% of sessions</div></div>
+      <div class="kpi kpi-warn"><div class="kpi-label">Reached checkout</div><div class="kpi-val">43</div><div class="kpi-sub">13.2% of sessions</div></div>
+      <div class="kpi kpi-ok"><div class="kpi-label">Completed</div><div class="kpi-val">38</div><div class="kpi-sub">11.7% conversion</div></div>
+    </div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ 31 people added to cart but did not reach checkout this week</div>
+      <div class="alert-body">74 added to cart · only 43 reached checkout. 31 people dropped between cart and checkout — your biggest weekly leak. They are anonymous so cannot be contacted. Simplifying the checkout path could recover these.</div>
+    </div>
+
+    <div class="sec-label">Traffic by source this week</div>
+    <div class="order-table-wrap">
+      <table class="src-table">
+        <thead><tr><th>Source</th><th>Sessions</th><th>% of total</th><th>Conv. rate</th></tr></thead>
+        <tbody>
+          <tr><td>Direct</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:75%;background:var(--gold);"></div></div>~244</td><td>75%</td><td><span class="cvr-badge cvr-mid">~13%</span></td></tr>
+          <tr><td>Search (Google)</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:25%;background:var(--success);"></div></div>~81</td><td>25%</td><td><span class="cvr-badge cvr-mid">~10%</span></td></tr>
+          <tr><td>Social</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:0%;background:var(--info);"></div></div>0</td><td>0%</td><td><span class="cvr-badge cvr-low">0%</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="alert alert-stuck">
+      <div class="alert-title">🚨 Social traffic = 0 for the entire week — every single day</div>
+      <div class="alert-body">Instagram and TikTok are not sending any tracked visitors to letshookah.co. Add your website link to your Instagram bio with UTM parameters so traffic can be measured.</div>
+    </div>
+
+    <div class="sec-label">Top products this week</div>
+    <div class="card">
+      <div class="prod-row"><span class="prod-name">Arabic — Desert Dream (1 Head)</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:100%;background:var(--gold);"></div></div><span class="prod-val">68 orders · AED 8,460</span></div>
+      <div class="prod-row"><span class="prod-name">Premium Two Heads</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:58%;background:var(--info);"></div></div><span class="prod-val">20 orders · AED 4,890</span></div>
+      <div class="prod-row"><span class="prod-name">Russian VIP Signature</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:42%;background:var(--success);"></div></div><span class="prod-val">17 orders · AED 3,515</span></div>
+      <div class="prod-row"><span class="prod-name">Gold Catering Package</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:31%;background:rgba(154,134,96,0.6);"></div></div><span class="prod-val">2 orders · AED 2,598</span></div>
+    </div>
+
+    <div class="sec-label">Abandoned checkouts this week</div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ 1 abandoned checkout this week — AED 197.40 · still recoverable</div>
+      <div class="alert-body">28 May · Two Heads · Phone: <strong>+971502075952</strong> · WhatsApp them now to recover this order.</div>
+    </div>
+
+    <div class="sec-label">Best & worst days</div>
+    <div class="card">
+      <div class="card-row"><span class="cr-label">Best day by revenue</span><span class="cr-ok">Thursday 21 May — AED 2,150</span></div>
+      <div class="card-row"><span class="cr-label">Best day by orders</span><span class="cr-ok">Saturday 30 May — 8 orders</span></div>
+      <div class="card-row"><span class="cr-label">Best conversion day</span><span class="cr-ok">Sunday 24 May — 22.7%</span></div>
+      <div class="card-row"><span class="cr-label">Quietest day</span><span class="cr-warn">Friday 22 May — 2 orders · AED 279</span></div>
+    </div>
+
+    <div class="sec-label">New customers this week</div>
+    <div class="order-table-wrap">
+      <table class="order-tbl">
+        <thead><tr><th>Name</th><th>Joined</th><th>First order</th></tr></thead>
+        <tbody>
+          <tr><td>Camelia Draghici</td><td>31 May</td><td>AED 124.95</td></tr>
+          <tr><td>Yogesh Mande</td><td>30 May</td><td>AED 218.40</td></tr>
+          <tr><td>Krupesh Soni</td><td>30 May</td><td>AED 415.80</td></tr>
+          <tr><td>Rouba Halawi</td><td>30 May</td><td>AED 99.96</td></tr>
+          <tr><td>Futun Futun</td><td>29 May</td><td>AED 192.15</td></tr>
+          <tr><td>Maria Kuznetsova</td><td>29 May</td><td>AED 215.25</td></tr>
+          <tr><td>Reem Jethani</td><td>28 May</td><td>AED 726.60</td></tr>
+          <tr><td>Emad Aldeen</td><td>27 May</td><td>AED 118.65</td></tr>
+          <tr><td>Zahra Zakizadeh</td><td>27 May</td><td>AED 119.70</td></tr>
+          <tr><td>Pablo Miralles</td><td>27 May</td><td>AED 406.09</td></tr>
+          <tr><td>Fernando De Andres</td><td>26 May</td><td>AED 239.40</td></tr>
+          <tr><td>Liza Stepenskaya</td><td>25 May</td><td>AED 409.50</td></tr>
+          <tr><td>Hiba Shanaa</td><td>24 May</td><td>AED 129.10</td></tr>
+          <tr><td>Samer Hemade</td><td>24 May</td><td>AED 119.70</td></tr>
+          <tr><td>Zahra Khalfan</td><td>24 May</td><td>AED 215.25</td></tr>
+          <tr><td>Bassem Khaled</td><td>23 May</td><td>AED 119.70</td></tr>
+          <tr><td>Hayat El Horr</td><td>23 May</td><td>AED 119.70</td></tr>
+          <tr><td>Ghazal Jawhar</td><td>23 May</td><td>AED 119.70</td></tr>
+          <tr><td>Itay Danon</td><td>21 May</td><td>AED 1,384.95</td></tr>
+          <tr><td>Stelio Lardo</td><td>21 May</td><td>AED 717.15</td></tr>
+          <tr><td>Rana El Hayek</td><td>20 May</td><td>AED 218.40</td></tr>
+          <tr><td>Abubakr Hajaree</td><td>19 May</td><td>AED 1,400.70</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════ BI-MONTHLY ══════════ -->
   <div class="tab-content" id="tab-bimonthly">
     <div class="report-header">
       <div>
-        <div class="rh-title">First Half Report — May 2026</div>
-        <div class="rh-sub">1 May – 15 May 2026 · Orders #7241–#7290</div>
+        <div class="rh-title">Second Half Report — May 2026</div>
+        <div class="rh-sub">16 May – 31 May 2026 · Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-info">50 orders</span>
+      <span class="rh-badge badge-gold">Period closed ✓</span>
     </div>
+
+    <div class="sec-label">Alerts</div>
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ No cancelled orders in this period</div>
+      <div class="alert-body">All orders from 16–31 May proceeded normally</div>
+    </div>
+    <div class="alert alert-teal">
+      <div class="alert-title">🏷 Discounts given this period — AED 267.25 total</div>
+      <div class="alert-body">
+        <table class="alert-table">
+          <thead><tr><th>Code</th><th>Order</th><th>Customer</th><th>Discount</th></tr></thead>
+          <tbody>
+            <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7322</td><td>Zeina Noureddine</td><td>AED 70.00</td></tr>
+            <tr><td><span class="code-pill">LOYAL25</span></td><td>#7331</td><td>Pablo Miralles</td><td>AED 122.25</td></tr>
+            <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7336</td><td>Nevine Tabbara</td><td>AED 56.00</td></tr>
+            <tr><td><span class="code-pill">F&F20</span></td><td>#7348</td><td>Rouba Halawi</td><td>AED 18.80</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ 1 abandoned checkout — 28 May · AED 197.40 · +971502075952</div>
+      <div class="alert-body">Two Heads order. Person left a phone number — still contactable on WhatsApp.</div>
+    </div>
+
+    <div class="sec-label">Period summary — 16–31 May</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">43</div><div class="kpi-sub">#7291 – #7349</div></div>
+      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">9,406</div><div class="kpi-sub">AED</div></div>
+      <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">57</div><div class="kpi-sub">total sold</div></div>
+      <div class="kpi kpi-ok"><div class="kpi-label">Cancelled</div><div class="kpi-val">0</div><div class="kpi-sub">clean period</div></div>
+    </div>
+
+    <div class="sec-label">Revenue by payment method</div>
+    <div class="pay-grid">
+      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">7,420</div><div class="pay-orders">34 orders · 79%</div></div>
+      <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">764</div><div class="pay-orders">6 orders · 8%</div></div>
+      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">1,222</div><div class="pay-orders">3 orders · 13%</div></div>
+    </div>
+
+    <div class="sec-label">Shisha category breakdown</div>
+    <div class="card">
+      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">28 units</span></div>
+      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">14 units</span></div>
+      <div class="card-row"><span class="cr-label">Russian VIP Signature</span><span class="cr-val">11 units</span></div>
+      <div class="card-row"><span class="cr-label">Gold Catering Package</span><span class="cr-val">2 units</span></div>
+      <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">2 units</span></div>
+    </div>
+
+    <div class="sec-label">Customer breakdown</div>
+    <div class="card">
+      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-ok">22 orders (51%)</span></div>
+      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">21 orders (49%)</span></div>
+      <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">Nevine Tabbara (116 orders) most active</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="report-header" style="margin-top:0;">
+      <div>
+        <div class="rh-title">First Half Report — May 2026</div>
+        <div class="rh-sub">1 May – 15 May 2026 · Let's Hookah</div>
+      </div>
+      <span class="rh-badge badge-info">Period closed</span>
+    </div>
+
     <div class="sec-label">Alerts</div>
     <div class="alert alert-danger">
       <div class="alert-title">🔴 2 cancelled orders — AED 311.85 lost</div>
       <div class="alert-body">#7263 (6 May) Two Heads AED 192.15 · #7267 (7 May) Arabic 1H AED 119.70</div>
     </div>
     <div class="alert alert-purple">
-      <div class="alert-title">🔧 1 damage / accessory payment</div>
+      <div class="alert-title">🔧 1 damage payment</div>
       <div class="alert-body">#7250 (3 May) — Broken head — AED 52.50</div>
     </div>
     <div class="alert alert-teal">
@@ -513,25 +605,28 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
             <tr><td><span class="code-pill">F&amp;F20</span></td><td>1 order</td><td>AED 37.60</td></tr>
             <tr><td><span class="code-pill">LOYAL25</span></td><td>1 order</td><td>AED 46.25</td></tr>
             <tr><td><span class="code-pill">Ladiesnight20</span></td><td>1 order</td><td>AED 32.60</td></tr>
-            <tr><td><span class="code-pill">welcome15/LOYAL15</span></td><td>2 orders</td><td>AED 42.30</td></tr>
+            <tr><td><span class="code-pill">welcome15 / LOYAL15</span></td><td>2 orders</td><td>AED 42.30</td></tr>
             <tr><td><span class="code-pill">Auto-generated</span></td><td>3 orders</td><td>AED 140.00</td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <div class="sec-label">Period summary</div>
+
+    <div class="sec-label">Period summary — 1–15 May</div>
     <div class="kpi-grid">
       <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">50</div><div class="kpi-sub">#7241–#7290</div></div>
       <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">7,288</div><div class="kpi-sub">AED excl. cancelled</div></div>
       <div class="kpi"><div class="kpi-label">Shisha units</div><div class="kpi-val">63</div><div class="kpi-sub">total sold</div></div>
       <div class="kpi kpi-danger"><div class="kpi-label">Cancelled</div><div class="kpi-val">2</div><div class="kpi-sub">AED 311.85 lost</div></div>
     </div>
+
     <div class="sec-label">Revenue by payment method</div>
     <div class="pay-grid">
       <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">5,431</div><div class="pay-orders">30 orders · 74.5%</div></div>
       <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">912</div><div class="pay-orders">10 orders · 12.5%</div></div>
       <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">945</div><div class="pay-orders">10 orders · 13%</div></div>
     </div>
+
     <div class="sec-label">Shisha category breakdown</div>
     <div class="card">
       <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">38 units</span></div>
@@ -540,12 +635,14 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
       <div class="card-row"><span class="cr-label">Silver Catering Package</span><span class="cr-val">1 unit</span></div>
       <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">4 units</span></div>
     </div>
+
     <div class="sec-label">Customer breakdown</div>
     <div class="card">
       <div class="card-row"><span class="cr-label">New customers</span><span class="cr-ok">12 orders (24%)</span></div>
       <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-val">38 orders (76%)</span></div>
       <div class="card-row"><span class="cr-label">Loyal regulars (10+ orders)</span><span class="cr-ok">14 orders this period</span></div>
     </div>
+
     <div class="sec-label">Cancelled orders</div>
     <div class="order-table-wrap">
       <table class="order-tbl">
@@ -556,173 +653,6 @@ table.order-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:460
           <tr class="total-row"><td colspan="3">Total lost</td><td>AED 311.85</td><td></td></tr>
         </tbody>
       </table>
-    </div>
-    <div class="divider"></div>
-    <div style="text-align:center;color:var(--text-dim);font-size:13px;padding:8px 0;">Second half report (16–31 May) will appear here after the 16th update</div>
-  </div>
-
-  <!-- ══════════════ WEEKLY ══════════════ -->
-  <div class="tab-content" id="tab-weekly">
-    <div class="report-header">
-      <div>
-        <div class="rh-title">Weekly Report — w/c 19 May</div>
-        <div class="rh-sub">19 May – 31 May 2026 · Final week of May 🏁</div>
-      </div>
-      <span class="rh-badge badge-live">Updated 31 May 2026 · 20:00</span>
-    </div>
-
-    <div class="sec-label">🚨 Stuck this week</div>
-    <div class="alert alert-stuck">
-      <div class="alert-title">🚨 Social traffic 0 every day this week — 7 days in a row</div>
-      <div class="alert-body">Direct: 131 sessions · Search: 44 sessions · Social: 0 sessions. Instagram and TikTok not sending any tracked traffic. Add UTM-tagged links to your Instagram bio.</div>
-    </div>
-
-    <div class="sec-label">Week at a glance</div>
-    <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">47</div><div class="kpi-sub">19–31 May</div></div>
-      <div class="kpi"><div class="kpi-label">Total revenue</div><div class="kpi-val">12,197</div><div class="kpi-sub">AED</div></div>
-      <div class="kpi kpi-ok"><div class="kpi-label">New customers</div><div class="kpi-val">22</div><div class="kpi-sub">first-time</div></div>
-      <div class="kpi"><div class="kpi-label">Returning</div><div class="kpi-val">25</div><div class="kpi-sub">ordered before</div></div>
-    </div>
-
-    <div class="sec-label">Website funnel this week (GA4)</div>
-    <div class="funnel">
-      <div class="funnel-step">
-        <div class="funnel-icon">👁</div>
-        <div class="funnel-info"><div class="funnel-label">Visited the website</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:100%;background:var(--gold);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">308</span><span class="funnel-pct">100%</span></div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-icon">🛒</div>
-        <div class="funnel-info"><div class="funnel-label">Added to cart</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:22%;background:var(--info);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">70</span><span class="funnel-pct">22.7%</span></div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-icon">💳</div>
-        <div class="funnel-info"><div class="funnel-label">Reached checkout</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:9%;background:var(--warn);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">35</span><span class="funnel-pct">11.4%</span></div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-icon">✅</div>
-        <div class="funnel-info"><div class="funnel-label">Completed order</div></div>
-        <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:8%;background:var(--success);"></div></div>
-        <div class="funnel-nums"><span class="funnel-count">31</span><span class="funnel-pct">10.1%</span></div>
-      </div>
-    </div>
-    <div class="alert alert-warn">
-      <div class="alert-title">⚠ Cart abandonment this week: 23 people added to cart but didn't checkout</div>
-      <div class="alert-body">42 added to cart, only 19 reached checkout. That's 23 lost potential orders this week. This is your biggest growth opportunity right now.</div>
-    </div>
-
-    <div class="sec-label">Traffic by source this week</div>
-    <div class="order-table-wrap">
-      <table class="src-table">
-        <thead><tr><th>Source</th><th>Sessions</th><th>% of total</th><th>Conv. rate</th></tr></thead>
-        <tbody>
-          <tr><td>Direct</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:71%;background:var(--gold);"></div></div>148</td><td>71%</td><td><span class="cvr-badge cvr-mid">~13%</span></td></tr>
-          <tr><td>Search (Google)</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:29%;background:var(--success);"></div></div>61</td><td>29%</td><td><span class="cvr-badge cvr-mid">~11%</span></td></tr>
-          <tr><td>Social</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:0%;background:var(--info);"></div></div>0</td><td>0%</td><td><span class="cvr-badge cvr-low">0%</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="sec-label">Day by day</div>
-    <div class="day-grid">
-      <div class="day-cell"><div class="day-name">Mon 19</div><div class="day-orders">2</div><div class="day-rev">1,580</div></div>
-      <div class="day-cell"><div class="day-name">Tue 20</div><div class="day-orders">2</div><div class="day-rev">390</div></div>
-      <div class="day-cell best"><div class="day-name">Wed 21</div><div class="day-orders">4</div><div class="day-rev">2,347</div></div>
-      <div class="day-cell"><div class="day-name">Thu 22</div><div class="day-orders">2</div><div class="day-rev">340</div></div>
-      <div class="day-cell"><div class="day-name">Fri 23</div><div class="day-orders">3</div><div class="day-rev">359</div></div>
-      <div class="day-cell"><div class="day-name">Sat 24</div><div class="day-orders">5</div><div class="day-rev">694</div></div>
-      <div class="day-cell"><div class="day-name">Sun 25</div><div class="day-orders">4</div><div class="day-rev">934</div></div>
-      <div class="day-cell"><div class="day-name">Mon 26</div><div class="day-orders">5</div><div class="day-rev">967</div></div>
-      <div class="day-cell"><div class="day-name">Tue 27</div><div class="day-orders">4</div><div class="day-rev">873</div></div>
-      <div class="day-cell"><div class="day-name">Thu 28</div><div class="day-orders">1</div><div class="day-rev">727</div></div>
-      <div class="day-cell"><div class="day-name">Fri 29</div><div class="day-orders">5</div><div class="day-rev">793</div></div>
-      <div class="day-cell best"><div class="day-name">Sat 30</div><div class="day-orders">8</div><div class="day-rev">1,560</div></div>
-      <div class="day-cell"><div class="day-name">Sun 31</div><div class="day-orders">1</div><div class="day-rev">125</div></div>
-    </div>
-
-    <div class="sec-label">Customer retention</div>
-    <div class="card">
-      <div class="card-row"><span class="cr-label">New customers</span><span class="cr-val">12 (50%)</span></div>
-      <div class="card-row"><span class="cr-label">Returning customers</span><span class="cr-ok">12 (50%)</span></div>
-      <div class="card-row"><span class="cr-label">Retention rate</span><span class="cr-ok">50%</span></div>
-      <div class="card-row"><span class="cr-label">Most loyal active</span><span class="cr-ok">Zeina — 64 orders</span></div>
-      <div class="ret-bar-wrap">
-        <div class="ret-bar"><div class="ret-new" style="width:50%"></div><div class="ret-ret" style="width:50%"></div></div>
-        <div class="ret-legend">
-          <div class="leg"><div class="leg-dot" style="background:var(--info)"></div>New — 50%</div>
-          <div class="leg"><div class="leg-dot" style="background:var(--gold)"></div>Returning — 50%</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sec-label">New customers this week</div>
-    <div class="order-table-wrap">
-      <table class="order-tbl">
-        <thead><tr><th>Name</th><th>Joined</th><th>First order value</th></tr></thead>
-        <tbody>
-          <tr><td>Camelia Draghici</td><td>31 May</td><td>AED 124.95</td></tr>
-          <tr><td>Yogesh Mande</td><td>30 May</td><td>AED 218.40</td></tr>
-          <tr><td>Krupesh Soni</td><td>30 May</td><td>AED 415.80</td></tr>
-          <tr><td>Rouba Halawi</td><td>30 May</td><td>AED 99.96</td></tr>
-          <tr><td>Futun Futun</td><td>29 May</td><td>AED 192.15</td></tr>
-          <tr><td>Maria Kuznetsova</td><td>29 May</td><td>AED 215.25</td></tr>
-          <tr><td>Reem Jethani</td><td>28 May</td><td>AED 726.60</td></tr>
-          <tr><td>Emad Aldeen</td><td>27 May</td><td>AED 118.65</td></tr>
-          <tr><td>Zahra Zakizadeh</td><td>27 May</td><td>AED 119.70</td></tr>
-          <tr><td>Fernando De Andres</td><td>26 May</td><td>AED 239.40</td></tr>
-          <tr><td>Liza Stepenskaya</td><td>25 May</td><td>AED 409.50</td></tr>
-          <tr><td>Hiba Shanaa</td><td>24 May</td><td>AED 129.10</td></tr>
-          <tr><td>Samer Hemade</td><td>24 May</td><td>AED 119.70</td></tr>
-          <tr><td>Zahra Khalfan</td><td>24 May</td><td>AED 215.25</td></tr>
-          <tr><td>Bassem Khaled</td><td>23 May</td><td>AED 119.70</td></tr>
-          <tr><td>Hayat El Horr</td><td>23 May</td><td>AED 119.70</td></tr>
-          <tr><td>Ghazal Jawhar</td><td>23 May</td><td>AED 119.70</td></tr>
-          <tr><td>Itay Danon</td><td>21 May</td><td>AED 1,384.95</td></tr>
-          <tr><td>Stelio Lardo</td><td>21 May</td><td>AED 717.15</td></tr>
-          <tr><td>Rana El Hayek</td><td>20 May</td><td>AED 218.40</td></tr>
-          <tr><td>Abubakr Hajaree</td><td>19 May</td><td>AED 1,400.70</td></tr>
-          <tr><td>Saman Saleh</td><td>19 May</td><td>AED 192.15</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="sec-label">Top products this week</div>
-    <div class="card">
-      <div class="prod-row"><span class="prod-name">Arabic — Desert Dream (1 Head)</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:55%;background:var(--gold);"></div></div><span class="prod-val">14 orders · AED 1,708</span></div>
-      <div class="prod-row"><span class="prod-name">Gold Catering Package</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:100%;background:var(--success);"></div></div><span class="prod-val">2 orders · AED 2,598</span></div>
-      <div class="prod-row"><span class="prod-name">Russian VIP Signature</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:38%;background:var(--info);"></div></div><span class="prod-val">5 orders · AED 1,559</span></div>
-      <div class="prod-row"><span class="prod-name">Premium Two Heads</span><div class="prod-bar-wrap"><div class="prod-bar-fill" style="width:22%;background:var(--text-dim);"></div></div><span class="prod-val">4 orders · AED 1,063</span></div>
-    </div>
-
-    <div class="sec-label">Abandoned checkouts — this week</div>
-    <div class="alert alert-warn">
-      <div class="alert-title">⚠ 1 abandoned checkout this week (28 May) — AED 197.40 · phone: +971502075952 — still not recovered</div>
-      <div class="alert-body">
-        <table class="alert-table">
-          <thead><tr><th>Date</th><th>Name</th><th>Contact</th><th>Product</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>21 May</td><td>—</td><td>No contact left</td><td>Arabic 1H</td><td>AED 119.70</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="alert alert-teal">
-      <div class="alert-title">💡 Contact: +971502075952 — WhatsApp them now to recover AED 197.40</div>
-      <div class="alert-body">Shopify Admin → Marketing → Automations → Abandoned checkout → Enable to automate this going forward. Free, built-in, 2 minutes to turn on.</div>
-    </div>
-
-    <div class="sec-label">Best & worst days</div>
-    <div class="card">
-      <div class="card-row"><span class="cr-label">Best day by revenue</span><span class="cr-ok">Saturday 30 May — AED 1,560</span></div>
-      <div class="card-row"><span class="cr-label">Best day by orders</span><span class="cr-ok">Sat 30 May — 8 orders</span></div>
-      <div class="card-row"><span class="cr-label">Best conversion day</span><span class="cr-ok">Sunday 24 May — 22.7% conversion rate</span></div>
-      <div class="card-row"><span class="cr-label">Quietest day</span><span class="cr-warn">Thursday 22 May — 2 orders · AED 340</span></div>
     </div>
   </div>
 </div>
@@ -741,7 +671,7 @@ function checkLogin(){
     sessionStorage.setItem(SESSION_KEY,'1');
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app').style.display='block';
-    document.getElementById('last-updated-txt').textContent='Updated 31 May 2026, 09:30';
+    document.getElementById('last-updated-txt').textContent='Updated 1 Jun 2026, 09:00';
   } else {
     document.getElementById('login-error').style.display='block';
     document.getElementById('pwd-input').value='';
@@ -765,7 +695,7 @@ document.getElementById('pwd-input').addEventListener('keydown',e=>{if(e.key==='
 if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
-  document.getElementById('last-updated-txt').textContent='Updated 31 May 2026, 09:30';
+  document.getElementById('last-updated-txt').textContent='Updated 1 Jun 2026, 09:00';
 }
 </script>
 </body>
