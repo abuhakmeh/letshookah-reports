@@ -214,30 +214,22 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="alert-title">✓ No orders yet today — Sunday 1 June</div>
       <div class="alert-body">Day is still early — new week starts today</div>
     </div>
-    <div class="alert alert-danger">
-      <div class="alert-title">🔴 10 orders tagged Not Collected — AED 1,844.76 to collect</div>
+    <div class="alert alert-stuck">
+      <div class="alert-title">🚨 2 orders overdue — past 48 hours — chase today</div>
       <div class="alert-body">
         <table class="alert-table">
-          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Zone</th><th>Time slot</th><th>Age</th></tr></thead>
+          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th><th>Overdue by</th></tr></thead>
           <tbody>
-            <tr style="color:#ff6666;font-weight:600;"><td>#7336</td><td>Nevine Tabbara</td><td>AED 60.90</td><td>Zone A</td><td>29 May 07:15 PM</td><td><span class="days-badge days-critical">3 days — DUE</span></td></tr>
-            <tr style="color:#ff6666;font-weight:600;"><td>#7340</td><td>Zeina Noureddine</td><td>AED 119.70</td><td>Zone B</td><td>29 May 12:00 AM</td><td><span class="days-badge days-critical">3 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7341</td><td>Rahul Mittal</td><td>AED 119.70</td><td>Zone A</td><td>30 May 03:15 PM</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7343</td><td>Krupesh Soni</td><td>AED 415.80</td><td>Zone A</td><td>30 May 05:45 PM</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7344</td><td>Zahra Khalfan</td><td>AED 218.40</td><td>Zone A</td><td>30 May 09:15 PM</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7345</td><td>Syed Hussain</td><td>AED 197.40</td><td>—</td><td>30 May</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7346</td><td>Lama Abdul</td><td>AED 124.95</td><td>Zone C+D</td><td>30 May 12:00 AM</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7347</td><td>Futun Futun</td><td>AED 363.30</td><td>Zone A</td><td>30 May 12:00 AM</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr style="color:#c08840;font-weight:600;"><td>#7348</td><td>Rouba Halawi</td><td>AED 99.96</td><td>Zone A</td><td>30 May 03:15 PM</td><td><span class="days-badge days-warn">2 days — DUE</span></td></tr>
-            <tr><td>#7349</td><td>Camelia Draghici</td><td>AED 124.95</td><td>Zone C+D</td><td>31 May 11:30 PM</td><td><span style="font-size:11px;color:var(--success);">1 day — OK</span></td></tr>
-            <tr class="total-row"><td colspan="2">Total to collect</td><td>AED 1,844.76</td><td colspan="3"></td></tr>
+            <tr><td>#7336</td><td>Nevine Tabbara</td><td>AED 60.90</td><td>29 May 07:15 PM</td><td>Zone A</td><td><span class="days-badge days-critical">2d 18h overdue</span></td></tr>
+            <tr><td>#7340</td><td>Zeina Noureddine</td><td>AED 119.70</td><td>29 May 12:00 AM</td><td>Zone B</td><td><span class="days-badge days-critical">2d 14h overdue</span></td></tr>
+            <tr class="total-row"><td colspan="2">Total overdue</td><td>AED 180.60</td><td colspan="3"></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <div class="alert alert-stuck">
-      <div class="alert-title">🚨 2 orders overdue 3 days — chase immediately</div>
-      <div class="alert-body">#7336 Nevine Tabbara AED 60.90 · #7340 Zeina Noureddine AED 119.70 — both from 29 May, past the 48-hour window</div>
+    <div class="alert alert-ok">
+      <div class="alert-title">✓ 8 other Not Collected orders are within the 48-hour window</div>
+      <div class="alert-body">Orders #7341–#7349 (30–31 May) are all within the normal 24–48h collection window — no action needed yet.</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No cancelled orders today</div>
