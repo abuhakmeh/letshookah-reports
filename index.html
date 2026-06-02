@@ -166,6 +166,29 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
   .last-updated{display:none;}
   .login-box{padding:36px 24px;margin:16px;}
 }
+
+/* PAYMENT MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(4px);z-index:1000;display:none;align-items:flex-end;justify-content:center;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--surface);border:1px solid var(--border-strong);border-radius:20px 20px 0 0;width:100%;max-width:640px;max-height:85vh;display:flex;flex-direction:column;animation:slideUp 0.25s ease;}
+@keyframes slideUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
+.modal-header{padding:20px 24px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-shrink:0;}
+.modal-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--text);}
+.modal-sub{font-size:12px;color:var(--text-muted);margin-top:3px;}
+.modal-close{background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text-muted);font-size:16px;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.modal-body{overflow-y:auto;padding:16px 24px 32px;flex:1;}
+.modal-total{background:var(--surface2);border-radius:var(--r);padding:12px 16px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.modal-total-label{font-size:12px;color:var(--text-muted);}
+.modal-total-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--gold);}
+.modal-order-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.modal-order-row:last-child{border-bottom:none;}
+.mor-num{font-family:'DM Mono',monospace;font-size:12px;color:var(--text-muted);width:48px;flex-shrink:0;}
+.mor-name{flex:1;color:var(--text);min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.mor-product{font-size:11px;color:var(--text-muted);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.mor-amount{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--text);text-align:right;white-space:nowrap;}
+.pay-card-btn{cursor:pointer;transition:transform 0.15s,border-color 0.15s;}
+.pay-card-btn:hover{transform:translateY(-2px);border-color:var(--border-strong);}
+.pay-card-btn:active{transform:translateY(0);}
 </style>
 </head>
 <body>
@@ -594,9 +617,9 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
 
     <div class="sec-label">Revenue by payment method</div>
     <div class="pay-grid">
-      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">12,591</div><div class="pay-orders">49 orders · 86%</div></div>
-      <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">345</div><div class="pay-orders">3 orders · 2%</div></div>
-      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">887</div><div class="pay-orders">4 orders · 6%</div></div>
+      <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h2','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">12,591</div><div class="pay-orders">49 orders · 86% · tap to view ›</div></div>
+      <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h2','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">345</div><div class="pay-orders">3 orders · 2% · tap to view ›</div></div>
+      <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h2','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">887</div><div class="pay-orders">4 orders · 6% · tap to view ›</div></div>
     </div>
 
     <div class="sec-label">Shisha breakdown</div>
@@ -669,9 +692,9 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
 
     <div class="sec-label">Revenue by payment method</div>
     <div class="pay-grid">
-      <div class="pay-card pc-card"><div class="pay-label">Card on delivery</div><div class="pay-val">5,431</div><div class="pay-orders">30 orders · 72%</div></div>
-      <div class="pay-card pc-cash"><div class="pay-label">Cash (COD)</div><div class="pay-val">912</div><div class="pay-orders">10 orders · 12%</div></div>
-      <div class="pay-card pc-link"><div class="pay-label">Payment link</div><div class="pay-val">945</div><div class="pay-orders">10 orders · 13%</div></div>
+      <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h1','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">7,527</div><div class="pay-orders">40 orders · 85% · tap to view ›</div></div>
+      <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h1','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">192</div><div class="pay-orders">1 order · 2% · tap to view ›</div></div>
+      <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h1','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">1,104</div><div class="pay-orders">7 orders · 13% · tap to view ›</div></div>
     </div>
 
     <div class="sec-label">Shisha breakdown</div>
@@ -693,6 +716,26 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
           <tr class="total-row"><td colspan="3">Total lost</td><td>AED 311.85</td><td></td></tr>
         </tbody>
       </table>
+    </div>
+  </div>
+
+  <!-- PAYMENT MODAL -->
+  <div class="modal-overlay" id="pay-modal" onclick="closePayModal(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-title">Orders</div>
+          <div class="modal-sub" id="modal-sub"></div>
+        </div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-total">
+          <span class="modal-total-label">Total collected</span>
+          <span class="modal-total-val" id="modal-total"></span>
+        </div>
+        <div id="modal-orders"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -737,6 +780,182 @@ if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('app').style.display='block';
   document.getElementById('last-updated-txt').textContent='Updated 2 Jun 2026, 09:00';
 }
+
+// PAYMENT METHOD DATA — Second half May 2026
+const payData = {
+  h2: {
+    card: {
+      label: "Card on delivery",
+      period: "16–31 May 2026",
+      orders: [
+        {num:"#7292", name:"Rana El Hayek", product:"Russian VIP", amount:215.25},
+        {num:"#7293", name:"Abubakr Hajaree", product:"Russian VIP", amount:215.25},
+        {num:"#7295", name:"Saman Saleh", product:"Arabic 1H", amount:124.95},
+        {num:"#7296", name:"Nevine Tabbara", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7297", name:"Nevine Tabbara", product:"Arabic 1H", amount:75.60},
+        {num:"#7298", name:"Nevine Tabbara", product:"Arabic 1H", amount:119.70},
+        {num:"#7299", name:"Bassem Khaled", product:"Two Heads", amount:192.15},
+        {num:"#7300", name:"Nevine Tabbara", product:"Arabic 1H", amount:75.60},
+        {num:"#7301", name:"Zeina Noureddine", product:"Two Heads", amount:192.15},
+        {num:"#7302", name:"Hayat El Horr", product:"Arabic 1H", amount:99.96},
+        {num:"#7303", name:"Abubakr Hajaree", product:"Russian VIP x4", amount:1400.70},
+        {num:"#7304", name:"Ghazal Jawhar", product:"Arabic 1H", amount:178.92},
+        {num:"#7306", name:"Hiba Shanaa", product:"Arabic 1H", amount:218.40},
+        {num:"#7308", name:"Stelio Lardo", product:"Russian VIP x2", amount:717.15},
+        {num:"#7309", name:"Amir Asadollahi", product:"Arabic 1H", amount:119.70},
+        {num:"#7310", name:"Itay Danon", product:"Russian VIP x4", amount:1384.95},
+        {num:"#7311", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7312", name:"Zahra Khalfan", product:"Arabic 1H", amount:220.50},
+        {num:"#7313", name:"Samer Hemade", product:"Arabic 1H", amount:119.70},
+        {num:"#7314", name:"Diksha Tahiliani", product:"Arabic 1H", amount:119.70},
+        {num:"#7315", name:"Ghazal Jawhar", product:"Arabic 1H", amount:119.70},
+        {num:"#7316", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7318", name:"Zahra Khalfan", product:"Russian VIP", amount:215.25},
+        {num:"#7319", name:"Samer Hemade", product:"Arabic 1H", amount:119.70},
+        {num:"#7320", name:"Hiba Shanaa", product:"Arabic 1H", amount:129.10},
+        {num:"#7321", name:"Liza Stepenskaya", product:"Russian VIP x2", amount:409.50},
+        {num:"#7322", name:"Zeina Noureddine", product:"Arabic 1H", amount:46.20},
+        {num:"#7323", name:"Ahmed Mokhtar", product:"Two Heads x2", amount:368.55},
+        {num:"#7324", name:"Lama Abdul", product:"Arabic 1H", amount:110.15},
+        {num:"#7325", name:"Sonia Khanjari", product:"Arabic 1H", amount:119.70},
+        {num:"#7326", name:"Narwan Alahmad", product:"Arabic 1H", amount:119.70},
+        {num:"#7327", name:"Hatoof Ghunaim", product:"Arabic 1H", amount:119.70},
+        {num:"#7328", name:"Fernando De Andres", product:"Arabic 1H x2", amount:239.40},
+        {num:"#7329", name:"Ahmed Mokhtar", product:"Two Heads x2", amount:368.55},
+        {num:"#7330", name:"Emad Aldeen", product:"Arabic grape mint", amount:118.65},
+        {num:"#7331", name:"Pablo Miralles", product:"Two Heads x3", amount:406.09},
+        {num:"#7333", name:"Vogue Eldobee", product:"Love 66", amount:228.90},
+        {num:"#7334", name:"Reem Jethani", product:"Two Heads x4", amount:726.60},
+        {num:"#7335", name:"Futun Futun", product:"Two Heads", amount:192.15},
+        {num:"#7337", name:"Maria Kuznetsova", product:"Russian VIP", amount:215.25},
+        {num:"#7338", name:"Dmitrii WDW", product:"Two Heads", amount:192.15},
+        {num:"#7340", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7341", name:"Rahul Mittal", product:"Arabic 1H", amount:119.70},
+        {num:"#7342", name:"Yogesh Mande", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7343", name:"Krupesh Soni", product:"Arabic 1H x4", amount:415.80},
+        {num:"#7344", name:"Zahra Khalfan", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7345", name:"Syed Hussain", product:"Two Heads", amount:197.40},
+        {num:"#7346", name:"Lama Abdul", product:"Arabic 1H", amount:124.95},
+        {num:"#7347", name:"Futun Futun", product:"Two Heads x2", amount:363.30},
+      ]
+    },
+    cash: {
+      label: "Cash (COD)",
+      period: "16–31 May 2026",
+      orders: [
+        {num:"#7332", name:"Zahra Zakizadeh", product:"Arabic 1H", amount:119.70},
+        {num:"#7348", name:"Rouba Halawi", product:"Arabic 1H", amount:99.96},
+        {num:"#7349", name:"Camelia Draghici", product:"Arabic 1H", amount:124.95},
+      ]
+    },
+    link: {
+      label: "Payment link",
+      period: "16–31 May 2026",
+      orders: [
+        {num:"#7294", name:"Saman Saleh", product:"Arabic 1H", amount:223.65},
+        {num:"#7305", name:"Hayat El Horr", product:"Russian VIP", amount:483.00},
+        {num:"#7317", name:"Diksha Tahiliani", product:"Arabic 1H", amount:119.70},
+        {num:"#7336", name:"Nevine Tabbara", product:"Arabic 1H", amount:60.90},
+      ]
+    }
+  },
+  h1: {
+    card: {
+      label: "Card on delivery",
+      period: "1–15 May 2026",
+      orders: [
+        {num:"#7241", name:"Sandeep Sharma", product:"Two Heads", amount:192.15},
+        {num:"#7242", name:"Danil Ranchodas", product:"Silver Catering + Two Heads", amount:945.74},
+        {num:"#7243", name:"Anaam Baig", product:"Russian VIP", amount:220.50},
+        {num:"#7244", name:"Harry Bristow-Holmes", product:"Arabic 1H", amount:119.70},
+        {num:"#7247", name:"Zeina Noureddine", product:"Arabic 1H", amount:124.95},
+        {num:"#7248", name:"Sana Khan", product:"Russian VIP", amount:215.25},
+        {num:"#7249", name:"Nasab Al Jurdi", product:"Two Heads x2 + Russian VIP", amount:557.55},
+        {num:"#7253", name:"Harry Bristow-Holmes", product:"Arabic 1H", amount:119.70},
+        {num:"#7254", name:"Zeina Noureddine", product:"Arabic 1H", amount:75.60},
+        {num:"#7255", name:"Dmitrii WDW", product:"Arabic 1H + Tip", amount:129.10},
+        {num:"#7256", name:"Mohamad Mardini", product:"Arabic 1H", amount:99.96},
+        {num:"#7257", name:"Samar", product:"Arabic 1H x3", amount:317.10},
+        {num:"#7258", name:"Joshua Troskie", product:"Arabic 1H", amount:119.70},
+        {num:"#7259", name:"Brian Den Boer", product:"Arabic 1H", amount:124.95},
+        {num:"#7260", name:"Sonia Khanjari", product:"Two Heads", amount:149.36},
+        {num:"#7261", name:"Zeina Noureddine", product:"Arabic 1H", amount:124.95},
+        {num:"#7262", name:"Harry Bristow-Holmes", product:"Arabic 1H", amount:70.35},
+        {num:"#7264", name:"Fatina Abdallah", product:"Arabic 1H", amount:119.70},
+        {num:"#7266", name:"Varun Gupta", product:"Russian VIP", amount:166.69},
+        {num:"#7268", name:"Mohamad Mardini", product:"Arabic 1H x2", amount:178.92},
+        {num:"#7269", name:"Zeina Noureddine", product:"Arabic 1H", amount:75.60},
+        {num:"#7270", name:"Bassem Khaled", product:"Arabic 1H", amount:119.70},
+        {num:"#7271", name:"Jordan Lee", product:"Two Heads", amount:192.15},
+        {num:"#7272", name:"Lubna Makarem", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7273", name:"Fernando Jimenez", product:"Russian VIP + Two Heads", amount:386.40},
+        {num:"#7274", name:"Zeina Noureddine", product:"Arabic 1H", amount:124.95},
+        {num:"#7276", name:"Elchin Guliyev", product:"Russian VIP", amount:215.25},
+        {num:"#7277", name:"Huda Majid", product:"Arabic 1H", amount:119.70},
+        {num:"#7278", name:"Mohamad Mardini", product:"Arabic 1H x2", amount:178.92},
+        {num:"#7279", name:"Mahdi Rimawi", product:"Arabic 1H", amount:119.70},
+        {num:"#7280", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7281", name:"Aastha Kapoor", product:"Arabic 1H x4", amount:317.10},
+        {num:"#7282", name:"Nischay Nagpal", product:"Two Heads", amount:163.17},
+        {num:"#7284", name:"Zeina Noureddine", product:"Arabic 1H", amount:60.90},
+        {num:"#7285", name:"Dima Abdul Khalek", product:"Arabic 1H", amount:31.50},
+        {num:"#7286", name:"Mathew John", product:"Arabic 1H", amount:104.90},
+        {num:"#7287", name:"Zouhair Arja", product:"Arabic 1H x2", amount:188.79},
+        {num:"#7288", name:"Nathan Capdevielle", product:"Russian VIP", amount:215.25},
+        {num:"#7289", name:"Lujain Osman", product:"Arabic 1H", amount:119.70},
+        {num:"#7290", name:"Sameer Aziz", product:"Russian VIP + Accessories", amount:283.50},
+      ]
+    },
+    cash: {
+      label: "Cash (COD)",
+      period: "1–15 May 2026",
+      orders: [
+        {num:"#7245", name:"Zena Aboud", product:"Two Heads", amount:192.15},
+      ]
+    },
+    link: {
+      label: "Payment link",
+      period: "1–15 May 2026",
+      orders: [
+        {num:"#7246", name:"John Ropas", product:"Arabic 1H x2", amount:178.92},
+        {num:"#7250", name:"Sandeep Sharma", product:"Broken head accessory", amount:52.50},
+        {num:"#7251", name:"Nevine Tabbara", product:"Arabic 1H", amount:119.70},
+        {num:"#7252", name:"Umut Sile", product:"Arabic 1H", amount:119.70},
+        {num:"#7265", name:"Anaam Baig", product:"Russian VIP", amount:225.75},
+        {num:"#7275", name:"Omair Afzal", product:"Two Heads", amount:192.15},
+        {num:"#7283", name:"Ihsan Kapkin", product:"Russian VIP", amount:215.25},
+      ]
+    }
+  }
+};
+
+function openPayModal(half, method) {
+  const d = payData[half][method];
+  document.getElementById('modal-title').textContent = d.label + ' — ' + (half === 'h2' ? 'Second Half' : 'First Half');
+  document.getElementById('modal-sub').textContent = d.period + ' · ' + d.orders.length + ' orders';
+  const total = d.orders.reduce((s, o) => s + o.amount, 0);
+  document.getElementById('modal-total').textContent = 'AED ' + total.toLocaleString('en-AE', {minimumFractionDigits:2, maximumFractionDigits:2});
+  const container = document.getElementById('modal-orders');
+  container.innerHTML = d.orders.map(o => `
+    <div class="modal-order-row">
+      <span class="mor-num">${o.num}</span>
+      <span class="mor-name">${o.name}</span>
+      <span class="mor-product">${o.product}</span>
+      <span class="mor-amount">AED ${o.amount.toLocaleString('en-AE', {minimumFractionDigits:2, maximumFractionDigits:2})}</span>
+    </div>`).join('');
+  document.getElementById('pay-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('pay-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closePayModal(e) {
+  if (e.target === document.getElementById('pay-modal')) closeModal();
+}
+
 </script>
 </body>
 </html>
