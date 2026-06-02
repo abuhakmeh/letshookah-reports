@@ -629,10 +629,9 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
 
     <div class="sec-label">Revenue by payment method</div>
     <div class="pay-grid">
-      <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h2','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">12,591</div><div class="pay-orders">49 orders · 86% · tap to view ›</div></div>
+      <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h2','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">12,716</div><div class="pay-orders">50 orders · 87% · tap to view ›</div></div>
       <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h2','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">345</div><div class="pay-orders">3 orders · 2% · tap to view ›</div></div>
       <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h2','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">887</div><div class="pay-orders">4 orders · 6% · tap to view ›</div></div>
-      <div class="pay-card pay-card-btn" style="background:rgba(128,80,180,0.08);border:1px solid var(--border);" onclick="openPayModal('h2','pos')" title="Click to view orders"><div class="pay-label" style="color:#9070cc;">Manual entry</div><div class="pay-val" style="color:#a080dd;">125</div><div class="pay-orders" style="color:#7060aa;">1 order · 1% · tap to view ›</div></div>
       <div class="pay-card pay-card-btn" style="background:rgba(184,140,40,0.08);border:1px solid var(--border);" onclick="openPayModal('h2','tips')" title="Click to view tip orders"><div class="pay-label" style="color:#c09030;">Tips received</div><div class="pay-val" style="color:#d0a040;">9.40</div><div class="pay-orders" style="color:#9a7020;">1 order · tap to view ›</div></div>
     </div>
 
@@ -709,7 +708,6 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h1','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">7,527</div><div class="pay-orders">40 orders · 85% · tap to view ›</div></div>
       <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h1','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">192</div><div class="pay-orders">1 order · 2% · tap to view ›</div></div>
       <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h1','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">1,104</div><div class="pay-orders">7 orders · 13% · tap to view ›</div></div>
-      <div class="pay-card pay-card-btn" style="background:rgba(128,80,180,0.08);border:1px solid var(--border);" onclick="openPayModal('h1','pos')" title="Click to view orders"><div class="pay-label" style="color:#9070cc;">Manual entry</div><div class="pay-val" style="color:#a080dd;">0</div><div class="pay-orders" style="color:#7060aa;">0 orders in this period</div></div>
       <div class="pay-card pay-card-btn" style="background:rgba(184,140,40,0.08);border:1px solid var(--border);" onclick="openPayModal('h1','tips')" title="Click to view tip orders"><div class="pay-label" style="color:#c09030;">Tips received</div><div class="pay-val" style="color:#d0a040;">9.40</div><div class="pay-orders" style="color:#9a7020;">1 order · tap to view ›</div></div>
     </div>
 
@@ -832,6 +830,7 @@ const payData = {
         {num:"#7304", name:"Ghazal Jawhar", product:"Arabic 1H", amount:178.92},
         {num:"#7306", name:"Hiba Shanaa", product:"Arabic 1H", amount:218.40},
         {num:"#7308", name:"Stelio Lardo", product:"Russian VIP x2", amount:717.15},
+        {num:"#7307", name:"Zeina Noureddine", product:"Arabic 1H (manual entry)", amount:124.95},
         {num:"#7309", name:"Amir Asadollahi", product:"Arabic 1H", amount:119.70},
         {num:"#7310", name:"Itay Danon", product:"Russian VIP x4", amount:1384.95},
         {num:"#7311", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
@@ -890,11 +889,6 @@ const payData = {
     }
   },
   h1: {
-    pos: {
-      label: "Manual entry",
-      period: "1–15 May 2026",
-      orders: []
-    },
     tips: {
       label: "Tips received",
       period: "1–15 May 2026",
