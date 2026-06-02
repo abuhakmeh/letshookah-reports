@@ -620,6 +620,8 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h2','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">12,591</div><div class="pay-orders">49 orders · 86% · tap to view ›</div></div>
       <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h2','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">345</div><div class="pay-orders">3 orders · 2% · tap to view ›</div></div>
       <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h2','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">887</div><div class="pay-orders">4 orders · 6% · tap to view ›</div></div>
+      <div class="pay-card pay-card-btn" style="background:rgba(128,80,180,0.08);border:1px solid var(--border);" onclick="openPayModal('h2','pos')" title="Click to view orders"><div class="pay-label" style="color:#9070cc;">Manual / POS</div><div class="pay-val" style="color:#a080dd;">125</div><div class="pay-orders" style="color:#7060aa;">1 order · 1% · tap to view ›</div></div>
+      <div class="pay-card pay-card-btn" style="background:rgba(184,140,40,0.08);border:1px solid var(--border);" onclick="openPayModal('h2','tips')" title="Click to view tip orders"><div class="pay-label" style="color:#c09030;">Tips received</div><div class="pay-val" style="color:#d0a040;">9.40</div><div class="pay-orders" style="color:#9a7020;">1 order · tap to view ›</div></div>
     </div>
 
     <div class="sec-label">Shisha breakdown</div>
@@ -695,6 +697,8 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h1','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">7,527</div><div class="pay-orders">40 orders · 85% · tap to view ›</div></div>
       <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h1','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">192</div><div class="pay-orders">1 order · 2% · tap to view ›</div></div>
       <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h1','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">1,104</div><div class="pay-orders">7 orders · 13% · tap to view ›</div></div>
+      <div class="pay-card pay-card-btn" style="background:rgba(128,80,180,0.08);border:1px solid var(--border);" onclick="openPayModal('h1','pos')" title="Click to view orders"><div class="pay-label" style="color:#9070cc;">Manual / POS</div><div class="pay-val" style="color:#a080dd;">0</div><div class="pay-orders" style="color:#7060aa;">0 orders in this period</div></div>
+      <div class="pay-card pay-card-btn" style="background:rgba(184,140,40,0.08);border:1px solid var(--border);" onclick="openPayModal('h1','tips')" title="Click to view tip orders"><div class="pay-label" style="color:#c09030;">Tips received</div><div class="pay-val" style="color:#d0a040;">9.40</div><div class="pay-orders" style="color:#9a7020;">1 order · tap to view ›</div></div>
     </div>
 
     <div class="sec-label">Shisha breakdown</div>
@@ -784,6 +788,20 @@ if(sessionStorage.getItem(SESSION_KEY)){
 // PAYMENT METHOD DATA — Second half May 2026
 const payData = {
   h2: {
+    pos: {
+      label: "Manual / POS",
+      period: "16–31 May 2026",
+      orders: [
+        {num:"#7307", name:"Zeina Noureddine", product:"Arabic 1H", amount:124.95},
+      ]
+    },
+    tips: {
+      label: "Tips received",
+      period: "16–31 May 2026",
+      orders: [
+        {num:"#7320", name:"Hiba Shanaa", product:"Arabic 1H + Tip AED 9.40", amount:9.40},
+      ]
+    },
     card: {
       label: "Card on delivery",
       period: "16–31 May 2026",
@@ -860,6 +878,18 @@ const payData = {
     }
   },
   h1: {
+    pos: {
+      label: "Manual / POS",
+      period: "1–15 May 2026",
+      orders: []
+    },
+    tips: {
+      label: "Tips received",
+      period: "1–15 May 2026",
+      orders: [
+        {num:"#7255", name:"Dmitrii WDW", product:"Arabic 1H + Tip AED 9.40", amount:9.40},
+      ]
+    },
     card: {
       label: "Card on delivery",
       period: "1–15 May 2026",
