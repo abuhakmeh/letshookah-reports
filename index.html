@@ -204,9 +204,9 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
     <div class="report-header">
       <div>
         <div class="rh-title">Daily Operations Report</div>
-        <div class="rh-sub">Sunday, 1 June 2026 — Let's Hookah</div>
+        <div class="rh-sub">Monday, 2 June 2026 — Let's Hookah</div>
       </div>
-      <span class="rh-badge badge-live">Updated 1 Jun 2026</span>
+      <span class="rh-badge badge-live">Updated 2 Jun 2026</span>
     </div>
 
     <div class="sec-label">Alerts — today</div>
@@ -220,16 +220,20 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
         <table class="alert-table">
           <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Zone</th><th>Overdue by</th></tr></thead>
           <tbody>
-            <tr><td>#7336</td><td>Nevine Tabbara</td><td>AED 60.90</td><td>29 May 07:15 PM</td><td>Zone A</td><td><span class="days-badge days-critical">2d 18h overdue</span></td></tr>
-            <tr><td>#7340</td><td>Zeina Noureddine</td><td>AED 119.70</td><td>29 May 12:00 AM</td><td>Zone B</td><td><span class="days-badge days-critical">2d 14h overdue</span></td></tr>
-            <tr class="total-row"><td colspan="2">Total overdue</td><td>AED 180.60</td><td colspan="3"></td></tr>
+            <tr><td>#7345</td><td>Syed Hussain</td><td>AED 197.40</td><td>30 May</td><td>—</td><td><span class="days-badge days-critical">3d overdue</span></td></tr>
+            <tr><td>#7348</td><td>Rouba Halawi</td><td>AED 99.96</td><td>30 May 03:15 PM</td><td>Zone A</td><td><span class="days-badge days-critical">3d overdue</span></td></tr>
+            <tr class="total-row"><td colspan="2">Total overdue</td><td>AED 297.36</td><td colspan="3"></td></tr>
           </tbody>
         </table>
       </div>
     </div>
     <div class="alert alert-ok">
-      <div class="alert-title">✓ 8 other Not Collected orders are within the 48-hour window</div>
-      <div class="alert-body">Orders #7341–#7349 (30–31 May) are all within the normal 24–48h collection window — no action needed yet.</div>
+      <div class="alert-title">✓ #7350 Ghada Daboul — today's order — within 48h window</div>
+      <div class="alert-body">AED 119.70 — Zone A — 7:15 PM tonight — no action needed yet</div>
+    </div>
+    <div class="alert alert-warn">
+      <div class="alert-title">⚠ #7350 also tagged "to be canceled" — check with your team</div>
+      <div class="alert-body">Order #7350 has both Not Collected and to be canceled tags — your team needs to clarify whether this order is proceeding or being cancelled.</div>
     </div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No cancelled orders today</div>
@@ -244,40 +248,40 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="alert-body">No damage keywords detected</div>
     </div>
 
-    <div class="sec-label">Yesterday — 31 May</div>
+    <div class="sec-label">Yesterday — 1 June</div>
     <div class="yday-panel">
       <div class="yday-grid">
-        <div class="yday-kpi"><div class="yday-label">Orders</div><div class="yday-val">1</div><div class="yday-sub">#7349</div></div>
-        <div class="yday-kpi"><div class="yday-label">Revenue</div><div class="yday-val">124.95</div><div class="yday-sub">AED</div></div>
+        <div class="yday-kpi"><div class="yday-label">Orders</div><div class="yday-val">1</div><div class="yday-sub">#7350</div></div>
+        <div class="yday-kpi"><div class="yday-label">Revenue</div><div class="yday-val">119.70</div><div class="yday-sub">AED</div></div>
         <div class="yday-kpi"><div class="yday-label">Shisha units</div><div class="yday-val">1</div><div class="yday-sub">Arabic 1H</div></div>
-        <div class="yday-kpi"><div class="yday-label">New customers</div><div class="yday-val">1</div><div class="yday-sub">Camelia D.</div></div>
-        <div class="yday-kpi"><div class="yday-label">Sessions</div><div class="yday-val">12</div><div class="yday-sub">letshookah.co</div></div>
-        <div class="yday-kpi"><div class="yday-label">Conversion</div><div class="yday-val">8.3%</div><div class="yday-sub">sessions→orders</div></div>
+        <div class="yday-kpi"><div class="yday-label">New customers</div><div class="yday-val">0</div><div class="yday-sub">Ghada returning</div></div>
+        <div class="yday-kpi"><div class="yday-label">Sessions</div><div class="yday-val">24</div><div class="yday-sub">letshookah.co</div></div>
+        <div class="yday-kpi"><div class="yday-label">Conversion</div><div class="yday-val">4.2%</div><div class="yday-sub">sessions→orders</div></div>
       </div>
       <div class="order-table-wrap">
         <table class="order-tbl">
           <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>#7349</td><td>Camelia Draghici</td><td>Arabic 1H</td><td>AED 124.95</td><td>Card on delivery</td><td><span class="ob ob-new">New</span></td></tr>
+            <tr><td>#7350</td><td>Ghada Daboul</td><td>Arabic 1H</td><td>AED 119.70</td><td>Card on delivery</td><td><span class="ob ob-return">Returning — 3rd</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <div class="sec-label">Website funnel — 31 May (GA4 + Shopify)</div>
+    <div class="sec-label">Website funnel — 1 June (GA4 + Shopify)</div>
     <div style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:18px 18px 8px;margin-bottom:10px;">
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
         <div style="width:32px;height:32px;border-radius:50%;background:rgba(154,134,96,0.15);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">👁</div>
         <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Visited letshookah.co</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — all visitors</div></div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold);">12</div>
       </div>
-      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--text-dim);">↓ 11 left without any action (92%)</div></div>
+      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--text-dim);">↓ 22 left without any action (92%)</div></div>
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
         <div style="width:32px;height:32px;border-radius:50%;background:var(--info-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🛒</div>
         <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Added to cart</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Tracked by GA4 — anonymous</div></div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#88aadd;">1</div>
       </div>
-      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--success);font-weight:500;">↓ 0 dropped — went straight to checkout ✓</div></div>
+      <div style="padding:6px 0 6px 44px;"><div style="font-size:11px;color:var(--danger);font-weight:500;">↓ 1 dropped — added cart but left before checkout</div></div>
       <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);">
         <div style="width:32px;height:32px;border-radius:50%;background:var(--warn-bg);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">💳</div>
         <div style="flex:1;"><div style="font-size:13px;font-weight:500;color:var(--text);">Reached checkout</div><div style="font-size:11px;color:var(--text-muted);margin-top:2px;">Entered details — Shopify can identify them</div></div>
@@ -293,27 +297,30 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
         <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-family:'Syne',sans-serif;letter-spacing:0.1em;text-transform:uppercase;">Where did the 12 visitors go?</div>
         <div style="display:flex;height:10px;border-radius:99px;overflow:hidden;gap:2px;">
           <div style="width:92%;background:var(--surface3);"></div>
-          <div style="width:8%;background:var(--success);"></div>
+          <div style="width:4%;background:var(--danger);"></div>
+          <div style="width:4%;background:var(--success);"></div>
         </div>
         <div style="display:flex;gap:16px;margin-top:8px;flex-wrap:wrap;">
-          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);"><div style="width:8px;height:8px;border-radius:2px;background:var(--surface3);flex-shrink:0;"></div>11 left without action (92%)</div>
-          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--success);"><div style="width:8px;height:8px;border-radius:2px;background:var(--success);flex-shrink:0;"></div>1 ordered (8%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted);"><div style="width:8px;height:8px;border-radius:2px;background:var(--surface3);flex-shrink:0;"></div>22 left without action (92%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--danger);"><div style="width:8px;height:8px;border-radius:2px;background:var(--danger);flex-shrink:0;"></div>1 cart drop (4%)</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--success);"><div style="width:8px;height:8px;border-radius:2px;background:var(--success);flex-shrink:0;"></div>1 ordered (4%)</div>
         </div>
       </div>
     </div>
 
-    <div class="sec-label">Traffic by source — 31 May</div>
+    <div class="sec-label">Traffic by source — 1 June</div>
     <div class="order-table-wrap">
       <table class="src-table">
         <thead><tr><th>Source</th><th>Sessions</th><th>Added cart</th><th>Checkout</th><th>Ordered</th><th>Conv. rate</th></tr></thead>
         <tbody>
-          <tr><td>Direct</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:83%;background:var(--gold);"></div></div>10</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">10%</span></td></tr>
-          <tr><td>Search (Google)</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:17%;background:var(--success);"></div></div>2</td><td>0</td><td>0</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td></tr>
+          <tr><td>Direct</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:92%;background:var(--gold);"></div></div>22</td><td>2</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">4.5%</span></td></tr>
+          <tr><td>Search (Google)</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:4%;background:var(--success);"></div></div>1</td><td>0</td><td>0</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td></tr>
+          <tr><td>Unknown</td><td><div class="mini-bar-wrap"><div class="mini-bar" style="width:4%;background:var(--text-dim);"></div></div>1</td><td>0</td><td>0</td><td>0</td><td><span class="cvr-badge cvr-low">0%</span></td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="sec-label">Abandoned checkouts — 31 May</div>
+    <div class="sec-label">Abandoned checkouts — 1 June</div>
     <div class="alert alert-ok">
       <div class="alert-title">✓ No abandoned checkouts yesterday</div>
       <div class="alert-body">1 reached checkout · 1 completed · 0 abandoned</div>
@@ -348,7 +355,8 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
           <tr><td>Fri 29 May</td><td>6</td><td>793</td><td>6</td><td>2</td><td>AED 56</td><td>0</td></tr>
           <tr><td>Sat 30 May</td><td>8</td><td>1,523</td><td>13</td><td>3</td><td>AED 19</td><td>0</td></tr>
           <tr><td>Sun 31 May</td><td>1</td><td>125</td><td>1</td><td>1</td><td>—</td><td>0</td></tr>
-          <tr class="today-row"><td>Mon 1 Jun</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Mon 1 Jun</td><td>1</td><td>120</td><td>1</td><td>0</td><td>—</td><td>0</td></tr>
+          <tr class="today-row"><td>Tue 2 Jun</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -371,7 +379,8 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
           <tr><td>Fri 29 May</td><td>23</td><td>10</td><td>6</td><td>5</td><td><span class="cvr-badge cvr-high">21.7%</span></td><td>1 checkout drop</td></tr>
           <tr><td>Sat 30 May</td><td>35</td><td>10</td><td>8</td><td>7</td><td><span class="cvr-badge cvr-high">20.0%</span></td><td>1 checkout drop</td></tr>
           <tr><td>Sun 31 May</td><td>12</td><td>1</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-mid">8.3%</span></td><td>Clean — 0 abandoned</td></tr>
-          <tr class="today-row"><td>Mon 1 Jun</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>New week</td></tr>
+          <tr><td>Mon 1 Jun</td><td>24</td><td>2</td><td>1</td><td>1</td><td><span class="cvr-badge cvr-low">4.2%</span></td><td>1 cart drop</td></tr>
+          <tr class="today-row"><td>Tue 2 Jun</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>New week</td></tr>
         </tbody>
       </table>
     </div>
@@ -672,7 +681,7 @@ function checkLogin(){
     sessionStorage.setItem(SESSION_KEY,'1');
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app').style.display='block';
-    document.getElementById('last-updated-txt').textContent='Updated 1 Jun 2026, 09:00';
+    document.getElementById('last-updated-txt').textContent='Updated 2 Jun 2026, 09:00';
   } else {
     document.getElementById('login-error').style.display='block';
     document.getElementById('pwd-input').value='';
@@ -696,7 +705,7 @@ document.getElementById('pwd-input').addEventListener('keydown',e=>{if(e.key==='
 if(sessionStorage.getItem(SESSION_KEY)){
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
-  document.getElementById('last-updated-txt').textContent='Updated 1 Jun 2026, 09:00';
+  document.getElementById('last-updated-txt').textContent='Updated 2 Jun 2026, 09:00';
 }
 </script>
 </body>
