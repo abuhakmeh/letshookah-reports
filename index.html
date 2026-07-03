@@ -600,26 +600,27 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
         <div style="margin-top:8px;display:flex;gap:8px;align-items:center;">
           <span style="font-family:'DM Mono',monospace;font-size:12px;background:var(--surface3);border:1px solid var(--border);border-radius:6px;padding:3px 10px;color:var(--gold);">From #7389</span>
           <span style="font-size:12px;color:var(--text-dim);">→</span>
-          <span style="font-family:'DM Mono',monospace;font-size:12px;background:var(--surface3);border:1px solid var(--border);border-radius:6px;padding:3px 10px;color:var(--gold);">To #7407</span>
-          <span style="font-size:11px;color:var(--text-muted);">19 orders · period still open</span>
+          <span style="font-family:'DM Mono',monospace;font-size:12px;background:var(--surface3);border:1px solid var(--border);border-radius:6px;padding:3px 10px;color:var(--gold);">To #7426</span>
+          <span style="font-size:11px;color:var(--text-muted);">36 active orders · 2 cancelled</span>
         </div>
       </div>
-      <span class="rh-badge badge-live">In progress</span>
+      <span class="rh-badge badge-gold">Period closed ✓</span>
     </div>
 
     <div class="sec-label">Alerts</div>
-    <div class="alert alert-ok">
-      <div class="alert-title">✓ No cancelled orders in this period</div>
-      <div class="alert-body">All orders from 16–26 June proceeded normally</div>
+    <div class="alert alert-danger">
+      <div class="alert-title">🔴 2 cancelled / voided orders — AED 506.10 lost</div>
+      <div class="alert-body">#7418 Brandon Wronski — Two Heads — AED 192.15 — voided 30 Jun &nbsp;|&nbsp; #7420 Josh Foreman — Arabic 1H + Russian VIP — AED 313.95 — voided 30 Jun</div>
     </div>
     <div class="alert alert-teal">
-      <div class="alert-title">🏷 2 orders with discounts — AED 112.00 total given</div>
+      <div class="alert-title">🏷 3 orders with discounts — AED 168.00 total given</div>
       <div class="alert-body">
         <table class="alert-table">
           <thead><tr><th>Code</th><th>Order</th><th>Customer</th><th>Discount</th></tr></thead>
           <tbody>
             <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7398</td><td>Zeina Noureddine</td><td>AED 56.00</td></tr>
             <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7405</td><td>Nevine Tabbara</td><td>AED 56.00</td></tr>
+            <tr><td><span class="code-pill">Auto-loyalty</span></td><td>#7425</td><td>Zeina Noureddine</td><td>AED 56.00</td></tr>
           </tbody>
         </table>
       </div>
@@ -629,38 +630,50 @@ table.hist-tbl{width:100%;border-collapse:collapse;font-size:12px;min-width:700p
       <div class="alert-body">Regina Mathews ordered Two Heads x2 and added a tip.</div>
     </div>
 
-    <div class="sec-label">Period summary — 16–26 June (period still open)</div>
+    <div class="sec-label">Period summary — 16–30 June</div>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">19</div><div class="kpi-sub">#7389–#7407</div></div>
-      <div class="kpi"><div class="kpi-label">Gross sales</div><div class="kpi-val">2,796</div><div class="kpi-sub">AED before discounts</div></div>
-      <div class="kpi"><div class="kpi-label">Net sales</div><div class="kpi-val">2,590</div><div class="kpi-sub">AED after discounts & returns</div></div>
-      <div class="kpi"><div class="kpi-label">Total sales</div><div class="kpi-val">3,124</div><div class="kpi-sub">AED incl. shipping & taxes</div></div>
+      <div class="kpi"><div class="kpi-label">Total orders</div><div class="kpi-val">36</div><div class="kpi-sub">#7389–#7426 (excl. 2 void)</div></div>
+      <div class="kpi"><div class="kpi-label">Gross sales</div><div class="kpi-val">5,880</div><div class="kpi-sub">AED before discounts</div></div>
+      <div class="kpi"><div class="kpi-label">Net sales</div><div class="kpi-val">5,013</div><div class="kpi-sub">AED after discounts & returns</div></div>
+      <div class="kpi"><div class="kpi-label">Total sales</div><div class="kpi-val">6,062</div><div class="kpi-sub">AED incl. shipping & taxes</div></div>
     </div>
     <div class="card" style="margin-bottom:10px;">
-      <div class="card-row"><span class="cr-label">Gross sales</span><span class="cr-val">AED 2,796.00</span></div>
-      <div class="card-row"><span class="cr-label">Discounts</span><span class="cr-danger">− AED 112.00</span></div>
-      <div class="card-row"><span class="cr-label">Returns</span><span class="cr-danger">− AED 94.00</span></div>
-      <div class="card-row"><span class="cr-label">Net sales</span><span class="cr-val">AED 2,590.00</span></div>
-      <div class="card-row"><span class="cr-label">Shipping charges</span><span class="cr-ok">+ AED 385.00</span></div>
-      <div class="card-row"><span class="cr-label">Taxes</span><span class="cr-ok">+ AED 148.75</span></div>
-      <div class="card-row" style="border-top:1px solid var(--border-strong);"><span class="cr-label" style="font-weight:600;color:var(--text);">Total sales so far</span><span style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--gold);">AED 3,123.75</span></div>
+      <div class="card-row"><span class="cr-label">Gross sales</span><span class="cr-val">AED 5,880.00</span></div>
+      <div class="card-row"><span class="cr-label">Discounts</span><span class="cr-danger">− AED 168.00</span></div>
+      <div class="card-row"><span class="cr-label">Returns / Voids</span><span class="cr-danger">− AED 699.00</span></div>
+      <div class="card-row"><span class="cr-label">Net sales</span><span class="cr-val">AED 5,013.00</span></div>
+      <div class="card-row"><span class="cr-label">Shipping charges</span><span class="cr-ok">+ AED 760.00</span></div>
+      <div class="card-row"><span class="cr-label">Taxes</span><span class="cr-ok">+ AED 288.65</span></div>
+      <div class="card-row" style="border-top:1px solid var(--border-strong);"><span class="cr-label" style="font-weight:600;color:var(--text);">Total sales</span><span style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--gold);">AED 6,061.65</span></div>
     </div>
 
     <div class="sec-label">Revenue by payment method</div>
     <div class="pay-grid">
-      <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h2','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">12,716</div><div class="pay-orders">50 orders · 87% · tap to view ›</div></div>
-      <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h2','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">345</div><div class="pay-orders">3 orders · 2% · tap to view ›</div></div>
-      <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h2','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">887</div><div class="pay-orders">4 orders · 6% · tap to view ›</div></div>
+      <div class="pay-card pc-card pay-card-btn" onclick="openPayModal('h2','card')" title="Click to view orders"><div class="pay-label">Card on delivery</div><div class="pay-val">5,701</div><div class="pay-orders">31 orders · 84% · tap to view ›</div></div>
+      <div class="pay-card pc-cash pay-card-btn" onclick="openPayModal('h2','cash')" title="Click to view orders"><div class="pay-label">Cash (COD)</div><div class="pay-val">0</div><div class="pay-orders">0 orders this period</div></div>
+      <div class="pay-card pc-link pay-card-btn" onclick="openPayModal('h2','link')" title="Click to view orders"><div class="pay-label">Payment link</div><div class="pay-val">685</div><div class="pay-orders">5 orders · 11% · tap to view ›</div></div>
       <div class="pay-card pay-card-btn" style="background:rgba(184,140,40,0.08);border:1px solid var(--border);" onclick="openPayModal('h2','tips')" title="Click to view tip orders"><div class="pay-label" style="color:#c09030;">Tips received</div><div class="pay-val" style="color:#d0a040;">9.40</div><div class="pay-orders" style="color:#9a7020;">1 order · tap to view ›</div></div>
     </div>
 
     <div class="sec-label">Shisha breakdown</div>
     <div class="card">
-      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">10 orders · AED 1,165 gross</span></div>
-      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">7 orders · AED 1,345 gross</span></div>
-      <div class="card-row"><span class="cr-label">Russian VIP / Pan vanilla</span><span class="cr-val">1 order · AED 197 gross</span></div>
-      <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">3 orders · AED 256 gross</span></div>
-      <div class="card-row"><span class="cr-label">Combo / Mixed orders</span><span class="cr-val">2 orders · AED 575 gross</span></div>
+      <div class="card-row"><span class="cr-label">Arabic — Desert Dream (1 Head)</span><span class="cr-val">17 orders · AED 2,043 gross</span></div>
+      <div class="card-row"><span class="cr-label">Premium Two Heads</span><span class="cr-val">14 orders · AED 2,759 gross</span></div>
+      <div class="card-row"><span class="cr-label">Russian VIP / Pan vanilla</span><span class="cr-val">2 orders · AED 413 gross</span></div>
+      <div class="card-row"><span class="cr-label">Accessories / Add-ons</span><span class="cr-val">3 orders · AED 320 gross</span></div>
+      <div class="card-row"><span class="cr-label">Combo / Mixed orders</span><span class="cr-val">5 orders · AED 1,312 gross</span></div>
+    </div>
+
+    <div class="sec-label">Cancelled / Voided orders</div>
+    <div class="order-table-wrap">
+      <table class="order-tbl">
+        <thead><tr><th>Order</th><th>Date</th><th>Customer</th><th>Product</th><th>Amount</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr class="cancelled"><td>#7418</td><td>28 Jun</td><td>Brandon Wronski</td><td>Two Heads</td><td>AED 192.15</td><td><span class="ob ob-cancel">Voided 30 Jun</span></td></tr>
+          <tr class="cancelled"><td>#7420</td><td>28 Jun</td><td>Josh Foreman</td><td>Arabic 1H + Russian VIP</td><td>AED 313.95</td><td><span class="ob ob-cancel">Voided 30 Jun</span></td></tr>
+          <tr class="total-row"><td colspan="4">Total lost</td><td>AED 506.10</td><td></td></tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="divider"></div>
@@ -821,93 +834,64 @@ if(sessionStorage.getItem(SESSION_KEY)){
 // PAYMENT METHOD DATA — Second half May 2026
 const payData = {
   h2: {
-    pos: {
-      label: "Manual entry",
-      period: "16–31 May 2026",
-      orders: [
-        {num:"#7307", name:"Zeina Noureddine", product:"Arabic 1H", amount:124.95},
-      ]
-    },
     tips: {
       label: "Tips received",
-      period: "16–31 May 2026",
+      period: "16–30 June 2026",
       orders: [
-        {num:"#7320", name:"Hiba Shanaa", product:"Arabic 1H + Tip AED 9.40", amount:9.40},
+        {num:"#7394", name:"Regina Mathews", product:"Two Heads x2 + Tip", amount:395.90},
       ]
     },
     card: {
       label: "Card on delivery",
-      period: "16–31 May 2026",
+      period: "16–30 June 2026",
       orders: [
-        {num:"#7292", name:"Rana El Hayek", product:"Russian VIP", amount:215.25},
-        {num:"#7293", name:"Abubakr Hajaree", product:"Russian VIP", amount:215.25},
-        {num:"#7295", name:"Saman Saleh", product:"Arabic 1H", amount:124.95},
-        {num:"#7296", name:"Nevine Tabbara", product:"Arabic 1H x2", amount:218.40},
-        {num:"#7297", name:"Nevine Tabbara", product:"Arabic 1H", amount:75.60},
-        {num:"#7298", name:"Nevine Tabbara", product:"Arabic 1H", amount:119.70},
-        {num:"#7299", name:"Bassem Khaled", product:"Two Heads", amount:192.15},
-        {num:"#7300", name:"Nevine Tabbara", product:"Arabic 1H", amount:75.60},
-        {num:"#7301", name:"Zeina Noureddine", product:"Two Heads", amount:192.15},
-        {num:"#7302", name:"Hayat El Horr", product:"Arabic 1H", amount:99.96},
-        {num:"#7303", name:"Abubakr Hajaree", product:"Russian VIP x4", amount:1400.70},
-        {num:"#7304", name:"Ghazal Jawhar", product:"Arabic 1H", amount:178.92},
-        {num:"#7306", name:"Hiba Shanaa", product:"Arabic 1H", amount:218.40},
-        {num:"#7308", name:"Stelio Lardo", product:"Russian VIP x2", amount:717.15},
-        {num:"#7307", name:"Zeina Noureddine", product:"Arabic 1H (manual entry)", amount:124.95},
-        {num:"#7309", name:"Amir Asadollahi", product:"Arabic 1H", amount:119.70},
-        {num:"#7310", name:"Itay Danon", product:"Russian VIP x4", amount:1384.95},
-        {num:"#7311", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
-        {num:"#7312", name:"Zahra Khalfan", product:"Arabic 1H", amount:220.50},
-        {num:"#7313", name:"Samer Hemade", product:"Arabic 1H", amount:119.70},
-        {num:"#7314", name:"Diksha Tahiliani", product:"Arabic 1H", amount:119.70},
-        {num:"#7315", name:"Ghazal Jawhar", product:"Arabic 1H", amount:119.70},
-        {num:"#7316", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
-        {num:"#7318", name:"Zahra Khalfan", product:"Russian VIP", amount:215.25},
-        {num:"#7319", name:"Samer Hemade", product:"Arabic 1H", amount:119.70},
-        {num:"#7320", name:"Hiba Shanaa", product:"Arabic 1H", amount:129.10},
-        {num:"#7321", name:"Liza Stepenskaya", product:"Russian VIP x2", amount:409.50},
-        {num:"#7322", name:"Zeina Noureddine", product:"Arabic 1H", amount:46.20},
-        {num:"#7323", name:"Ahmed Mokhtar", product:"Two Heads x2", amount:368.55},
-        {num:"#7324", name:"Lama Abdul", product:"Arabic 1H", amount:110.15},
-        {num:"#7325", name:"Sonia Khanjari", product:"Arabic 1H", amount:119.70},
-        {num:"#7326", name:"Narwan Alahmad", product:"Arabic 1H", amount:119.70},
-        {num:"#7327", name:"Hatoof Ghunaim", product:"Arabic 1H", amount:119.70},
-        {num:"#7328", name:"Fernando De Andres", product:"Arabic 1H x2", amount:239.40},
-        {num:"#7329", name:"Ahmed Mokhtar", product:"Two Heads x2", amount:368.55},
-        {num:"#7330", name:"Emad Aldeen", product:"Arabic grape mint", amount:118.65},
-        {num:"#7331", name:"Pablo Miralles", product:"Two Heads x3", amount:406.09},
-        {num:"#7333", name:"Vogue Eldobee", product:"Love 66", amount:228.90},
-        {num:"#7334", name:"Reem Jethani", product:"Two Heads x4", amount:726.60},
-        {num:"#7335", name:"Futun Futun", product:"Two Heads", amount:192.15},
-        {num:"#7337", name:"Maria Kuznetsova", product:"Russian VIP", amount:215.25},
-        {num:"#7338", name:"Dmitrii WDW", product:"Two Heads", amount:192.15},
-        {num:"#7340", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
-        {num:"#7341", name:"Rahul Mittal", product:"Arabic 1H", amount:119.70},
-        {num:"#7342", name:"Yogesh Mande", product:"Arabic 1H x2", amount:218.40},
-        {num:"#7343", name:"Krupesh Soni", product:"Arabic 1H x4", amount:415.80},
-        {num:"#7344", name:"Zahra Khalfan", product:"Arabic 1H x2", amount:218.40},
-        {num:"#7345", name:"Syed Hussain", product:"Two Heads", amount:197.40},
-        {num:"#7346", name:"Lama Abdul", product:"Arabic 1H", amount:124.95},
-        {num:"#7347", name:"Futun Futun", product:"Two Heads x2", amount:363.30},
+        {num:"#7389", name:"Huda Majid", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7390", name:"Ghazal Jawhar", product:"Arabic 1H", amount:119.70},
+        {num:"#7391", name:"Syed Hussain (admin)", product:"Pan vanilla", amount:197.40},
+        {num:"#7392", name:"Mo Maas (admin)", product:"Arabic 1H", amount:124.95},
+        {num:"#7393", name:"Ghazal Jawhar", product:"Arabic 1H + Acc", amount:156.45},
+        {num:"#7394", name:"Regina Mathews", product:"Two Heads x2 + Tip", amount:395.90},
+        {num:"#7395", name:"Aquilla Maria", product:"Two Heads", amount:202.65},
+        {num:"#7396", name:"Candela Carles", product:"Two Heads", amount:192.15},
+        {num:"#7397", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7398", name:"Zeina Noureddine", product:"Arabic 1H (auto-disc AED56)", amount:60.90},
+        {num:"#7399", name:"Rima Numan", product:"Arabic 1H x3", amount:317.10},
+        {num:"#7400", name:"Brian Den Boer", product:"Arabic 1H", amount:124.95},
+        {num:"#7403", name:"Maya Jamal", product:"Arabic 1H + Acc x2", amount:169.05},
+        {num:"#7404", name:"Mohamad Mardini", product:"Arabic 1H", amount:119.70},
+        {num:"#7406", name:"Hind Barakate", product:"Two Heads", amount:192.15},
+        {num:"#7407", name:"Ahmed Marmolejo", product:"Two Heads", amount:192.15},
+        {num:"#7408", name:"Ines Hedi", product:"Two Heads", amount:202.65},
+        {num:"#7409", name:"Suedud Kadhim", product:"Two Heads x2", amount:368.55},
+        {num:"#7410", name:"Dana Abunasrah", product:"Arabic 1H", amount:119.70},
+        {num:"#7411", name:"Huda Majid", product:"Two Heads + Arabic 1H", amount:290.85},
+        {num:"#7412", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7413", name:"Sanjay Varghese", product:"Two Heads", amount:192.15},
+        {num:"#7415", name:"Negar Nazari", product:"Arabic 1H", amount:119.70},
+        {num:"#7416", name:"Dana Charour (admin)", product:"Arabic 1H x2", amount:234.15},
+        {num:"#7417", name:"Dana Abunasrah", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7419", name:"Zeina Noureddine", product:"Arabic 1H", amount:119.70},
+        {num:"#7421", name:"Nil Garcia", product:"Russian VIP", amount:215.25},
+        {num:"#7422", name:"Syed Hussain (admin)", product:"Two Heads", amount:197.40},
+        {num:"#7423", name:"Samar", product:"Arabic 1H x2", amount:218.40},
+        {num:"#7424", name:"Rafat Darwazeh (admin)", product:"Arabic 1H", amount:119.70},
+        {num:"#7425", name:"Zeina Noureddine", product:"Arabic 1H (auto-disc AED56)", amount:60.90},
       ]
     },
     cash: {
       label: "Cash (COD)",
-      period: "16–31 May 2026",
-      orders: [
-        {num:"#7332", name:"Zahra Zakizadeh", product:"Arabic 1H", amount:119.70},
-        {num:"#7348", name:"Rouba Halawi", product:"Arabic 1H", amount:99.96},
-        {num:"#7349", name:"Camelia Draghici", product:"Arabic 1H", amount:124.95},
-      ]
+      period: "16–30 June 2026",
+      orders: []
     },
     link: {
       label: "Payment link",
-      period: "16–31 May 2026",
+      period: "16–30 June 2026",
       orders: [
-        {num:"#7294", name:"Saman Saleh", product:"Arabic 1H", amount:223.65},
-        {num:"#7305", name:"Hayat El Horr", product:"Russian VIP", amount:483.00},
-        {num:"#7317", name:"Diksha Tahiliani", product:"Arabic 1H", amount:119.70},
-        {num:"#7336", name:"Nevine Tabbara", product:"Arabic 1H", amount:60.90},
+        {num:"#7401", name:"Vismantas Uselis", product:"Two Heads", amount:192.15},
+        {num:"#7402", name:"Nevine Tabbara", product:"Arabic 1H", amount:119.70},
+        {num:"#7405", name:"Nevine Tabbara", product:"Arabic 1H (auto-disc AED56)", amount:60.90},
+        {num:"#7414", name:"Ahmed Marmolej", product:"Two Heads", amount:192.15},
+        {num:"#7426", name:"Kayle Stroud", product:"Arabic 1H", amount:119.70},
       ]
     }
   },
